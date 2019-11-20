@@ -1,0 +1,10 @@
+@import '../../GlobalStyle';
+
+.MainNavbarContainer {
+    background-color: $black;
+    min-width: 120px;
+    width: 15%;
+    color: white;
+    font-family: $mainFont;
+    font-weight: bold;
+}

@@ -1,15 +1,21 @@
 import React from "react";
 import "./Homepage.scss";
+import Footer from "../../components/Footer";
 import Gallery from "./Gallery";
 import { Link } from 'react-router-dom'
+import MainNavbar from "../../components/MainNavbar";
+
 
 const Homepage = () => {
   return (
+    <>
     <div className="Homepage">
-      Welcome!
+      <MainNavbar />
       <Link path to="/about-me">About Me</Link>
-      <Gallery/>
+      <Gallery />
+      <Footer />
     </div>
+    </>
   );
 };
 

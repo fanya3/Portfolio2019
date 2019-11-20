@@ -1,8 +1,10 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {Switch, Route} from 'react-router-dom'
 import Homepage from './pages/Homepage/Homepage' 
 import AboutMe from './pages/AboutMe/AboutMe' 
+import Danette from './pages/Danette/Danette' 
+import Lubees from './pages/Lubees/Lubees' 
 
  const App = () => {
   return (
@@ -10,6 +12,8 @@ import AboutMe from './pages/AboutMe/AboutMe'
     <Switch>
       <Route exact path ='/' component={Homepage}/>
       <Route exact path ='/about-me' component={AboutMe}/> 
+      <Route exact path ='/danette' component={Danette}/> 
+      <Route exact path ='/lubees' component={Lubees}/> 
     </Switch>
     </div>
   );

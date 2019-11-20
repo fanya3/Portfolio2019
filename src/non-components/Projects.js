@@ -4,7 +4,8 @@ export const PROJECTS = [
       name: "Danette",
       image: "./images/danette-card.jpg",
       type1: "Foody",
-      alt: "Danette Project"
+      alt: "Danette Project",
+      path:'/danette'
     },
     {
       id: 1,
@@ -18,7 +19,8 @@ export const PROJECTS = [
       name: "Lubees de Sylvie",
       image: "./images/lubees-card.jpg",
       type1: "Green",
-      alt: "Lubees Project"
+      alt: "Lubees Project",
+      path:'/lubees'
     },
     {
       id: 3,

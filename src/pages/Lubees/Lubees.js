@@ -1,10 +1,10 @@
 import React from "react";
-import "./AboutMe.scss";
+import "../CaseDisplay.scss";
 import { Link } from 'react-router-dom'
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
-const AboutMe = () => {
+const Lubees = () => {
   return (
     <div className="Homepage">
       <Navbar/>
@@ -15,4 +15,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Lubees;
