@@ -1,5 +1,4 @@
 import React from "react";
-import { ButtonGroup, Button } from "reactstrap";
 import { FILTERS } from "../../non-components/Filters.js";
 
 
@@ -17,22 +16,22 @@ const Filter = props => {
     });
   const filterButtons = FILTERS.map(filterName => {
     return (
-      <Button
+      <button
         key={filterName}
         onClick={() => props.cardFilterSelect(filterName)}
       >
         {filterName}
-      </Button>
+      </button>
     );
   });
 
   return (
     <div className="container">
       <div className="p-5 col-1">
-        <ButtonGroup >
-          <Button onClick={() => props.cardFilterSelect(null)}>All</Button>
+        <div>
+          <button onClick={() => props.cardFilterSelect(null)}>All</button>
           {filterButtons}
-        </ButtonGroup>
+        </div>
       </div>
       <div className="row">
         <div className="col d-flex align-content-start flex-wrap">{card}</div>
