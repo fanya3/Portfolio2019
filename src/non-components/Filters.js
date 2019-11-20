@@ -1,4 +1,4 @@
-export const Filters = [
+export const FILTERS = [
     'Foody',
     'Green',
     'Online',

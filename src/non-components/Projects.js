@@ -1,32 +1,34 @@
-export const Projects = [
+export const PROJECTS = [
     {
       id: 0,
       name: "Danette",
-      image: "./assets/pictures/danette-card.jpg",
-      type1: "foody",
+      image: "./images/danette-card.jpg",
+      type1: "Foody",
       alt: "Danette Project"
     },
     {
       id: 1,
       name: "OhMyG!",
-      image: "./assets/pictures/ohmyg-card.jpg",
-      type1: "online",
+      image: "./images/ohmyg-card.jpg",
+      type1: "Online",
       alt: "OhMyG! Project"
     },
     {
       id: 2,
       name: "Lubees de Sylvie",
-      image: "./assets/pictures/lubees-card.jpg",
-      type1: "green",
+      image: "./images/lubees-card.jpg",
+      type1: "Green",
       alt: "Lubees Project"
     },
     {
       id: 3,
       name: "Volvic Green",
-      image: "./assets/pictures/volvic-card.jpg",
-      type1: "foody",
-      type2: "green",
+      image: "./images//volvic-card.jpg",
+      type1: "Foody",
+      type2: "Green",
       alt: "Volvic Green Project"
     },
   ];
+
+
   
