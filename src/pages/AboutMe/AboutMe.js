@@ -6,10 +6,11 @@ import Navbar from "../../components/Navbar";
 
 const AboutMe = () => {
   return (
-    <div className="Homepage">
+    <div className="AboutMeContainer">
       <Navbar/>
-      About Me!
-      <Link path to="/">back</Link>
+      <div className="AboutMeMain">About Me!
+      <Link path to="/">back</Link></div>
+      
       <Footer/>
     </div>
   );

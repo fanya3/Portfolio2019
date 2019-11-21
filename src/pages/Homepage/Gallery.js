@@ -4,7 +4,6 @@ import { PROJECTS } from "../../non-components/Projects";
 
 
 
-
 class Gallery extends Component {
   state = {
     cards: PROJECTS,
@@ -17,7 +16,7 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <Filter
           cards={this.state.cards}
           filter={this.state.cardFilter}

@@ -1,0 +1,34 @@
+@import '../../GlobalStyle';
+
+body {
+    background-color: $green;
+}
+
+.AboutMeContainer {
+    display:grid;
+    grid-template-columns: 1.4fr 6fr;
+    grid-template-areas: "navbar aboutme"
+                         "navbar footer";
+    color: white;
+    width:100%;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+}
+
+.AboutMeMain {
+    height:500px;
+    background-color: $green;
+}
+
+.NavbarContainer {
+    grid-area: navbar;
+    background-color: white;
+    min-width: 150px;
+    color: $black;
+    font-family: $mainFont;
+    font-weight: bold;
+    box-shadow: 3px 3px 12px rgb(197, 197, 197);
+    mix-blend-mode: multiply;
+    z-index: 20;
+}

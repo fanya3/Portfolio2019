@@ -1,0 +1,21 @@
+@import "../GlobalStyle";
+
+body {
+  background-color: white;
+}
+
+.CaseContainer {
+  display: grid;
+  grid-template-columns: 1.4fr 6fr;
+  grid-template-areas:
+    "navbar aboutme"
+    "navbar footer";
+  width: 100%;
+  font-family: $mainFont;
+  font-weight: bold;
+  background-color: white;
+}
+
+.CaseDisplay {
+    height:700px;
+}
