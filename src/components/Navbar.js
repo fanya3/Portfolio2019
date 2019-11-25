@@ -1,14 +1,12 @@
 import React from 'react';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
-      
       <div className="NavbarContainer">
-         Navbar
+        Navbar
+      {props.content}
       </div>
-     
-      
     );
   }
 

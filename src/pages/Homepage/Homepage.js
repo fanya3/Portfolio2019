@@ -9,7 +9,7 @@ const Homepage = () => {
   return (
     <>
       <div className="HomepageContainer">
-        <MainNavbar />
+        <MainNavbar/>
         <div className="HomepageIntro">Hello!</div>
         <div className="HomepageWhatIDo">
           <Link className="HomepageLink" path to="/about-me">

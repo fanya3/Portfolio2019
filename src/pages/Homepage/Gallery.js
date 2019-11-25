@@ -10,7 +10,7 @@ class Gallery extends Component {
     cardFilter: null
   };
 
-  cardFilterSelect = filterName => {
+  cardFilterSelect = (filterName) => {
     this.setState({ cardFilter: filterName });
   };
 

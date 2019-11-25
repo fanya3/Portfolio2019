@@ -10,8 +10,8 @@ const Filter = props => {
     .map(card => {
       return (
         <div>
-          <Link to={card.path}>
-            <img className="GalleryImg" src={card.image} alt={card.name} />
+          <Link to = {`/project${card.path}/${card.name}`}>
+            <img className="GalleryImg" src={card.cover_image} alt={card.name} />
           </Link>
         </div>
       );

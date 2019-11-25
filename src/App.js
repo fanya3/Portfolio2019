@@ -1,19 +1,20 @@
 import React from 'react';
-import './App.scss';
 import {Switch, Route} from 'react-router-dom'
-import Homepage from './pages/Homepage/Homepage' 
 import AboutMe from './pages/AboutMe/AboutMe' 
-import Danette from './pages/Danette/Danette' 
-import Lubees from './pages/Lubees/Lubees' 
+import DisplayCaseDesign from './pages/DisplayCases/DisplayCaseDesign' 
+import DisplayCaseDigital from './pages/DisplayCases/DisplayCaseDigital' 
+import Homepage from './pages/Homepage/Homepage' 
+import './App.scss';
+import './_GlobalStyle.scss';
 
  const App = () => {
   return (
     <div className="App">
     <Switch>
       <Route exact path ='/' component={Homepage}/>
-      <Route exact path ='/about-me' component={AboutMe}/> 
-      <Route exact path ='/danette' component={Danette}/> 
-      <Route exact path ='/lubees' component={Lubees}/> 
+      <Route path ='/about-me' component={AboutMe}/> 
+      <Route path ='/projectdesign/:name' component={DisplayCaseDesign}/> 
+      <Route path ='/projectdigital/:name' component={DisplayCaseDigital}/>
     </Switch>
     </div>
   );
