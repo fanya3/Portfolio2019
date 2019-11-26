@@ -16,9 +16,10 @@ class DisplayCaseDigital extends Component {
     const ProjectName = this.props.match.params.name;
     this.setState({
       project: this.state.projects.filter(item => item.name === ProjectName),
-      isLoaded: true
+      isLoaded: true,
     });
   };
+
 
   displayImages = () => {
     return this.state.project[0].images.map(item => (
@@ -43,13 +44,17 @@ class DisplayCaseDigital extends Component {
       </>
     );
   };
-
-  componentDidMount() {
-    this.filterState();
+ 
+  componentDidUpdate(prevProps) {
+    if(this.props.match.params.name !== prevProps.match.params.name){
+      this.filterState();     
+    }
+  }
+  componentDidMount(){
+    this.filterState(); 
   }
 
   render() {
-    
     return (
       <div className="CaseContainer">
         {this.state.isLoaded ? (

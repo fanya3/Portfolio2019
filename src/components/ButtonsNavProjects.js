@@ -14,34 +14,43 @@ class ButtonsNavProjects extends React.Component {
   };
 
   getLinks = () => {
-    if (this.props.id === 0) {
+    const { projects} =this.state
+    const { id } = this.props
+    if (id === 0) {
        this.setState({
-        nextPath : this.state.projects[this.props.id + 1].path,
-        nextName: this.state.projects[this.props.id + 1].name,
+        nextPath : projects[id + 1].path,
+        nextName: projects[id + 1].name,
         isLoaded: true
       });
-     } else if (this.props.id === this.state.projects.length - 1) {
+     } else if (id === projects.length - 1) {
       this.setState({
-        previousPath: this.state.projects[this.props.id - 1].path,
-        previousName: this.state.projects[this.props.id - 1].name,
+        previousPath: projects[id - 1].path,
+        previousName: projects[id - 1].name,
         isLoaded: true
       });
     } else {
        this.setState({
-        nextPath: this.state.projects[this.props.id + 1].path,
-        nextName: this.state.projects[this.props.id + 1].name,
-        previousPath: this.state.projects[this.props.id - 1].path,
-        previousName: this.state.projects[this.props.id - 1].name,
+        nextPath: projects[id + 1].path,
+        nextName: projects[id + 1].name,
+        previousPath: projects[id - 1].path,
+        previousName: projects[id - 1].name,
         isLoaded: true
       });
     }
   };
 
 
-  componentDidMount() {
-    this.getLinks()
+  componentDidUpdate(prevProps) {
+    const { id } = this.props
+    if(id!== prevProps.id){
+      this.getLinks();
+    }
   }
 
+
+  componentDidMount() {
+    this.getLinks();
+  }
 
 
   render() {

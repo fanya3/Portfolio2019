@@ -16,9 +16,21 @@ class DisplayCaseDesign extends React.Component {
     const ProjectName = this.props.match.params.name;
     this.setState({
       project: this.state.projects.filter(item => item.name === ProjectName),
-      isLoaded: true
+      isLoaded: true,
     });
   };
+
+  // filterState = async () => {
+  //   const ProjectName = this.props.match.params.name;
+  //   await this.setState({
+  //     project: this.state.projects.filter(item => item.name === ProjectName),
+  //     isLoaded: true,
+  //   });
+  //   this.setState({
+  //     id:this.state.project[0].id
+  //   }) 
+  // };
+
 
   displayImages = () => {
     return this.state.project[0].images.map(item => (
@@ -35,25 +47,26 @@ class DisplayCaseDesign extends React.Component {
     );
   };
 
-  componentDidMount() {
-    this.filterState();  
-    
+ 
+
+  componentDidUpdate(prevProps) {
+    if(this.props.match.params.name !== prevProps.match.params.name){
+      this.filterState();     
+    }
+  }
+
+  componentDidMount(){
+    this.filterState(); 
   }
 
   render() {
-    
     return (  
       <div className="CaseContainer">
-        {this.state.isLoaded ? (
-          <Navbar
+        {this.state.isLoaded ? 
+         (<Navbar
             content={
               <ButtonsNavProjects
                 id = {this.state.project[0].id}
-                // nextPath= {this.state.projects[this.state.project[0].id + 1].path} 
-                // nextName = {this.state.projects[this.state.project[0].id + 1].name} 
-                // previousPath= {this.state.projects[this.state.project[0].id - 1].path} 
-                // previousName = {this.state.projects[this.state.project[0].id - 1].name} 
-                // max={this.state.projects.length - 1}
               />
             }
           />
