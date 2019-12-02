@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import Logo  from "../assets/icons/LogoFB.svg";
 
 const MainNavbar = () => {
     return (
       
       <div className="MainNavbarContainer">
-         MainNavbar
+         <Link path to="/" ><img className = "NavbarLogo" src={Logo} alt="Logo-FannyBouffier"/></Link>
       </div>
      
       

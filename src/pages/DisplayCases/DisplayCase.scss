@@ -4,18 +4,54 @@ body {
   background-color: white;
 }
 
-.CaseContainer {
-  display: grid;
-  grid-template-columns: 1.4fr 6fr;
-  grid-template-areas:
-    "navbar aboutme"
-    "navbar footer";
-  width: 100%;
+.CaseContainer{
+  display:grid;
+  grid-template-columns: 1.2fr 6fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "navbar case"
+                       "navbar case "
+                       "navbar case"
+                       "navbar footer";
+  color: white;
+  width:100%;
   font-family: $mainFont;
   font-weight: bold;
   background-color: white;
 }
 
+.NavbarContainer {
+  grid-area: navbar;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 3px 3px 12px rgb(197, 197, 197);
+  mix-blend-mode: multiply;
+  z-index: 20;
+  position: sticky;
+  top:0;
+  height:100vh;
+  padding:0.5em;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.FooterContainer{
+  grid-area: footer; 
+  z-index: 20;
+}
+
 .CaseDisplay {
-    height:700px;
+  grid-area: case;
+  font-family: $mainFont;
+  display: flex;
+  flex-direction: column;
+  color:$black;
+  align-items: center;
+}
+
+.CaseImg{
+  width:80%;
+  height:auto;
+  margin :10px;
 }

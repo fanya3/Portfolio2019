@@ -23,14 +23,14 @@ class DisplayCaseDigital extends Component {
 
   displayImages = () => {
     return this.state.project[0].images.map(item => (
-      <img className="illustr" src={item.image} alt={item.name}></img>
+      <img className="CaseImg" src={item.image} alt={item.name}></img>
     ));
   };
 
   displayTexts = () => {
     return (
       <>
-        <h3>{this.state.project[0].name}</h3>
+        <h2>{this.state.project[0].name}</h2>
         <p>{this.state.project[0].description}</p>
       </>
     );
@@ -70,15 +70,13 @@ class DisplayCaseDigital extends Component {
           <p>is loading ...</p>
         )}
 
-        <h2>Design</h2>
-
         <div className="CaseDisplay">
           {this.state.isLoaded ? (
-            <div>
+            <>
               {this.displayTexts()}
               {this.displayImages()}
               {this.displayLinks()}
-            </div>
+            </>
           ) : (
             <p>is loading ...</p>
           )}

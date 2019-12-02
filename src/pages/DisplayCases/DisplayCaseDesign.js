@@ -20,28 +20,17 @@ class DisplayCaseDesign extends React.Component {
     });
   };
 
-  // filterState = async () => {
-  //   const ProjectName = this.props.match.params.name;
-  //   await this.setState({
-  //     project: this.state.projects.filter(item => item.name === ProjectName),
-  //     isLoaded: true,
-  //   });
-  //   this.setState({
-  //     id:this.state.project[0].id
-  //   }) 
-  // };
-
 
   displayImages = () => {
     return this.state.project[0].images.map(item => (
-      <img className="illustr" src={item.image} alt={item.name}></img>
+      <img className="CaseImg" src={item.image} alt={item.name}></img>
     ));
   };
 
   displayTexts = () => {
     return (
       <>
-        <h3>{this.state.project[0].name}</h3>
+        <h2>{this.state.project[0].name}</h2>
         <p>{this.state.project[0].description}</p>
       </>
     );
@@ -75,15 +64,13 @@ class DisplayCaseDesign extends React.Component {
           <p>is loading ...</p>
         )}
 
-        <h2>Design</h2>
-
         <div className="CaseDisplay">
           {this.state.isLoaded ? (
-            <div>
+            <>
                {console.log("projectid dans case",this.state.project[0].id) }
               {this.displayTexts()}
               {this.displayImages()}
-            </div>
+            </>
           ) : (
             <p>is loading ...</p>
           )}

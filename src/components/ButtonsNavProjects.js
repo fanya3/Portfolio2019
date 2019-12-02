@@ -1,5 +1,6 @@
 import React from "react";
 import "../_GlobalStyle.scss";
+import "./Navbar.scss"
 import { PROJECTS } from "../non-components/Projects";
 import { Link } from "react-router-dom";
 
@@ -14,22 +15,22 @@ class ButtonsNavProjects extends React.Component {
   };
 
   getLinks = () => {
-    const { projects} =this.state
-    const { id } = this.props
+    const { projects } = this.state;
+    const { id } = this.props;
     if (id === 0) {
-       this.setState({
-        nextPath : projects[id + 1].path,
+      this.setState({
+        nextPath: projects[id + 1].path,
         nextName: projects[id + 1].name,
         isLoaded: true
       });
-     } else if (id === projects.length - 1) {
+    } else if (id === projects.length - 1) {
       this.setState({
         previousPath: projects[id - 1].path,
         previousName: projects[id - 1].name,
         isLoaded: true
       });
     } else {
-       this.setState({
+      this.setState({
         nextPath: projects[id + 1].path,
         nextName: projects[id + 1].name,
         previousPath: projects[id - 1].path,
@@ -39,107 +40,70 @@ class ButtonsNavProjects extends React.Component {
     }
   };
 
-
   componentDidUpdate(prevProps) {
-    const { id } = this.props
-    if(id!== prevProps.id){
+    const { id } = this.props;
+    if (id !== prevProps.id) {
       this.getLinks();
     }
   }
-
 
   componentDidMount() {
     this.getLinks();
   }
 
-
   render() {
-    console.log("id dans bouton",this.props.id)
+    // console.log("id dans bouton",this.props.id)
     if (this.props.id === 0) {
       return (
-        <div> {this.state.isLoaded ?
-        (<div>
-          <h4>next</h4>
-          <Link path to = {`/project${this.state.nextPath}/${this.state.nextName}`}>Next Project</Link>
-        </div>
+        <>
+          <div >
+              <Link className = "ButtonBack" path to="/#gallery"><p>BACK TO ALL</p></Link>
+          </div>
+          <div className = "Border" ></div>
+          {this.state.isLoaded ? (
+            <div >
+              <Link className = "ButtonNavProject Next Heartbeat" path to={`/project${this.state.nextPath}/${this.state.nextName}`}><p>NEXT</p></Link>
+            </div>
           ) : (
-        <p> is loading ...</p>
-        )}
-      </div>
-      )
-
+            <p> is loading ...</p>
+          )}
+        </>
+      );
     } else if (this.props.id === this.state.projects.length - 1) {
-    return (
-      <div> {this.state.isLoaded ?
-      (<div>
-        <h4>previous</h4>
-        <Link path to = {`/project${this.state.previousPath}/${this.state.previousName}`}>Previous Project</Link>
-        </div>
-        ) : (
-      <p> is loading ...</p>
-      )}
-    </div>
-    )
-
-  } else {
-    return (
-      <div> {this.state.isLoaded ?
-      (<div>
-        <h4>liens complets</h4>
-        <Link path to = {`/project${this.state.previousPath}/${this.state.previousName}`}>Previous Project</Link>
-
-        <Link path to = {`/project${this.state.nextPath}/${this.state.nextName}`}>Next Project</Link>
-        </div>
-        ) : (
-      <p> is loading ...</p>
-      )}
-    </div>
-    )
+      return (
+        <>
+          <div >
+              <Link className = "ButtonBack" path to="/#gallery"><p>BACK TO ALL</p></Link>
+          </div>
+          <div className = "Border" ></div>
+          {this.state.isLoaded ? (
+            <div>
+              <Link className = "ButtonNavProject Previous Heartbeat" path to={`/project${this.state.previousPath}/${this.state.previousName}`}><p>PREVIOUS</p></Link>
+            </div>
+          ) : (
+            <p> is loading ...</p>
+          )}
+        </>
+      );
+    } else {
+      return (
+        <>
+          <div >
+              <Link className = "ButtonBack" path to="/#gallery"><p>BACK TO ALL</p></Link>
+          </div>
+          <div className = "Border" ></div>
+          {this.state.isLoaded ? (
+            <div>
+              <Link className = "ButtonNavProject Previous Heartbeat" path to={`/project${this.state.previousPath}/${this.state.previousName}`}><p>PREVIOUS</p></Link>
+              <Link className = "ButtonNavProject Next Heartbeat" path to={`/project${this.state.nextPath}/${this.state.nextName}`}><p>NEXT</p></Link>
+            </div>
+          ) : (
+            <p> is loading ...</p>
+          )}
+        </>
+      );
+    }
   }
-}
 }
 
 export default ButtonsNavProjects;
-
-
-
-
-// import React from "react";
-// import "../_GlobalStyle.scss";
-// import { Link } from "react-router-dom";
-
-// const ButtonsNavProjects = props => {
-//   if (props.id === 0) {
-//     return (
-//       <div>
-//         <h4>next</h4>
-//         <Link path to={`/project${props.nextPath}/${props.nextName}`}>
-//           Next Project
-//         </Link>
-//       </div>
-//     );
-//   // } else if (props.id === props.max) {
-//   //   return (
-//   //     <div>
-//   //       <h4>previous</h4>
-//   //       {/* <Link path={`/project${props.previousPath}/${props.previousName}`}>
-//   //         Previous Project
-//   //       </Link> */}
-//   //     </div>
-//   //   );
-//   } else {
-//     return (
-//       <div>
-//         <h4>liens complets</h4>
-//         <Link path to={`/project${props.nextPath}/${props.nextName}`}>
-//           Next Project
-//         </Link>
-//         {/* <Link path to={`/project${props.previousPath}/${props.previousName}`}>
-//           Previous Project
-//         </Link> */}
-//       </div>
-//     );
-//   }
-// };
-
-// export default ButtonsNavProjects;

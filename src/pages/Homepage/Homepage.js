@@ -16,7 +16,7 @@ const Homepage = () => {
             About Me
           </Link>
         </div>
-        <Gallery />
+        <Gallery id="gallery"/>
         <Footer />
       </div>
     </>

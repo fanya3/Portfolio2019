@@ -6,7 +6,7 @@ body {
 
 .HomepageContainer{
     display:grid;
-    grid-template-columns: 1.4fr 6fr;
+    grid-template-columns: 1.2fr 6fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "mainnavbar intro"
                          "mainnavbar whatido "
@@ -30,6 +30,7 @@ body {
     box-shadow: 3px 3px 12px rgb(197, 197, 197);
     mix-blend-mode: multiply;
     z-index: 20;
+    padding:0.5em;
 }
 
 
