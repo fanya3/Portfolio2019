@@ -55,7 +55,7 @@ class ButtonsNavProjects extends React.Component {
     // console.log("id dans bouton",this.props.id)
     if (this.props.id === 0) {
       return (
-        <>
+        <>       
           <div >
               <Link className = "ButtonBack" path to="/#gallery"><p>BACK TO ALL</p></Link>
           </div>
