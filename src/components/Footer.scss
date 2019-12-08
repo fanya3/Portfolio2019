@@ -3,14 +3,15 @@
 .FooterContainer {
     background-color: $black;
     width: 100%;
-    height:100px;
+    height:150px;
     color: white;
     font-weight: 400;
     font-family: $mainFont;
+    font-size:0.9em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    text-align: center;
 }
 
 

@@ -4,7 +4,6 @@ import AboutMe from './pages/AboutMe/AboutMe'
 import DisplayCaseDesign from './pages/DisplayCases/DisplayCaseDesign' 
 import DisplayCaseDigital from './pages/DisplayCases/DisplayCaseDigital' 
 import Homepage from './pages/Homepage/Homepage' 
-import './App.scss';
 import './_GlobalStyle.scss';
 
  const App = () => {

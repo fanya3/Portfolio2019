@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Logo  from "../assets/icons/LogoFB.svg";
+import "../_GlobalStyle.scss";
+import "./Navbar.scss"
 
 const Navbar = (props) => {
     return (
