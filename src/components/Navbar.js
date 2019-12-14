@@ -8,7 +8,7 @@ const Navbar = (props) => {
     return (
       <div className= "NavbarContainer">
       <Link path to="/" ><img className = "NavbarLogo" src={Logo} alt="Logo-FannyBouffier"/></Link>
-      {props.content}
+      <div >{props.content}</div>
       </div>
     );
   }

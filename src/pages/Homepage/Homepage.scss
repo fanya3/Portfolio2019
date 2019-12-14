@@ -37,32 +37,169 @@ body {
 }
 
 
+/////////////////////////////HELLO///////////////////////////////
 
 .HomepageIntro {
     grid-area: intro;  
-    height:100vh;
-    font-size:12rem;
     background-color: $green; 
+    padding-top:60px; 
+    padding-bottom:100px; 
 }
+
+.HomepageHelloContainer{
+    width:78%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 3.6fr 1fr;
+    grid-template-rows: auto auto;
+    gap:2em;
+}
+
+.HomepageHelloLogo {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    width:100%;
+}
+
+
+.HomepageHelloText{
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    font-size: 3.8vw;
+    text-align: left;
+    margin-top:0;
+    line-height: 1.1em;
+}
+
+.HomepageHelloLegend {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    font-size: 0.85vw;
+    text-align: left;
+    text-justify: auto;
+    color: $black;
+    margin-top:10px;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+.LegendBold{
+    font-weight: 900;
+}
+
+.LegendSuperBold {
+    font-size:1.6em;
+    font-weight: 900;
+}
+
+
+
+
+/////////////////////////////WHAT I DO///////////////////////////////
 
 .HomepageWhatIDo{
     grid-area: whatido;
     background-color: $black; 
-    height:300px;
     z-index: 20;
+    padding-bottom:60px;
+    padding-top:20px;
+    position: relative;
+}
+
+.blackTitle1 {
+    @include blackTitle(2.2em);
+    position: absolute;
+    left : -11%;
+    top: -140px;
+}
+
+.blackTitle2 {
+    @include blackTitle(2.2em);
+    position: absolute;
+    left : -11%;
+    top: 40px;
+}
+.WhatIDoBlock{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin:auto;
+    min-height: 200px;
+    padding-top:2.5em;
+}
+
+.WhatIDoBlockText{
+    width:40%;
+    line-height: 1.6em;
+}
+
+.WhatIDoTitle {
+    font-size:2.2em;
+    font-weight: 900;
+    letter-spacing: 0.22em;
+}
+
+.Between {
+    width:2px;
+    height:170px;
+    background-color:$green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.And {
+    height:60px;
+}
+
+
+.green {
+    color: $green;
 }
 
 .HomepageLink{
     display: inline-block;
     text-decoration: none;
     color: $green;
-    padding:1em 2em;
+    padding:0.6em 1.2em;
     border:solid 2px $green;
-    margin-top:100px;
+    font-size:1.1em;
+    margin-top: 1.5em;
 }
+
+.HomepageLink:hover {
+    color: $black;
+    background-color:$green ;
+}
+
+
+///////////////////////////// GALLERY ///////////////////////////////
+
 
 .GalleryContainer {
     min-height:600px;
+    padding-top:100px;
+    position: relative;
+    z-index: 100        ;
+}
+
+.GalleryButtons{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin: 2em;
+    position:absolute;
+    left:-190px;
+    top:160px;
+}
+
+.ButtonBack, .ButtonNavProject{
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 

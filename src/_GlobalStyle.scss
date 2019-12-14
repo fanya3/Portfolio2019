@@ -1,4 +1,4 @@
-$green: #3df4b2;
+$green: #5bf4c1;
 $black: #1d1d1b;
 $mainFont:'Heimat-mono', sans-serif;
 @import url("https://use.typekit.net/ejc7vwp.css");
@@ -8,4 +8,23 @@ $mainFont:'Heimat-mono', sans-serif;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Heimat-mono', sans-serif;  
+}
+
+@mixin blackTitle ($font-size) {
+  background-color: $black;
+  color:$black;
+  font-size:$font-size;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  padding: 0.2em 0.5em 0.2em 0.7em;
+  text-shadow: 1.2px 0 0 white, 0 1.2px 0 white, 0 -1.2px 0 white, -1.2px 0 0 white, 1.2px 1.2px 0 white, 1.2px -1.2px 0 white, -1.2px 1.2px 0 white, -1.2px -1.2px 0 white;
+}
+
+@mixin linkAll() {
+  
+}
+
+
+@mixin linkSections() {
+
 }

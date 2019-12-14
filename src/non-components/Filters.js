@@ -1,6 +1,5 @@
 export const FILTERS = [
-    'Foody',
-    'Green',
-    'Online',
-  ];
-  
+  'Foody',
+  'Green',
+  'Online',
+];

@@ -10,7 +10,7 @@ import * as serviceWorker from "./serviceWorker";
 ReactDOM.render(
   <BrowserRouter >
     <ScrollToTop/>
-    <App />
+    <App/>
   </BrowserRouter>,
   document.getElementById("root")
 );

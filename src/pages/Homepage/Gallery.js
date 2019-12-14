@@ -1,30 +1,43 @@
-import React, { Component } from "react";
-import Filter from "./Filter";
-import { PROJECTS } from "../../non-components/Projects";
+import React from "react";
+// import { FILTERS } from "../../non-components/Filters.js";
+import { Link } from "react-router-dom";
 
 
+const Gallery = props => {
 
-class Gallery extends Component {
-  state = {
-    cards: PROJECTS,
-    cardFilter: null
-  };
+  const card = props.cards
+    .filter(({ type1, type2 }) => {
+      return !props.filter || type1 === props.filter || type2 === props.filter;
+    })
+    .map(card => {
+      return (
+        <div>
+          <Link to = {`/project${card.path}/${card.name}`}>
+            <img className="GalleryImg" src={card.cover_image} alt={card.name} />
+          </Link>
+        </div>
+      );
+    });
 
-  cardFilterSelect = (filterName) => {
-    this.setState({ cardFilter: filterName });
-  };
+  // const filterButtons = FILTERS.map(filterName => {
+  //   return (
+  //     <button className = "ButtonNavProject"
+  //       key={filterName}
+  //       onClick={() => props.cardFilterSelect(filterName)}>
+  //       {filterName}
+  //     </button>
+  //   );
+  // });
 
-  render() {
-    return (
-      <div>
-        <Filter
-          cards={this.state.cards}
-          filter={this.state.cardFilter}
-          cardFilterSelect={filterName => this.cardFilterSelect(filterName)}
-        />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="GalleryContainer">
+      {/* <div className="GalleryButtons">
+        <button className = "ButtonBack" onClick={() => props.cardFilterSelect(null)}>SHOW ALL</button>
+        <div className = "Border" ></div>
+      {filterButtons}</div>    */}
+      <div className="GalleryDisplay">{card}</div>
+    </div>
+  );
+};
 
 export default Gallery;
