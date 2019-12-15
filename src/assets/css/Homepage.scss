@@ -1,0 +1,206 @@
+@import "../../GlobalStyle";
+
+body {
+  background-color: $green;
+}
+
+.HomepageContainer {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "mainnavbar intro"
+    "mainnavbar whatido "
+    "mainnavbar gallery"
+    "mainnavbar footer";
+  color: white;
+  width: 100%;
+  font-family: $mainFont;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+}
+
+.MainNavbarContainer {
+  grid-area: mainnavbar;
+  background-color: white;
+  color: $black;
+  font-family: $mainFont;
+  font-weight: bold;
+  box-shadow: 3px 3px 12px rgb(197, 197, 197);
+  mix-blend-mode: multiply;
+  z-index: 20;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/////////////////////////////HELLO///////////////////////////////
+
+.HomepageIntro {
+  grid-area: intro;
+  background-color: $green;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.HomepageHelloContainer {
+  width: 78%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3.6fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2em;
+}
+
+.HomepageHelloLogo {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+.HomepageHelloText {
+  grid-column: 1 / span 1;
+  grid-row: 2;
+  display: inline-block;
+  font-size: 3.8vw;
+  text-align: left;
+  margin-top: 0;
+  line-height: 1.1em;
+}
+
+.HomepageHelloLegend {
+  grid-column: 2 / span 1;
+  grid-row: 2;
+  display: inline-block;
+  font-size: 0.85vw;
+  text-align: left;
+  text-justify: auto;
+  color: $black;
+  margin-top: 10px;
+  font-weight: 500;
+  line-height: 1.7em;
+}
+
+.LegendBold {
+  font-weight: 900;
+}
+
+.LegendSuperBold {
+  font-size: 1.6em;
+  font-weight: 900;
+}
+
+/////////////////////////////WHAT I DO///////////////////////////////
+
+.HomepageWhatIDo {
+  grid-area: whatido;
+  background-color: $black;
+  z-index: 20;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  position: relative;
+
+  .WhatIDoBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    min-height: 200px;
+    padding-top: 2.5em;
+
+    .blackTitle1 {
+      @include blackTitle(2em);
+      position: absolute;
+      left: -120px;
+      top: -125px;
+    }
+
+    .WhatIDoBlockText {
+      width: 40%;
+      line-height: 1.6em;
+
+      .WhatIDoTitle {
+        font-size: 2.2em;
+        font-weight: 900;
+        letter-spacing: 0.22em;
+      }
+
+      p {
+        font-family: $secondFont;
+        font-weight: 400;
+      }
+    }
+
+    .Between {
+      width: 2px;
+      height: 170px;
+      background-color: $green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+
+      .And {
+        height: 60px;
+      }
+    }
+  }
+
+  .HomepageLink {
+    display: inline-block;
+    text-decoration: none;
+    color: $green;
+    padding: 0.6em 1.2em;
+    border: solid 2px $green;
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    &:hover {
+      color: $black;
+      background-color: $green;
+    }
+  }
+}
+
+.green {
+  color: $green;
+}
+
+///////////////////////////// GALLERY ///////////////////////////////
+
+.GalleryContainer {
+  min-height: 600px;
+  padding-top: 70px;
+  position: relative;
+  z-index: 100;
+
+  .blackTitle2 {
+    @include blackTitle(2em);
+    position: absolute;
+    left: -120px;
+    top: 30px;
+  }
+
+  .GalleryDisplay {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2em;
+    column-gap: 2em;
+    width: 80%;
+    margin: 3em auto;
+
+    .GalleryImg {
+      width: 100%;
+    }
+  }
+}
+
+
+
+.FooterContainer {
+  grid-area: footer;
+  z-index: 20;
+}

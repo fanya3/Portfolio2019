@@ -1,0 +1,105 @@
+import React from "react";
+import { PROJECTS } from "../../non-components/Projects";
+
+import ButtonsNavProjects from "../../components/ButtonsNavProjects";
+import Contacts from "../../components/Contacts"
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+
+import Github from "../../assets/icons/IconGithub.svg"
+import Web from "../../assets/icons/IconWeb.svg"
+import "../../assets/css/DisplayCase.scss";
+
+class DisplayCaseDigital extends React.Component {
+  state = {
+    projects: PROJECTS,
+    isLoaded: false,
+    project: []
+  };
+
+  filterState = () => {
+    const ProjectName = this.props.match.params.name;
+    this.setState({
+      project: this.state.projects.filter(item => item.name === ProjectName),
+      isLoaded: true,
+    });
+  };
+
+
+  displayImages = () => {
+    return this.state.project[0].images.map(item => (
+      <img className="CaseImg" src={item.image} alt={item.name}></img>
+    ));
+  };
+
+  displayTexts = () => {
+    console.log(this.state.project[0].link)
+    return (
+      <>
+         <h2 className="blackTitle4">{this.state.project[0].alt}<span className="missionTitle">{this.state.project[0].mission}</span></h2>
+        <div className="CaseIntro">
+
+          <p>{this.state.project[0].description}</p>
+          <div className = "IconContactsContainer">
+            <div className = "IconContactsGroup">
+              <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><img className = "IconContacts" src={Web} alt="web link"/></a>
+              <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><p>{this.state.project[0].link}</p></a>
+            </div>
+            <div className = "IconContactsGroup">
+              <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><img className = "IconContacts" src={Github} alt="web link"/></a>
+              <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><p>{this.state.project[0].github}</p></a>
+            </div>
+          </div>
+         
+        </div>
+      </>
+    );
+  };
+
+
+ 
+  componentDidUpdate(prevProps) {
+    if(this.props.match.params.name !== prevProps.match.params.name){
+      this.filterState();     
+    }
+  }
+  componentDidMount(){
+    this.filterState(); 
+  }
+
+  render() {
+    return (
+      <div className="CaseContainer">
+        {this.state.isLoaded ? (
+          <Navbar
+          content={
+              <ButtonsNavProjects
+                id = {this.state.project[0].id}
+              />
+          }
+          content2={
+            <Contacts/>
+        }
+        />
+         
+        ) : (
+          <p>is loading ...</p>
+        )}
+
+        <div className="CaseDisplay">
+          {this.state.isLoaded ? (
+            <>
+              {this.displayTexts()}
+              {this.displayImages()}
+            </>
+          ) : (
+            <p>is loading ...</p>
+          )}
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+}
+
+export default DisplayCaseDigital;

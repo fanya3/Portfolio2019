@@ -1,0 +1,31 @@
+@import "../../GlobalStyle";
+
+.ContactsContainer {
+ 
+  .ContactsTitle {
+    color: $green;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    letter-spacing: -0.05em;
+  }
+
+  .IconsContactsGroup {
+    display: flex;
+    justify-content: space-evenly;
+
+    .IconContacts {
+      width: 40px;
+    }
+  }
+}
+
+
+.ContactsHomepage {
+  position: absolute;
+  bottom: 220px;
+}
+
+.ContactsDisplayCase {
+  position: absolute;
+  bottom: 60px;
+}

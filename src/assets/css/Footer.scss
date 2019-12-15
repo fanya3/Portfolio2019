@@ -1,0 +1,30 @@
+@import '../../GlobalStyle';
+
+.FooterContainer {
+    background-color: $black;
+    width: 100%;
+    height:150px;
+    color: white;
+    font-weight: 400;
+    font-family: $secondFont;
+    font-size:0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+
+    .FooterLogo {
+        width:20px;
+        height:auto;
+        position: relative;
+        top:4px;
+    }
+
+
+    p {
+        margin:0.3em
+    }
+}
+
