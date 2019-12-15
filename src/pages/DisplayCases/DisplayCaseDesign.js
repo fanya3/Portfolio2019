@@ -6,8 +6,8 @@ import Contacts from "../../components/Contacts"
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
-import "./DisplayCase.scss";
-import "../AboutMe/AboutMe.scss";
+import "../../assets/css/DisplayCase.scss";
+// import "../../assets/css/AboutMe.scss";
 
 class DisplayCaseDesign extends React.Component {
   state = {

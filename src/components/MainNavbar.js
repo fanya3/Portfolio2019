@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Logo  from "../assets/icons/LogoFB.svg";
 import "../_GlobalStyle.scss";
-import "./Navbar.scss"
+import "../assets/css/Navbar.scss"
 
 const MainNavbar = (props) => {
     return (

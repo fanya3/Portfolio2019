@@ -8,7 +8,7 @@ import Navbar from "../../components/Navbar";
 
 import Github from "../../assets/icons/IconGithub.svg"
 import Web from "../../assets/icons/IconWeb.svg"
-import "./DisplayCase.scss";
+import "../../assets/css/DisplayCase.scss";
 
 class DisplayCaseDigital extends React.Component {
   state = {

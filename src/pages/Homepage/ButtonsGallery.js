@@ -1,6 +1,6 @@
 import React from 'react';
 import { FILTERS } from "../../non-components/Filters.js";
-import "../../components/Buttons.scss"
+import "../../assets/css/Buttons.scss"
 
 
 const ButtonsGallery = (props) => {

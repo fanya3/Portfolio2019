@@ -8,9 +8,9 @@ import Gallery from "./Gallery";
 import Hello from "../../assets/icons/Hello.svg";
 import MainNavbar from "../../components/MainNavbar";
 import Contacts from '../../components/Contacts'
-import InternshipLabel from "./InternshipLabel";
+import InternshipLabel from "../../components/InternshipLabel";
 
-import "./Homepage.scss";
+import "../../assets/css/Homepage.scss";
 
 
 

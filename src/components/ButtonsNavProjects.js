@@ -1,7 +1,7 @@
 import React from "react";
 import { PROJECTS } from "../non-components/Projects";
 import { Link } from "react-router-dom";
-import "./Buttons.scss"
+import "../assets/css/Buttons.scss"
 
 class ButtonsNavProjects extends React.Component {
   state = {

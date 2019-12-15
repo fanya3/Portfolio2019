@@ -10,8 +10,8 @@ import Mail from "../../assets/icons/IconMail.svg"
 import LinkedIn from "../../assets/icons/IconLinkedIn.svg"
 import Github from "../../assets/icons/IconGithub.svg"
 
-import "./AboutMe.scss";
-import "../Homepage/Homepage.scss";
+import "../../assets/css/AboutMe.scss";
+import "../../assets/css/Homepage.scss";
 
 const AboutMe = () => {
   return (

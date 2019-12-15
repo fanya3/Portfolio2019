@@ -1,5 +1,5 @@
 import React from 'react';
-import "./InternshipLabel.scss"
+import "../assets/css/InternshipLabel.scss"
 
 class InternshipLabel extends React.Component {
 

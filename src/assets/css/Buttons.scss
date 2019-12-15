@@ -1,4 +1,4 @@
-@import '../GlobalStyle';
+@import '../../GlobalStyle';
 
 
 
@@ -89,7 +89,7 @@
 
 
 .Previous::before {
-  content: url("../assets/icons/ButtonPrevious.svg");
+  content: url("../icons/ButtonPrevious.svg");
   display: inline-block;
   width: 35px;
   height: auto;
@@ -98,7 +98,7 @@
 }
 
 .Next::after {
-  content: url("../assets/icons/ButtonNext.svg");
+  content: url("../icons/ButtonNext.svg");
   display: inline-block;
   width: 35px;
   height: auto;

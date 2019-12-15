@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Contacts.scss"
+import "../assets/css/Contacts.scss"
 import Mail from "../assets/icons/IconMail.svg"
 import LinkedIn from "../assets/icons/IconLinkedIn.svg"
 import Github from "../assets/icons/IconGithub.svg"

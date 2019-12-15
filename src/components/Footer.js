@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Footer.scss";
+import "../assets/css/Footer.scss";
 import LogoLove  from "../assets/icons/LogoLove.svg";
 import LogoReact  from "../assets/icons/LogoReact.svg";
 
