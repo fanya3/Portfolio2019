@@ -1,13 +1,17 @@
 import React, { Component } from "react";
-import "./Homepage.scss";
+import { Link } from "react-router-dom";
+import { PROJECTS } from "../../non-components/Projects";
+import And from "../../assets/icons/And.svg";
+import ButtonsGallery from "./ButtonsGallery"
 import Footer from "../../components/Footer";
 import Gallery from "./Gallery";
-import ButtonsGallery from "./ButtonsGallery"
-import { Link } from "react-router-dom";
 import Hello from "../../assets/icons/Hello.svg";
-import And from "../../assets/icons/And.svg";
 import MainNavbar from "../../components/MainNavbar";
-import { PROJECTS } from "../../non-components/Projects";
+import Contacts from '../../components/Contacts'
+
+
+import "./Homepage.scss";
+
 
 class Homepage extends Component {
 
@@ -25,8 +29,9 @@ class Homepage extends Component {
     return (
       <>
         <div className="HomepageContainer">
-          <MainNavbar />
-
+          <MainNavbar
+          content={<Contacts/>}/>
+          
           <div className="HomepageIntro">
             <div className="HomepageHelloContainer">
               <img className="HomepageHelloLogo" src={Hello} alt="hello logo" />
@@ -64,8 +69,8 @@ class Homepage extends Component {
               <div className="WhatIDoBlockText">
                 <h3 className="WhatIDoTitle green">I DEVELOP</h3>
                 <p className="green">
-                  Front-end &amp; Back-end with HTML &amp; CSS, Sass,
-                  JavaScript, React, Redux, Node.js &amp; MySQL.
+                  FRONT-END &amp; BACK-END <br/> with HTML &amp; CSS, Sass, Bootstrap 
+                  JavaScript, React, Redux, Node.js <br/> &amp; Database with MySQL.
                 </p>
               </div>
             </div>
@@ -85,6 +90,7 @@ class Homepage extends Component {
               filter={this.state.cardFilter}
             />
           </div>
+
 
           <Footer />
 

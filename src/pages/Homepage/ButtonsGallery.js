@@ -1,25 +1,27 @@
 import React from 'react';
 import { FILTERS } from "../../non-components/Filters.js";
-
+import "../../components/Buttons.scss"
 
 
 const ButtonsGallery = (props) => {
 
     const filterButtons = FILTERS.map(filterName => {
         return (
-          <button className = "ButtonNavProject"
+          <input className = "ButtonNavGallery pulsate-fwd"
             key={filterName}
-            onClick={() => props.cardFilterSelect(filterName)}>
-            {filterName}
-          </button>
+            type ="button"
+            value={`it's ${filterName}!`}
+            onClick={() => props.cardFilterSelect(filterName)}
+          />
         );
       });
 
       
     return ( 
       <>
-        <div className="GalleryButtons">
-            <button className = "ButtonBack" onClick={() => props.cardFilterSelect(null)}>SHOW ALL</button>
+        <div className="ButtonsContainer ButtonsLeft">
+            <button className = "ButtonAllGallery" onClick={() => props.cardFilterSelect(null)}>SHOW ALL</button>
+            <div className = "Border" ></div>
             {filterButtons}
         </div> 
       </>  

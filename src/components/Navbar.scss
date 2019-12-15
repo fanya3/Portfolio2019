@@ -4,65 +4,7 @@
 
 .NavbarLogo {
   margin: 30px auto 30px auto;
-  min-width: 110px;
-  width: 8vw;
+  width: 120px;
   height: auto;
 }
 
-
-.ButtonBack {
-  display: inline-block;
-  text-decoration: none;
-  color: $black;
-  font-family: $mainFont;
-  font-weight: 500;
-  font-size: 1.2em;
-}
-
-.ButtonBack:hover {
-  font-weight: 800;
-  transition-duration: 0.3s;
-}
-
-.Border {
-  width : 80%;
-  border: solid 1px $black;
-  margin: 0 auto 10px auto;
-}
-
-.ButtonNavProject {
-  text-decoration: none;
-  color: $black;
-  font-family: $mainFont;
-  font-weight: 800;
-  font-size: 1.2em;
-  line-height: 0.4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:5px;
-  text-transform: uppercase;
-}
-
-.Heartbeat:hover{
-  animation:heartbeat 1.3s ease-in-out  both
-}
-
- @keyframes heartbeat{from{transform:scale(1);transform-origin:center center;animation-timing-function:ease-out}10%{transform:scale(.91);animation-timing-function:ease-in}17%{transform:scale(.98);animation-timing-function:ease-out}33%{transform:scale(.87);animation-timing-function:ease-in}45%{transform:scale(1);animation-timing-function:ease-out}}
-
-
-.Previous::before {
-  content: url("../assets/icons/ButtonPrevious.svg");
-  display: inline-block;
-  width: 40px;
-  height: auto;
-  margin-right:5px;
-}
-
-.Next::after {
-  content: url("../assets/icons/ButtonNext.svg");
-  display: inline-block;
-  width: 40px;
-  height: auto;
-  margin-left:5px;
-}

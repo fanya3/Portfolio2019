@@ -1,9 +1,13 @@
 import React from "react";
-import "./DisplayCase.scss";
+import { PROJECTS } from "../../non-components/Projects";
+
+import ButtonsNavProjects from "../../components/ButtonsNavProjects";
+import Contacts from "../../components/Contacts"
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import ButtonsNavProjects from "../../components/ButtonsNavProjects";
-import { PROJECTS } from "../../non-components/Projects";
+
+import "./DisplayCase.scss";
+import "../AboutMe/AboutMe.scss";
 
 class DisplayCaseDesign extends React.Component {
   state = {
@@ -30,8 +34,10 @@ class DisplayCaseDesign extends React.Component {
   displayTexts = () => {
     return (
       <>
-        <h2>{this.state.project[0].name}</h2>
-        <p>{this.state.project[0].description}</p>
+        <h2 className="blackTitle4">{this.state.project[0].alt}<span className="missionTitle">{this.state.project[0].mission}</span></h2>
+        <div className="CaseIntro">
+          <p>{this.state.project[0].description}</p>
+        </div>
       </>
     );
   };
@@ -54,10 +60,13 @@ class DisplayCaseDesign extends React.Component {
         {this.state.isLoaded ? 
          (<Navbar
             content={
-              <ButtonsNavProjects
-                id = {this.state.project[0].id}
-              />
+                <ButtonsNavProjects
+                  id = {this.state.project[0].id}
+                />
             }
+            content2={
+              <Contacts/>
+          }
           />
          
         ) : (

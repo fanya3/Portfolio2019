@@ -4,8 +4,9 @@ export const PROJECTS = [
     name: "Danette",
     cover_image: "/images/danette-card.jpg",
     type1: "Foody",
-    alt: "Danette Project",
+    alt: "Danette",
     path: "design",
+    mission: "/ Global Redesign",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     images: [
       {
@@ -30,8 +31,9 @@ export const PROJECTS = [
     name: "OhMyG!",
     cover_image: "/images/ohmyg-card.jpg",
     type1: "Online",
-    alt: "OhMyG! Project",
+    alt: "Oh My G!",
     path: "digital",
+    mission: "/ Web App",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     link:"www.blabla.com",
     github:"www.github.com",
@@ -58,8 +60,9 @@ export const PROJECTS = [
     name: "LubeesdeSylvie",
     cover_image: "/images/lubees-card.jpg",
     type1: "Green",
-    alt: "Lubees Project",
+    alt: "Lubees de Sylvie",
     path: "design",
+    mission: "/ Identity",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     images: [
       {
@@ -87,6 +90,7 @@ export const PROJECTS = [
     type2: "Green",
     alt: "Volvic Green Project",
     path: "design",
+    mission: "/Global Redesign",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     images: [
       {
@@ -113,6 +117,7 @@ export const PROJECTS = [
     type1: "Online",
     alt: "OhMyG! Project",
     path: "digital",
+    mission: "/Global Redesign",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     link:"www.blabla.com",
     github:"www.github.com",
@@ -142,6 +147,7 @@ export const PROJECTS = [
     alt: "Lubees Project",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     path: "design",
+    mission: "/Global Redesign",
     images: [
       {
         id: 0,
@@ -167,6 +173,7 @@ export const PROJECTS = [
     type1: "Foody",
     alt: "Danette Project",
     path: "design",
+    mission: "/Global Redesign",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     images: [
       {
@@ -194,6 +201,7 @@ export const PROJECTS = [
     type2: "Green",
     alt: "Volvic Green Project",
     path: "design",
+    mission: "/Global Redesign",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     images: [
       {
@@ -220,6 +228,7 @@ export const PROJECTS = [
     type1: "Foody",
     alt: "Danette Project",
     path: "design",
+    mission: "/Global Redesign",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     images: [
       {

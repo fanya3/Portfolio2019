@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+
 import Logo  from "../assets/icons/LogoFB.svg";
 import "../_GlobalStyle.scss";
 import "./Navbar.scss"
@@ -9,7 +10,7 @@ const MainNavbar = (props) => {
       <>
         <div className="MainNavbarContainer">
           <Link path to="/" ><img className = "NavbarLogo" src={Logo} alt="Logo-FannyBouffier"/></Link>
-          {props.content}
+         <div className="ContactsHomepage">{props.content}</div>
         </div>
       </>
     );

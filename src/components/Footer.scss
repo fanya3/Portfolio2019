@@ -12,17 +12,18 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+
+    .FooterLogo {
+        width:20px;
+        height:auto;
+        position: relative;
+        top:4px;
+    }
+
+
+    p {
+        margin:0.3em
+    }
 }
 
-
-.FooterLogo {
-    width:20px;
-    height:auto;
-    position: relative;
-    top:4px;
-}
-
-
-.FooterContainer p {
-    margin:0.3em
-}

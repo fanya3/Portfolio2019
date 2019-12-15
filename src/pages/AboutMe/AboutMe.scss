@@ -4,27 +4,11 @@ body {
     background-color: $green;
 }
 
-.AboutMeContainer {
-    display:grid;
-    grid-template-columns: 1.4fr 6fr;
-    grid-template-areas: "navbar aboutme"
-                         "navbar footer";
-    color: white;
-    width:100%;
-    font-family: $mainFont;
-    font-weight: bold;
-    background-color: white;
-}
 
-.AboutMeMain {
-    height:500px;
-    background-color: $green;
-}
 
 .NavbarContainer {
     grid-area: navbar;
     background-color: white;
-    min-width: 150px;
     color: $black;
     font-family: $mainFont;
     font-weight: bold;
@@ -32,3 +16,104 @@ body {
     mix-blend-mode: multiply;
     z-index: 20;
 }
+
+
+
+
+.AboutMeContainer {
+    display:grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-areas: "navbar aboutme"
+                         "navbar footer";
+    color: white;
+    width:100%;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+
+    .AboutMeMain {
+        height:900px;
+        background-color: $green;
+        padding:60px 10% 60px 10%;
+        
+        .blackTitle3 {
+            @include blackTitle(2em);
+            display: inline-block;
+            margin:0;
+        }
+
+        .AboutMeIntro {
+            display: inline-block;
+            background-color: white;
+            box-shadow: 3px 3px 12px rgb(64, 181, 138);
+            z-index: 20;
+            color:$black;
+            padding: 2em;
+            margin-top:3em;
+
+            p {
+                margin:0;
+            }
+
+            .ResumeLink{
+                display: block;
+                text-decoration: none;
+                padding:0.5em 0.5em 0.5em 1em;
+                border:solid 2px $green;
+                font-size:1.1em;
+                margin: 1.8em auto 0.7em auto;
+                color: $green;
+                width: 280px;
+                letter-spacing: -0.05em;
+                &:hover {
+                    background-color:$green ;
+                    color: $black;
+                    }
+                    h4 {
+                        margin:0;
+                    }
+                }
+            }
+        }
+    }
+
+    .IconContacts {
+        width: 40px;
+       
+      }
+
+
+
+
+.AboutMeContactBlock {
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:2em;
+
+    .AboutMeContactTitle {
+        color: $black;
+        font-family: $mainFont;
+        font-weight: 800;
+        font-size: 1.2em;
+        border-bottom: solid $black 2px;
+        padding-bottom: 9px;
+        margin-top:40px;
+    }
+    .AboutMeContact, .IconContactsBlock{
+        color: $black;
+        display: flex;
+        align-items: center;
+
+        .ContactsList {
+            display: flex;
+            flex-direction: column;
+            margin-right:4em;
+        }
+    }
+}
+
+
+
+
