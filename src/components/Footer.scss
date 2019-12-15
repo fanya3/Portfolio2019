@@ -6,12 +6,13 @@
     height:150px;
     color: white;
     font-weight: 400;
-    font-family: $mainFont;
-    font-size:0.9em;
+    font-family: $secondFont;
+    font-size:0.8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    letter-spacing: 0.1em;
 
 
     .FooterLogo {

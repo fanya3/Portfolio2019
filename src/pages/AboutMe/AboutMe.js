@@ -38,7 +38,7 @@ const AboutMe = () => {
             <div className="AboutMeContact">
 
               <div className="ContactsList">
-                  <div className = "IconContactsBlock"><a ><img className = "IconContacts" src={Tel} alt="tel link"/></a><p>+33 6 72 71 32 95</p></div>
+                  <div className = "IconContactsBlock"><img className = "IconContacts" src={Tel} alt="tel link"/><p>+33 6 72 71 32 95</p></div>
                   <div className = "IconContactsBlock"><a href="mailto:fanny.bouffier@gmail.com"><img className = "IconContacts" src={Mail} alt="mail link"/></a><p>www.fannybouffier@gmail.com</p></div>
               </div>
               

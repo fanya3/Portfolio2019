@@ -8,9 +8,10 @@ import Gallery from "./Gallery";
 import Hello from "../../assets/icons/Hello.svg";
 import MainNavbar from "../../components/MainNavbar";
 import Contacts from '../../components/Contacts'
-
+import InternshipLabel from "./InternshipLabel";
 
 import "./Homepage.scss";
+
 
 
 class Homepage extends Component {
@@ -53,6 +54,7 @@ class Homepage extends Component {
           </div>
 
           <div className="HomepageWhatIDo">
+          <InternshipLabel/>
             <div className="WhatIDoBlock">
               <h2 className="blackTitle1">WHAT I DO</h2>
               <div className="WhatIDoBlockText">
@@ -70,7 +72,7 @@ class Homepage extends Component {
                 <h3 className="WhatIDoTitle green">I DEVELOP</h3>
                 <p className="green">
                   FRONT-END &amp; BACK-END <br/> with HTML &amp; CSS, Sass, Bootstrap 
-                  JavaScript, React, Redux, Node.js <br/> &amp; Database with MySQL.
+                  JavaScript, React, Redux, Node.js &amp; Database with MySQL.
                 </p>
               </div>
             </div>

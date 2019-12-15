@@ -32,7 +32,7 @@ body {
     background-color: white;
 
     .AboutMeMain {
-        height:900px;
+        // height:900px;
         background-color: $green;
         padding:60px 10% 60px 10%;
         
@@ -53,6 +53,9 @@ body {
 
             p {
                 margin:0;
+                font-family: $secondFont;
+                font-weight: 400;
+                font-size: 0.9em;
             }
 
             .ResumeLink{
@@ -105,6 +108,11 @@ body {
         color: $black;
         display: flex;
         align-items: center;
+
+        p {
+            font-family: $secondFont;
+            font-weight: 500;
+        }
 
         .ContactsList {
             display: flex;
