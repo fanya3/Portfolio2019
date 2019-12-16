@@ -8,6 +8,7 @@ import Navbar from "../../components/Navbar";
 
 import Github from "../../assets/icons/IconGithub.svg"
 import Web from "../../assets/icons/IconWeb.svg"
+
 import "../../assets/css/DisplayCase.scss";
 
 class DisplayCaseDigital extends React.Component {
@@ -27,31 +28,34 @@ class DisplayCaseDigital extends React.Component {
 
 
   displayImages = () => {
-    return this.state.project[0].images.map(item => (
-      <img className="CaseImg" src={item.image} alt={item.name}></img>
-    ));
-  };
+    const NewProject = this.state.project[0].images.slice(1);
+    return NewProject.map(item => (
+     <img className="CaseImg" src={item.image} alt={item.name}></img>
+   ));
+ };
 
   displayTexts = () => {
-    console.log(this.state.project[0].link)
     return (
       <>
-         <h2 className="blackTitle4">{this.state.project[0].alt}<span className="missionTitle">{this.state.project[0].mission}</span></h2>
-        <div className="CaseIntro">
-
-          <p>{this.state.project[0].description}</p>
-          <div className = "IconContactsContainer">
-            <div className = "IconContactsGroup">
-              <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><img className = "IconContacts" src={Web} alt="web link"/></a>
-              <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><p>{this.state.project[0].link}</p></a>
-            </div>
-            <div className = "IconContactsGroup">
-              <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><img className = "IconContacts" src={Github} alt="web link"/></a>
-              <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><p>{this.state.project[0].github}</p></a>
-            </div>
-          </div>
-         
+      <div className="CaseIntroSection" style={{backgroundImage:`url(${this.state.project[0].images[0].image})`}}>
+        <h2 className="blackTitle4">{this.state.project[0].alt}<span className="missionTitle">/ {this.state.project[0].mission}</span></h2>
+        <p className="CaseDescription">
+          {this.state.project[0].description}
+        </p>
+      </div>
+       
+        
+      <div className = "CaseContactSection">
+        <div className = "IconContactsGroup">
+          <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><img className = "IconContacts" src={Web} alt="web link"/></a>
+          <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><p>{this.state.project[0].link}</p></a>
         </div>
+        <div className = "IconContactsGroup">
+          <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><img className = "IconContacts" src={Github} alt="web link"/></a>
+          <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><p>{this.state.project[0].github}</p></a>
+        </div>
+      </div>
+       
       </>
     );
   };

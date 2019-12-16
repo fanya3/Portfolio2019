@@ -7,7 +7,7 @@ import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 import "../../assets/css/DisplayCase.scss";
-// import "../../assets/css/AboutMe.scss";
+
 
 class DisplayCaseDesign extends React.Component {
   state = {
@@ -24,21 +24,22 @@ class DisplayCaseDesign extends React.Component {
     });
   };
 
-
+ 
   displayImages = () => {
-    return this.state.project[0].images.map(item => (
+     const NewProject = this.state.project[0].images.slice(1);
+     return NewProject.map(item => (
       <img className="CaseImg" src={item.image} alt={item.name}></img>
     ));
   };
 
   displayTexts = () => {
     return (
-      <>
-        <h2 className="blackTitle4">{this.state.project[0].alt}<span className="missionTitle">{this.state.project[0].mission}</span></h2>
-        <div className="CaseIntro">
-          <p>{this.state.project[0].description}</p>
-        </div>
-      </>
+      <div className="CaseIntroSection" style={{backgroundImage:`url(${this.state.project[0].images[0].image})`}}>
+        <h2 className="blackTitle4">{this.state.project[0].alt}<span className="missionTitle">/ {this.state.project[0].mission}</span></h2>
+        <p className="CaseDescription">
+          {this.state.project[0].description}
+        </p>
+      </div>
     );
   };
 

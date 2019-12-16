@@ -11,7 +11,7 @@ import Contacts from '../../components/Contacts'
 import InternshipLabel from "../../components/InternshipLabel";
 
 import "../../assets/css/Homepage.scss";
-
+import "../../assets/css/Gallery.scss"
 
 
 class Homepage extends Component {
