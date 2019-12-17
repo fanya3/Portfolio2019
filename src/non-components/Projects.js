@@ -60,12 +60,12 @@ export const PROJECTS = [
   {
     id: 1,
     name: "OhMyG!",
-    cover_image: "/images/ohmyg-card.jpg",
+    cover_image: "/images/OHMYG-CARD.gif",
     type1: "Online",
     alt: "Oh My G!",
     path: "digital",
     mission: "Web App",
-    color:"#5bf4c1",
+    color:"#08f8d5",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     link:"www.blabla.com",
     github:"www.github.com",
@@ -146,16 +146,14 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    name: "OhMyG!2",
-    cover_image: "/images/ohmyg-card.jpg",
-    type1: "Online",
-    alt: "OhMyG! Project",
-    path: "digital",
-    mission: "/Global Redesign",
-    color:"#592b1e",
+    name: "Calyce",
+    cover_image: "/images/CALYCE-CARD.jpg",
+    type1: "Green",
+    alt: "Calycé Développement",
+    path: "design",
+    mission: "Corporate Identity",
+    color:"#243e93",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
-    link:"www.blabla.com",
-    github:"www.github.com",
     images: [
       {
         id: 0,
@@ -177,13 +175,15 @@ export const PROJECTS = [
   {
     id: 5,
     name: "IntoTheWildCodeSchool",
-    cover_image: "/images/0-INTOTHEWILD-CARD.gif",
-    type1: "Green",
+    cover_image: "/images/INTOTHEWILD-CARD.gif",
+    type1: "Online",
     alt: "Into The Wild Code School",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     path: "digital",
-    mission: "Design & Web Developement",
-    color:"#592b1e",
+    link:"www.blabla.com",
+    github:"www.github.com",
+    mission: "Website",
+    color:"#504df4",
     images: [
       {
         id: 0,
@@ -276,6 +276,47 @@ export const PROJECTS = [
     path: "design",
     mission: "Branding & Packaging",
     color:"#f7bd89",
+    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    images: [
+      {
+        id: 0,
+        image: "/images/DANISSIMO/0-DANISSIMO-01.jpg"
+      },
+      {
+        id: 1,
+        image: "/images/DANISSIMO/0-DANISSIMO-02.jpg"
+      },
+      {
+        id: 2,
+        image: "/images/DANISSIMO/0-DANISSIMO-03.jpg"
+      },
+      {
+        id: 3,
+        image: "/images/DANISSIMO/0-DANISSIMO-04.jpg"
+      },
+      {
+        id: 4,
+        image: "/images/DANISSIMO/0-DANISSIMO-05.jpg"
+      },
+      {
+        id: 5,
+        image: "/images/DANISSIMO/0-DANISSIMO-06.jpg"
+      },
+      {
+        id: 6,
+        image: "/images/DANISSIMO/0-DANISSIMO-07.jpg"
+      }
+    ]
+  },
+  {
+    id: 9,
+    name: "DanonePro",
+    cover_image: "/images/DANONEPRO-CARD.jpg",
+    type1: "Foody",
+    alt: "Danone Pro",
+    path: "design",
+    mission: "Branding & Packaging",
+    color:"#eb212e",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     images: [
       {

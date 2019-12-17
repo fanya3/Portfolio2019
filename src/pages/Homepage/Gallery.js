@@ -13,9 +13,11 @@ const Gallery = props => {
         <div>
           <Link className ="CardLink" to = {`/project${card.path}/${card.name}`}>
             <div className="GalleryCard shadow-drop-2-br" style={{backgroundColor:`${card.color}`}}>
-            <img className="GalleryImg" src={card.cover_image} alt={card.alt}/>
-            <h4>{card.alt}</h4>
-            <p>{card.mission}</p>
+              <img className="GalleryImg" src={card.cover_image} alt={card.alt}/>
+              <div className="GalleryCardText">
+                <h4>{card.alt}</h4>
+                <p>{card.mission}</p>
+              </div> 
             </div>
   
           </Link>
