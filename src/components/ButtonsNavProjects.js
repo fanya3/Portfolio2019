@@ -16,6 +16,7 @@ class ButtonsNavProjects extends React.Component {
   getLinks = () => {
     const { projects } = this.state;
     const { id } = this.props;
+    
     if (id === 0) {
       this.setState({
         nextPath: projects[id + 1].path,

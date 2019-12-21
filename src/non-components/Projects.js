@@ -84,7 +84,7 @@ export const PROJECTS = [
       },
       {
         id: 3,
-        image: "/images/OHMYG/0-OHMYG-04.jpg"
+        image: "/images/lubees-card.jpg"
       }
     ]
   },
@@ -157,18 +157,15 @@ export const PROJECTS = [
     images: [
       {
         id: 0,
-        image:
-        "/images/ohmyg-card.jpg"
+        image: "/images/CALYCE-CARD.jpg"
       },
       {
         id: 1,
-        image:
-        "/images/ohmyg-card.jpg"
+        image:"/images/CALYCE-CARD.jpg"
       },
       {
         id: 2,
-        image:
-        "/images/ohmyg-card.jpg"
+        image: "/images/CALYCE-CARD.jpg"
       }
     ]
   },
@@ -209,6 +206,8 @@ export const PROJECTS = [
     type1: "Online",
     alt: "Xavier Chanard",
     path: "digital",
+    link:"www.blabla.com",
+    github: 'NULL',
     mission: "Identity & Web Design",
     color:"#ff6a48",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
