@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { PROJECTS } from "../../non-components/Projects";
 
 import ButtonsGallery from "./ButtonsGallery"
-import Contacts from '../../components/Contacts'
 import Footer from "../../components/Footer";
 import Gallery from "./Gallery";
 import InternshipLabel from "../../components/InternshipLabel";
@@ -31,8 +30,7 @@ class Homepage extends Component {
     return (
       <>
         <div className="HomepageContainer">
-          <MainNavbar
-          content={<Contacts/>}/>
+          <MainNavbar/>
           
           <div className="HomepageIntro">
             <div className="HomepageHelloContainer">
@@ -61,7 +59,7 @@ class Homepage extends Component {
               <div className="WhatIDoBlockText">
                 <h3 className="WhatIDoTitle  green">I DESIGN</h3>
                 <p  className="green">
-                Graphic Design, Corporate Identity, <br/> Branding and Packaging Design, Web Design, <br/> with Global Strategic Thinking
+                Graphic Design, Corporate Identity, <br/> Branding and Packaging Design, Web Design, with Global Strategic Thinking
                 </p>
               </div>
               <div className="Between">

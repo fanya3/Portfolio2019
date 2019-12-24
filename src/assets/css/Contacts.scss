@@ -2,16 +2,20 @@
 
 .ContactsContainer {
  
+  text-align: center;
   .ContactsTitle {
-    color: $green;
     font-size: 1.3em;
-    margin-bottom: 10px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
     letter-spacing: -0.05em;
   }
 
   .IconsContactsGroup {
     display: flex;
     justify-content: space-evenly;
+    margin:auto auto 1em auto;
+    width: auto;
+    max-width: 200px;
 
     .IconContacts {
       width: 40px;
@@ -20,12 +24,3 @@
 }
 
 
-.ContactsHomepage {
-  position: absolute;
-  bottom: 220px;
-}
-
-.ContactsDisplayCase {
-  position: absolute;
-  bottom: 60px;
-}

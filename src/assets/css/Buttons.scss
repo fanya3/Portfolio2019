@@ -1,100 +1,59 @@
-@import '../../GlobalStyle';
+@import "../../GlobalStyle";
+
+.ButtonNavGallery:focus, .ButtonAllGallery:focus {
+  outline:none;
+}
 
 
-
-.ButtonsContainer{
+@media screen and (min-width: 901px) {
+  .ButtonsGalleryContainer {
     display: flex;
     flex-direction: column;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: center;
-    margin:auto;
+    margin: auto;
+  }
+
+  .ButtonFilters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+
+  .ButtonsLeft {
+    position: absolute;
+    left: -180px;
+    top: 160px;
+  }
+  .ButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin:  -1em auto auto auto;
     text-align: left;
-
-
-    .ButtonAllGallery {
-      @include ButtonAll();
-      margin-top:20px;
-    }
-    
-    .ButtonAllProject {
-      @include ButtonAll();
-      margin-top:90px;
-    }
-
-    .Border {
-      width : 100%;
-      border: solid 1px $black;
-      margin: 20px auto 10px auto;
-    }
-  
-    .ButtonNavGallery {
-      @include ButtonNav();
-      margin-top:7px;
-    }
-
-    .ButtonNavProject {
-      @include ButtonNav();
-    }
-
 }
-
-
-
-.ButtonsLeft {
-  position:absolute;
-  left:-180px;
-  top:160px;
+.Border {
+  width: 100%;
+  border: solid 1px $black;
+  margin: 20px auto 10px auto;
 }
-
-
-
-
-/////////////////ANIMATION//////////////////
-
-
-.pulsate-fwd:hover {
-	-webkit-animation: pulsate-fwd 0.5s ease-in-out both;
-	        animation: pulsate-fwd 0.5s ease-in-out both;
+.ButtonAllProject {
+  @include ButtonAll();
+  margin-top: 90px;
 }
-
-
- @-webkit-keyframes pulsate-fwd {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+.ButtonNavProject {
+  @include ButtonNav();
 }
-@keyframes pulsate-fwd {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 
 .Previous::before {
   content: url("../icons/ButtonPrevious.svg");
   display: inline-block;
   width: 35px;
   height: auto;
-  margin-right:5px;
-  margin-top:6px;
+  margin-right: 5px;
+  margin-top: 6px;
 }
 
 .Next::after {
@@ -102,8 +61,196 @@
   display: inline-block;
   width: 35px;
   height: auto;
-  margin-left:5px;
-  margin-top:6px;
+  margin-left: 5px;
+  margin-top: 6px;
 }
 
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .ButtonsGalleryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width:85%;
+
+    .ButtonsLeft {
+      position: static;
+    }
+
+    .ButtonFilters {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+    }
+  }
+
+  .ButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Border {
+  width: 100%;
+  border: solid 1px $black;
+  margin: 20px auto 10px auto;
+}
+.ButtonAllProject {
+  @include ButtonAll();
+  margin-top: 10px;
+}
+.ButtonNavProject {
+  @include ButtonNav();
+  margin-top:-10px;
+}
+
+.Previous::before {
+  content: url("../icons/ButtonPrevious.svg");
+  display: inline-block;
+  width: 40px;
+  height: auto;
+  margin-right: 5px;
+  margin-top: 6px;
+}
+
+.Next::after {
+  content: url("../icons/ButtonNext.svg");
+  display: inline-block;
+  width: 40px;
+  height: auto;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+}
+
+
+.ButtonAllGallery {
+  @include ButtonAll();
+  margin-top: 20px;
+}
+
+.ButtonNavGallery {
+  @include ButtonNav();
+  margin-top: 7px;
+  // margin: 7px 1em 0 1em;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .ButtonsGalleryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 6em;
+    width:85%;
+  }
   
+  .ButtonsLeft {
+    position: static;
+  }
+  
+  .ButtonNavGallery {
+    @include ButtonNav();
+    margin: 7px 1em 0 1em;
+  }
+
+  .ButtonFilters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 85%;
+  }
+  .Border {
+    width: 100%;
+    border: solid 1px $black;
+    margin: 10px auto 10px auto;
+  }
+  
+  .ButtonAllProject {
+    @include ButtonAll();
+    margin-top: 10px;
+  }
+
+  .ButtonsNavGroup {
+    display:flex;
+    justify-content: center;
+    align-content: flex-start;
+  }
+  
+  .ButtonNavProject {
+    @include ButtonNav();
+    font-size: 0px;
+    display: inline;
+    text-align:center;
+    margin:0 auto auto auto;
+  }
+ 
+    
+  .Previous::before {
+    content: url("../icons/ButtonPrevious.svg");
+    display: inline-block;
+    width: 45px;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .Next::after {
+    content: url("../icons/ButtonNext.svg");
+    display: inline-block;
+    width: 45px;
+    height: auto;
+    margin-left: 5px;
+  }
+
+}
+
+
+
+/////////////////ANIMATION//////////////////
+
+.pulsate-fwd:hover {
+  -webkit-animation: pulsate-fwd 0.5s ease-in-out both;
+  animation: pulsate-fwd 0.5s ease-in-out both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+

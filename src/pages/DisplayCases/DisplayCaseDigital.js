@@ -62,14 +62,14 @@ class DisplayCaseDigital extends React.Component {
   };
 
 
+  componentDidMount(){
+    this.filterState(); 
+  }
  
   componentDidUpdate(prevProps) {
     if(this.props.match.params.name !== prevProps.match.params.name){
       this.filterState();     
     }
-  }
-  componentDidMount(){
-    this.filterState(); 
   }
 
   render() {
@@ -83,7 +83,8 @@ class DisplayCaseDigital extends React.Component {
               />
           }
           content2={
-            <Contacts/>
+            <Contacts
+            color={'#5bf4c1'}/>
         }
         />
          

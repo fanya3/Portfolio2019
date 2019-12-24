@@ -3,22 +3,19 @@
 body {
   background-color: white;
 }
-
+@media screen  and (min-width:901px) {
 .CaseContainer{
   display:grid;
-  grid-template-columns: 230px 6fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: auto auto;
   grid-template-areas: "navbar case"
-                       "navbar case "
-                       "navbar case"
-                       "navbar footer";
+                       "contacts footer";
   color: white;
   width:100%;
   font-family: $mainFont;
   font-weight: bold;
   background-color: white;
 }
-
 
 
 .NavbarContainer {
@@ -35,6 +32,55 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+  .ContactsDisplayCase {
+    position: sticky;
+    bottom: 0;
+  }
+  
+
+}
+
+@media screen  and (max-width:900px) {
+  .CaseContainer{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "navbar"
+                         "case "
+                         "contacts"
+                         "footer";
+    color: white;
+    width:100%;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+  }
+
+  .NavbarContainer {
+    grid-area: navbar;
+    background-color: white;
+    box-shadow: 3px 3px 12px rgb(197, 197, 197);
+    z-index: 20;
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    padding:1em 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .ContactsDisplayCase {
+    grid-area: contacts;
+    background-color: white;
+    box-shadow: 3px -3px 12px rgb(197, 197, 197);
+    padding: 2em;
+  }
+
+  }
+
+
 
 
 .CaseDisplay {
@@ -58,9 +104,9 @@ body {
   width:100%;
   height:auto;
   background-repeat: no-repeat;
-  background-size:100% 100% ;
+  background-size:100% 100%;
   background-attachment: fixed;
-  background-position: right;
+  background-position: center;
   padding: 3vw 0;
   margin-bottom: 1.1em;
 }
@@ -106,4 +152,14 @@ body {
 .FooterContainer{
   grid-area: footer; 
   z-index: 20;
+}
+
+
+@media screen  and (max-width:600px) {
+
+  .CaseDescription {
+    font-size:0.8em;
+    width: 65%;
+  }
+
 }

@@ -4,30 +4,13 @@ body {
   background-color: $green;
 }
 
-.HomepageContainer {
-  display: grid;
-  grid-template-columns: 230px 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "mainnavbar intro"
-    "mainnavbar whatido "
-    "mainnavbar gallery"
-    "mainnavbar footer";
-  color: white;
-  width: 100%;
-  font-family: $mainFont;
-  font-weight: bold;
-  background-color: white;
-  text-align: center;
-}
-
 .MainNavbarContainer {
   grid-area: mainnavbar;
   background-color: white;
   color: $black;
   font-family: $mainFont;
   font-weight: bold;
-  box-shadow: 3px 3px 12px rgb(197, 197, 197);
+  box-shadow: 3px 0px 11px rgb(197, 197, 197);
   mix-blend-mode: multiply;
   z-index: 20;
   padding: 0.5em;
@@ -37,7 +20,14 @@ body {
   position: relative;
 }
 
-/////////////////////////////HELLO///////////////////////////////
+.ContactsHomepage {
+  grid-area: contacts;
+  position: static;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $green;
+}
 
 .HomepageIntro {
   grid-area: intro;
@@ -46,43 +36,238 @@ body {
   padding-bottom: 100px;
 }
 
-.HomepageHelloContainer {
-  width: 78%;
-  margin: auto;
+
+.HomepageWhatIDo {
+  grid-area: whatido;
+  background-color: $black;
+  z-index: 20;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  position: relative;  
+  }
+
+
+/////////////////////////////HELLO///////////////////////////////
+
+
+@media screen  and (min-width:1101px) {
+
+.HomepageContainer {
   display: grid;
-  grid-template-columns: 3.6fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 2em;
-}
-
-.HomepageHelloLogo {
-  grid-column: 1 / span 1;
-  grid-row: 1;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "mainnavbar intro"
+    "mainnavbar whatido "
+    "mainnavbar gallery"
+    "contacts footer";
+  color: white;
   width: 100%;
+  font-family: $mainFont;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
 }
 
-.HomepageHelloText {
-  grid-column: 1 / span 1;
-  grid-row: 2;
-  display: inline-block;
-  font-size: 3.8vw;
-  text-align: left;
-  margin-top: 0;
-  line-height: 1.1em;
+
+  .HomepageHelloContainer {
+    width: 78%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3.6fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2vw;
+  }
+
+  .HomepageHelloLogo {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    width: 46vw;
+  }
+  
+  .HomepageHelloText {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    font-size: 3.9vw;
+    letter-spacing: -0.12vw;
+    text-align: left;
+    margin-top: 0;
+    line-height: 1.1em;
+  }
+
+  .HomepageHelloLegend {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    font-size: 0.85vw;
+    text-align: left;
+    text-justify: auto;
+    color: $black;
+    margin-top: 10px;
+    margin-left:-0.6vw;
+    font-weight: 500;
+    line-height: 1.7em;
+  }
+
+  .WhatIDoBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    min-height: 200px;
+    padding-top: 2.5em;  
 }
 
-.HomepageHelloLegend {
-  grid-column: 2 / span 1;
-  grid-row: 2;
-  display: inline-block;
-  font-size: 0.85vw;
-  text-align: left;
-  text-justify: auto;
-  color: $black;
-  margin-top: 10px;
-  font-weight: 500;
-  line-height: 1.7em;
+  .WhatIDoBlockText {
+    width: 40%;
+    line-height: 1.6em;
+
+    .WhatIDoTitle {
+      font-size: 2.2em;
+      font-weight: 900;
+      letter-spacing: 0.22em;
+    }
+
+    p {
+      font-family: $secondFont;
+      font-weight: 400;
+    }
+  }
+  .blackTitle1 {
+    @include blackTitle(2em);
+    position: absolute;
+    left: -120px;
+    top: -125px;
+  }
+
+
+.Between {
+  width: 2px;
+  height: 170px;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+  .And {
+    height: 60px;
+  }
 }
+}
+
+@media screen  and (min-width:901px) and (max-width:1100px) {
+
+  .HomepageContainer {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "mainnavbar intro"
+      "mainnavbar whatido "
+      "mainnavbar gallery"
+      "contacts footer";
+    color: white;
+    width: 100%;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+  }
+
+    .HomepageHelloContainer {
+      width: 85%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 3.4fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1.5vw;
+    }
+    .HomepageHelloLogo {
+      grid-column: 1 / span 1;
+      grid-row: 1;
+      width: 46.5vw;
+    }
+    
+    .HomepageHelloText {
+      grid-column: 1 / span 1;
+      grid-row: 2;
+      display: inline-block;
+      font-size: 4vw;
+      letter-spacing: -0.12vw;
+      text-align: left;
+      margin-top: 0;
+      line-height: 1.1em;
+    }
+    .HomepageHelloLegend {
+      grid-column: 2 / span 1;
+      grid-row: 2;
+      display: inline-block;
+      font-size: 1vw;
+      text-align: left;
+      text-justify: auto;
+      color: $black;
+      margin-top: 10px;
+      margin-left:-0.6vw;
+      font-weight: 500;
+      line-height: 1.5em;
+    }
+    .WhatIDoBlock {
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      margin: auto;
+      min-height: 200px;
+      padding-top: 2.5em;  
+  }
+
+  .WhatIDoBlockText {
+    width: 42%;
+    line-height: 1.6em;
+
+    .WhatIDoTitle {
+      font-size: 3vw;
+      font-weight: 900;
+      letter-spacing: 0.22em;
+    }
+
+    p {
+      font-family: $secondFont;
+      font-weight: 400;
+      font-size: 1.4vw;
+    }
+  }
+  .blackTitle1 {
+    @include blackTitle(2em);
+    position: absolute;
+    left: -120px;
+    top: -125px;
+  }
+
+
+  .Between {
+  width: 2px;
+  height: 170px;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+    .And {
+      height: 60px;
+    }
+  }
+}
+
+
+
+
+/////////////////////////////TRANSVERSAL///////////////////////////////
+
+
 
 .LegendBold {
   font-weight: 900;
@@ -92,62 +277,6 @@ body {
   font-size: 1.6em;
   font-weight: 900;
 }
-
-/////////////////////////////WHAT I DO///////////////////////////////
-
-.HomepageWhatIDo {
-  grid-area: whatido;
-  background-color: $black;
-  z-index: 20;
-  padding-bottom: 60px;
-  padding-top: 20px;
-  position: relative;
-
-  .WhatIDoBlock {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    min-height: 200px;
-    padding-top: 2.5em;
-
-    .blackTitle1 {
-      @include blackTitle(2em);
-      position: absolute;
-      left: -120px;
-      top: -125px;
-    }
-
-    .WhatIDoBlockText {
-      width: 40%;
-      line-height: 1.6em;
-
-      .WhatIDoTitle {
-        font-size: 2.2em;
-        font-weight: 900;
-        letter-spacing: 0.22em;
-      }
-
-      p {
-        font-family: $secondFont;
-        font-weight: 400;
-      }
-    }
-
-    .Between {
-      width: 2px;
-      height: 170px;
-      background-color: $green;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      align-self: center;
-
-      .And {
-        height: 60px;
-      }
-    }
-  }
 
   .HomepageLink {
     display: inline-block;
@@ -162,7 +291,7 @@ body {
       background-color: $green;
     }
   }
-}
+
 
 .green {
   color: $green;
@@ -172,4 +301,234 @@ body {
 .FooterContainer {
   grid-area: footer;
   z-index: 20;
+}
+
+
+
+@media screen and (min-width:601px) and (max-width:900px) {
+
+  .HomepageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+      "mainnavbar"
+      "intro"
+      "whatido"
+      "gallery"
+      "contacts"
+      "footer";
+    color: white;
+    width: 100%;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+  }
+
+  .HomepageHelloContainer {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1.5em;
+  }
+  
+  .HomepageHelloLogo {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    width: 100%;
+  }
+  
+  .HomepageHelloText {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    width: 100%;
+    font-size: 5.5vw;
+    text-align: left;
+    line-height: 1.1em;
+    margin-bottom:0;
+    margin-top:0.2vw;
+  }
+  
+  .HomepageHelloLegend {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+    display: inline-block;
+    font-size: 2vw;
+    text-align: left;
+    text-justify: auto;
+    color: $black;
+    font-weight: 500;
+    margin-top:-0.6vw;
+    margin-bottom:5em;
+    line-height: 1.6em;
+  }
+  
+
+
+    .blackTitle1 {
+      @include blackTitle(2em);
+      position: absolute;
+      left: 0;
+      top: -125px;
+    }
+
+
+    .WhatIDoBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      min-height: 200px;
+      padding-top: 1em;  
+  }
+  .Between {
+    width: 50vw;
+    height: 2px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin:2.5em auto 2em auto;
+  
+      .And {
+        height: 60px;
+      }
+    }
+  .WhatIDoBlockText {
+    width: 80%;
+    line-height: 1.6em;
+
+    .WhatIDoTitle {
+      font-size: 2.2em;
+      font-weight: 900;
+      letter-spacing: 0.22em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-family: $secondFont;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .HomepageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+      "mainnavbar"
+      "intro"
+      "whatido"
+      "gallery"
+      "contacts"
+      "footer";
+    color: white;
+    width: 100%;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+  }
+
+  .HomepageHelloContainer {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1.5em;
+  }
+  
+  .HomepageHelloLogo {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    width: 100%;
+  }
+  
+  .HomepageHelloText {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    width: 100%;
+    font-size: 6.6vw;
+    text-align: left;
+    line-height: 1.1em;
+    margin-bottom:0;
+    margin-top:0.2vw;
+  }
+  
+  .HomepageHelloLegend {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+    display: inline-block;
+    font-size: 3vw;
+    text-align: left;
+    text-justify: auto;
+    color: $black;
+    font-weight: 500;
+    margin-top:-1vw;
+    margin-bottom:5em;
+    line-height: 1.6em;
+  }
+
+  .blackTitle1 {
+    @include blackTitle(2em);
+    position: absolute;
+    left: 0;
+    top: -125px;
+  }
+
+
+  .WhatIDoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    min-height: 200px;
+    padding-top: 1em;  
+}
+.Between {
+  width: 50vw;
+  height: 2px;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin:2.5em auto 2em auto;
+
+    .And {
+      height: 60px;
+    }
+  }
+
+.WhatIDoBlockText {
+  width: 90%;
+  line-height: 1.6em;
+
+  .WhatIDoTitle {
+    font-size: 2.2em;
+    font-weight: 900;
+    letter-spacing: 0.22em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    font-family: $secondFont;
+    font-weight: 400;
+  }
+}
+  
 }
