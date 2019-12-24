@@ -25,6 +25,7 @@ body {
   mix-blend-mode: multiply;
   z-index: 20;
   position: sticky;
+  position: -webkit-sticky;
   top:0;
   height:100vh;
   padding:0.5em;
@@ -64,6 +65,7 @@ body {
     z-index: 20;
     position: sticky;
     position: -webkit-sticky;
+    transition: transform 0.4s;
     top:0;
     padding:1em 7%;
     display:flex;

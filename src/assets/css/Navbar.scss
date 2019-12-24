@@ -25,6 +25,18 @@
     display: block;
    
   }
+
+   /*////////////animation classes //////////*/
+
+.scroll-down .NavbarContainer  {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .NavbarContainer  {
+  transform: none;
+}
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -41,4 +53,15 @@
     display: block;
    
   }
+
+/*////////////animation classes //////////*/
+
+.scroll-down .NavbarContainer  {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .NavbarContainer  {
+  transform: none;
+}
+
 }
