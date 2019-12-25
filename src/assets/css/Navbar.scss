@@ -12,33 +12,9 @@
   }
 }
 
-@media screen and (min-width:601px) and (max-width: 900px) {
-
-  .NavbarLogo, .NavbarLogoLink {
-    display:none;
-  }
-
-  .NavbarLogoHorizontal {
-    margin: 30px 0 30px 0;
-    width: 190px;
-    height: auto;
-    display: block;
-   
-  }
-
-   /*////////////animation classes //////////*/
-
-.scroll-down .NavbarContainer  {
-  transform: translate3d(0, -100%, 0);
-}
-
-.scroll-up .NavbarContainer  {
-  transform: none;
-}
 
 
-}
-@media screen and (min-width:601px) and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 900px) {
   
   .NavbarLogo, .NavbarLogoLink {
     display:none;
@@ -46,30 +22,14 @@
 
 
   .NavbarLogoHorizontal {
-    margin: 15px 0 15px 0;
-    width: 130px;
-    height: auto;
-    display: block;
-   
-  }
-}
-
-@media screen and (max-width: 600px) {
-
-  .NavbarLogo, .NavbarLogoLink {
-    display:none;
-  }
-
-
-  .NavbarLogoHorizontal {
-    margin: 15px 0 15px 0;
+    margin: 10px 0 10px 0;
     width: 130px;
     height: auto;
     display: block;
    
   }
 
-/*////////////animation classes //////////*/
+  /*////////////animation classes //////////*/
 
 .scroll-down .NavbarContainer  {
   transform: translate3d(0, -100%, 0);
@@ -80,3 +40,22 @@
 }
 
 }
+
+// @media screen and (max-width: 600px) {
+
+//   .NavbarLogo, .NavbarLogoLink {
+//     display:none;
+//   }
+
+
+//   .NavbarLogoHorizontal {
+//     margin: 15px 0 15px 0;
+//     width: 130px;
+//     height: auto;
+//     display: block;
+   
+//   }
+
+
+
+

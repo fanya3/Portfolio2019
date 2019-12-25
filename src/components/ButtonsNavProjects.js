@@ -61,10 +61,10 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#gallery">
+            <Link className="ButtonAllProject" path to="/#GalleryId">
               BACK TO ALL
             </Link>
-            <div className="Border"></div>
+            <div className="BorderNav"></div>
             
             {this.state.isLoaded ? (
               <div className="ButtonsNavGroup"><Link
@@ -83,10 +83,10 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#gallery">
+            <Link className="ButtonAllProject" path to="/#GalleryId">
               BACK TO ALL
             </Link>
-            <div className="Border"></div>
+            <div className="BorderNav"></div>
             {this.state.isLoaded ? (
                <div className="ButtonsNavGroup"><Link
                 className="ButtonNavProject Previous Heartbeat"
@@ -103,11 +103,11 @@ class ButtonsNavProjects extends React.Component {
     } else if (this.props.id === "home") {
       return (
         <>
-          <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#gallery">
+          <div className="ButtonsContainerAboutMe">
+            <Link className="ButtonAllProject" path to="/">
               BACK TO HOME
             </Link>
-            <div className="Border"></div>
+            <div className="BorderAbout"></div>
           </div>
         </>
       );
@@ -115,10 +115,10 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#gallery">
+            <Link className="ButtonAllProject" path to="/#GalleryId">
               BACK TO ALL
             </Link>
-            <div className="Border"></div>
+            <div className="BorderNav"></div>
             {this.state.isLoaded ? (
               <>
                 <div className="ButtonsNavGroup"><Link

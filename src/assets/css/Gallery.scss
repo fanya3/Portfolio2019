@@ -59,14 +59,14 @@
       position: relative;
       z-index: 100;
       grid-area: gallery;
-      padding-top: 8em;
+      padding-top: 10em;
     }
 
     .blackTitle2 {
       @include blackTitle(2em);
       position: absolute;
       left: 0;
-      top: 30px;
+      top: 60px;
     }
 
     .GalleryDisplay {
@@ -132,7 +132,7 @@
     }
   }
   
-  
+  @media screen and (min-width:901px) {
   .GalleryCard {  
    &:hover {
 
@@ -169,9 +169,49 @@
     }
    }
   }
+  }
+
+  @media  screen and (hover: hover) and (pointer: fine) and (max-width:900px) {
+      .GalleryCard {  
+      &:hover, &:active {
+    
+        .GalleryCardText {
+          visibility: visible;
+          padding:1em;
+    
+          h4 {
+            text-transform: uppercase;
+            display: block;
+            color: white;
+            font-size: 1.1em;
+            margin:10px 0 0 0;
+        
+            &::after{
+              content: "\A ─";
+              white-space: pre; 
+            }
+          }
+    
+          p {
+            visibility: visible;
+            color: white;
+            margin-top:0;
+            font-family: $secondFont;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            font-size: 0.9em;
+          }
+        }
+    
+        .GalleryImg {
+        visibility: hidden;
+        }
+      }
+      }
+      }
 
 
-
+  @media screen and (min-width:901px) {
   
   .shadow-drop-2-br:hover {
       -webkit-animation: shadow-drop-2-br 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -207,6 +247,6 @@
               box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
     }
   }
-  
+}
   
  

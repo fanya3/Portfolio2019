@@ -111,7 +111,7 @@ body {
 
   .AboutMeIntroSection {
     p {
-      font-size: 0.7em;
+      font-size: 1em;
     }
   }
 
@@ -183,21 +183,49 @@ body {
   margin-top: 40px;
 }
 
+@media screen and (min-width: 901px) {
 .AboutMeContactSection {
   display: flex;
+  width:100%;
+  justify-content: flex-start;
+}
+.AboutMeContactGroup {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 6vw;
+  p {
+    font-family: $secondFont;
+    font-weight: 500;
+  }
+}
 
+}
+
+@media screen and (max-width: 900px) {
+  .AboutMeContactSection {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+  
+  }
   .AboutMeContactGroup {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-right: 4em;
+    margin-right: 1em;
     p {
       font-family: $secondFont;
       font-weight: 500;
     }
   }
-}
+  
+  }
+
+
+
 
 .IconContactsGroup {
   color: $black;

@@ -6,6 +6,7 @@
 
 
 @media screen and (min-width: 901px) {
+
   .ButtonsGalleryContainer {
     display: flex;
     flex-direction: column;
@@ -20,13 +21,13 @@
     align-items: flex-end;
   }
 
-
   .ButtonsLeft {
     position: absolute;
     left: -180px;
     top: 160px;
   }
-  .ButtonsContainer {
+
+  .ButtonsContainer, .ButtonsContainerAboutMe {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -34,10 +35,10 @@
     margin:  -1em auto auto auto;
     text-align: left;
 }
-.Border {
+.Border, .BorderNav, .BorderAbout {
   width: 100%;
   border: solid 1px $black;
-  margin: 20px auto 10px auto;
+  margin: 15px auto 10px auto;
 }
 .ButtonAllProject {
   @include ButtonAll();
@@ -69,7 +70,7 @@
 
 
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait){
   .ButtonsGalleryContainer {
     display: flex;
     flex-direction: column;
@@ -85,12 +86,19 @@
     .ButtonFilters {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      width: 80%;
+      justify-content: space-evenly;
+      width: 100%;
     }
   }
 
   .ButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonsContainerAboutMe {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,31 +110,49 @@
   border: solid 1px $black;
   margin: 20px auto 10px auto;
 }
+
+.BorderAbout {
+  width: 100%;
+  border: solid 1px $black;
+  margin: 10px auto 10px auto;
+}
+
+.BorderNav {
+  width:0px;
+  height: 40px;
+  border: solid 1px $black;
+  margin:0 1em;
+}
+
 .ButtonAllProject {
   @include ButtonAll();
-  margin-top: 10px;
+  margin-bottom:0.1em;
 }
+
 .ButtonNavProject {
   @include ButtonNav();
-  margin-top:-10px;
+  font-size: 0px;
+}
+
+.ButtonsNavGroup {
+  display:flex;
+  justify-content: center;
+  align-content: flex-start;
 }
 
 .Previous::before {
   content: url("../icons/ButtonPrevious.svg");
   display: inline-block;
-  width: 40px;
+  width: 45px;
   height: auto;
-  margin-right: 5px;
-  margin-top: 6px;
 }
 
 .Next::after {
   content: url("../icons/ButtonNext.svg");
   display: inline-block;
-  width: 40px;
+  width: 45px;
   height: auto;
   margin-left: 5px;
-  margin-top: 6px;
 }
 
 }
@@ -150,66 +176,83 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 6em;
     width:85%;
-  }
-  
-  .ButtonsLeft {
-    position: static;
-  }
-  
-  .ButtonNavGallery {
-    @include ButtonNav();
-    margin: 7px 1em 0 1em;
+
+    .ButtonsLeft {
+      position: static;
+    }
+
+    .ButtonFilters {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+    }
   }
 
-  .ButtonFilters {
+  .ButtonsContainer {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    width: 85%;
-  }
-  .Border {
-    width: 100%;
-    border: solid 1px $black;
-    margin: 10px auto 10px auto;
-  }
-  
-  .ButtonAllProject {
-    @include ButtonAll();
-    margin-top: 0;
-  }
+}
 
-  .ButtonsNavGroup {
-    display:flex;
-    justify-content: center;
-    align-content: flex-start;
-  }
-  
-  .ButtonNavProject {
-    @include ButtonNav();
-    font-size: 0px;
-    display: inline;
-    text-align:center;
-    margin:0 auto auto auto;
-  }
- 
-    
-  .Previous::before {
-    content: url("../icons/ButtonPrevious.svg");
-    display: inline-block;
-    width: 45px;
-    height: auto;
-    margin-right: 5px;
-  }
+.ButtonsContainerAboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .Next::after {
-    content: url("../icons/ButtonNext.svg");
-    display: inline-block;
-    width: 45px;
-    height: auto;
-    margin-left: 5px;
-  }
+.Border {
+  width: 100%;
+  border: solid 1px $black;
+  margin: 20px auto 10px auto;
+}
+
+
+.BorderAbout {
+  width: 100%;
+  border: solid 1px $black;
+  margin: 5px auto 10px auto;
+}
+
+.BorderNav {
+  width:0px;
+  height: 40px;
+  border: solid 1px $black;
+  margin:0 1em;
+}
+.ButtonAllProject {
+  @include ButtonAll();
+  margin-bottom:0.1em;
+}
+
+.ButtonNavProject {
+  @include ButtonNav();
+  font-size: 0px;
+}
+
+.ButtonsNavGroup {
+  display:flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.Previous::before {
+  content: url("../icons/ButtonPrevious.svg");
+  display: inline-block;
+  width: 40px;
+  height: auto;
+}
+
+.Next::after {
+  content: url("../icons/ButtonNext.svg");
+  display: inline-block;
+  width: 40px;
+  height: auto;
+  margin-left: 5px;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -239,11 +282,19 @@
     justify-content: center;
     width: 85%;
   }
+
   .Border {
     width: 100%;
     border: solid 1px $black;
     margin: 10px auto 10px auto;
   }
+
+.BorderNav, .BorderAbout {
+    width: 100%;
+    border: solid 1px $black;
+    margin: 6px auto 6px auto;
+  }
+  
   
   .ButtonAllProject {
     @include ButtonAll();
@@ -261,24 +312,24 @@
     font-size: 0px;
     display: inline;
     text-align:center;
-    margin:0 auto auto auto;
+    margin:0 2px auto 2px;
   }
  
     
   .Previous::before {
     content: url("../icons/ButtonPrevious.svg");
     display: inline-block;
-    width: 45px;
+    width: 40px;
     height: auto;
-    margin-right: 5px;
+
   }
 
   .Next::after {
     content: url("../icons/ButtonNext.svg");
     display: inline-block;
-    width: 45px;
+    width: 40px;
     height: auto;
-    margin-left: 5px;
+
   }
 
 }

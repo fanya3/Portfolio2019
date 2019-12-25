@@ -67,7 +67,7 @@ body {
     position: -webkit-sticky;
     transition: transform 0.4s;
     top:0;
-    padding:1em 7%;
+    padding:0.5em 7%;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -99,18 +99,33 @@ body {
   width:100%;
   height:auto;
   margin-bottom:0.8em;
-
 }
 
-.CaseIntroSection {
-  width:100%;
-  height:auto;
-  background-repeat: no-repeat;
-  background-size:100% 100%;
-  background-attachment: fixed;
-  background-position: center;
-  padding: 3vw 0;
-  margin-bottom: 1.1em;
+
+@media screen  and (min-width:901px){
+  .CaseIntroSection {
+    width:100%;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 3vw 0;
+    margin-bottom: 1.1em;
+  }
+}
+
+@media screen  and (max-width:900px){
+  .CaseIntroSection {
+    width:100%;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: scroll;
+    background-position: center;
+    padding: 3vw 0;
+    margin-bottom: 1.1em;
+  }
 }
 
 .blackTitle4 {
@@ -164,4 +179,17 @@ body {
     width: 65%;
   }
 
+  .CaseContactSection{
+    width:60%;
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    justify-content: space-around;
+  
+  }
 }
+
+
+
+
+

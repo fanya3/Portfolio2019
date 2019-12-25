@@ -26,6 +26,14 @@ class Homepage extends Component {
     this.setState({ cardFilter: filterName });
   };
 
+  componentDidMount () {
+    const myId = window.location.hash.slice(1)
+    const elem = document.getElementById(myId)
+    if (elem) {
+      elem.scrollIntoView()
+    }
+}
+
   render() {
     return (
       <>
@@ -80,7 +88,7 @@ class Homepage extends Component {
 
 
           <div className="GalleryContainer">
-            <h2 className="blackTitle2">PROJECTS</h2>
+            <h2 className="blackTitle2"  id="GalleryId">PROJECTS</h2>
             <ButtonsGallery
               cardFilterSelect={this.cardFilterSelect}
             />
