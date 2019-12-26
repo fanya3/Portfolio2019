@@ -14,7 +14,7 @@ let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
-  if (currentScroll == 0) {
+  if (currentScroll === 0) {
     body.classList.add(scrollUp);
     return;
   }

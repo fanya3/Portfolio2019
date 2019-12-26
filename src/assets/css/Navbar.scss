@@ -33,10 +33,12 @@
 
 .scroll-down .NavbarContainer  {
   transform: translate3d(0, -100%, 0);
+  box-shadow: none;
 }
 
 .scroll-up .NavbarContainer  {
   transform: none;
+  box-shadow: 3px 3px 12px rgb(197, 197, 197);
 }
 
 }
