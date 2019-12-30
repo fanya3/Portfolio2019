@@ -309,42 +309,38 @@ export const PROJECTS = [
   },
   {
     id: 9,
-    name: "DanonePro",
+    name: "DanoneB2B",
     cover_image: "/images/DANONEPRO-CARD.jpg",
     type1: "Foody",
-    alt: "Danone Pro",
+    alt: "Danone B2B",
     path: "design",
     mission: "Branding & Packaging",
     color:"#eb212e",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    description: "DANONE B2B : POP ART IN THE DAIRY WORLD. Danone  Group  B2B  Branch  for  Catering  Profesionnals has decided  to  boost  referencing and to feed Danone Equity. The new Danone Bicouche launched with exclusive and exquisite flavors is good & beautiful all at once. A fun and tasty creation that highlights varieties by using strong and modern color codes to promote impulsive consumption. (France & Belgium)",
     images: [
       {
         id: 0,
-        image: "/images/DANISSIMO/0-DANISSIMO-01.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-01.jpg"
       },
       {
         id: 1,
-        image: "/images/DANISSIMO/0-DANISSIMO-02.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-02.jpg"
       },
       {
         id: 2,
-        image: "/images/DANISSIMO/0-DANISSIMO-03.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-03.jpg"
       },
       {
         id: 3,
-        image: "/images/DANISSIMO/0-DANISSIMO-04.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-04.jpg"
       },
       {
         id: 4,
-        image: "/images/DANISSIMO/0-DANISSIMO-05.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-05.jpg"
       },
       {
         id: 5,
-        image: "/images/DANISSIMO/0-DANISSIMO-06.jpg"
-      },
-      {
-        id: 6,
-        image: "/images/DANISSIMO/0-DANISSIMO-07.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-06.jpg"
       }
     ]
   }
