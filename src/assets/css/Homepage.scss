@@ -1,8 +1,7 @@
 @import "../../GlobalStyle";
 
-body {
-  background-color: $green;
-}
+
+/////////////////////////////TRANSVERSAL///////////////////////////////
 
 .MainNavbarContainer {
   grid-area: mainnavbar;
@@ -47,29 +46,156 @@ body {
   }
 
 
-/////////////////////////////HELLO///////////////////////////////
+.LegendBold {
+  font-weight: 900;
+}
+
+.LegendSuperBold {
+  font-size: 1.6em;
+  font-weight: 900;
+}
+
+  .HomepageLink {
+    display: inline-block;
+    text-decoration: none;
+    color: $green;
+    padding: 0.6em 1.2em;
+    border: solid 2px $green;
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    &:hover {
+      color: $black;
+      background-color: $green;
+    }
+  }
 
 
-@media screen  and (min-width:1101px) {
-
-.HomepageContainer {
-  display: grid;
-  grid-template-columns: 230px 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "mainnavbar intro"
-    "mainnavbar whatido "
-    "mainnavbar gallery"
-    "contacts footer";
-  color: white;
-  width: 100%;
-  font-family: $mainFont;
-  font-weight: bold;
-  background-color: white;
-  text-align: center;
+.green {
+  color: $green;
 }
 
 
+.FooterContainer {
+  grid-area: footer;
+  z-index: 20;
+}
+
+
+
+
+
+
+/////////////////////////////HELLO///////////////////////////////
+
+@media screen  and (min-width:1801px) {
+  .HomepageContainer {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "mainnavbar intro"
+      "mainnavbar whatido "
+      "mainnavbar gallery"
+      "contacts footer";
+    color: white;
+    width: 100%;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    max-width: 1800px;
+    margin: auto;
+    box-shadow: 3px 0 11px #5bbb8e;
+  }
+
+
+  .HomepageHelloContainer {
+    width: 85%;
+    max-width: 1800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3.6fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 3em;
+  }
+
+  .HomepageHelloLogo {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    width: 100%;
+  }
+  
+  .HomepageHelloText {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    font-size: 5.1em;
+    letter-spacing: -0.12vw;
+    text-align: left;
+    margin-top: 0;
+    line-height: 1.1em;
+  }
+
+  .HomepageHelloLegend {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    font-size: 1.1em;
+    text-align: left;
+    text-justify: auto;
+    color: $black;
+    margin-top: 10px;
+    margin-left:-0.6vw;
+    font-weight: 500;
+    line-height: 1.8em;
+  }
+
+
+}
+
+@media screen  and (min-width:1601px) and (max-width:1800px){
+  .HomepageHelloContainer {
+    width: 78%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3.6fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 3em;
+  }
+  .HomepageHelloLogo {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    width: 100%;
+  }
+  
+  .HomepageHelloText {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    font-size: 4.1vw;
+    letter-spacing: -0.12vw;
+    text-align: left;
+    margin-top: 0;
+    line-height: 1.1em;
+  }
+
+  .HomepageHelloLegend {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    display: inline-block;
+    font-size: 0.92vw;
+    text-align: left;
+    text-justify: auto;
+    color: $black;
+    margin-top: 10px;
+    margin-left:-0.6vw;
+    font-weight: 500;
+    line-height: 1.7em;
+  }
+
+}
+
+@media screen and (min-width:1101px) and (max-width:1600px){
   .HomepageHelloContainer {
     width: 78%;
     max-width: 1000px;
@@ -77,20 +203,19 @@ body {
     display: grid;
     grid-template-columns: 3.6fr 1fr;
     grid-template-rows: auto auto;
-    gap: 2vw;
+    gap: 3em;
   }
-
   .HomepageHelloLogo {
     grid-column: 1 / span 1;
     grid-row: 1;
-    width: 46vw;
+    width: 100%;
   }
   
   .HomepageHelloText {
     grid-column: 1 / span 1;
     grid-row: 2;
     display: inline-block;
-    font-size: 3.9vw;
+    font-size: 3.8vw;
     letter-spacing: -0.12vw;
     text-align: left;
     margin-top: 0;
@@ -111,6 +236,31 @@ body {
     line-height: 1.7em;
   }
 
+}
+
+
+@media screen  and (min-width:1101px) and (max-width:1800px){
+.HomepageContainer {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "mainnavbar intro"
+    "mainnavbar whatido "
+    "mainnavbar gallery"
+    "contacts footer";
+  color: white;
+  width: 100%;
+  font-family: $mainFont;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+}
+
+}
+
+  @media screen  and (min-width:1101px) {
+    
   .WhatIDoBlock {
     display: flex;
     justify-content: space-between;
@@ -265,43 +415,7 @@ body {
 
 
 
-/////////////////////////////TRANSVERSAL///////////////////////////////
 
-
-
-.LegendBold {
-  font-weight: 900;
-}
-
-.LegendSuperBold {
-  font-size: 1.6em;
-  font-weight: 900;
-}
-
-  .HomepageLink {
-    display: inline-block;
-    text-decoration: none;
-    color: $green;
-    padding: 0.6em 1.2em;
-    border: solid 2px $green;
-    font-size: 1.1em;
-    margin-top: 1.5em;
-    &:hover {
-      color: $black;
-      background-color: $green;
-    }
-  }
-
-
-.green {
-  color: $green;
-}
-
-
-.FooterContainer {
-  grid-area: footer;
-  z-index: 20;
-}
 
 
 
