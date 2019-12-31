@@ -48,12 +48,12 @@ class DisplayCaseDigital extends React.Component {
          
       <div className = "CaseContactSection">
         <div className = "IconContactsGroup">
-          <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><img className = "IconContacts" src={Web} alt="web link"/></a>
-          <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><p>{this.state.project[0].link}</p></a>
+          <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><img className = "IconContactsWeb" src={Web} alt="web link"/></a>
+          <a href={`https://${this.state.project[0].link}`} target="_blank" rel="noopener noreferrer"><p className = "IconContactsWebLink">{this.state.project[0].link}</p></a>
         </div>
         <div className = "IconContactsGroup" style={{display: this.state.project[0].github === 'NULL' ? 'none' : 'flex'}}>
-          <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><img className = "IconContacts" src={Github} alt="web link"/></a>
-          <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><p>{this.state.project[0].github}</p></a>
+          <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><img className = "IconContactsWeb" src={Github} alt="web link"/></a>
+          <a href={`https://${this.state.project[0].github}`} target="_blank" rel="noopener noreferrer"><p className = "IconContactsWebLink">{this.state.project[0].github}</p></a>
         </div>
       </div>
 

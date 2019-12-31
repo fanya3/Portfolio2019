@@ -14,8 +14,8 @@
     display: flex;
     justify-content: space-evenly;
     margin:auto auto 1em auto;
-    width: auto;
-    max-width: 200px;
+    width: 30%;
+ 
 
     .IconContacts {
       width: 40px;
@@ -24,3 +24,23 @@
 }
 
 
+@media screen  and (min-width:901px) {
+
+
+  .IconContactsWeb {
+    width: 34px;
+  }
+
+}
+
+@media screen  and (max-width:900px) {
+
+
+  .IconContactsWeb {
+    width: 24px;
+  }
+  
+  .IconContactsWebLink {
+    font-size: 0.8em;
+  }
+}

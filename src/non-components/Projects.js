@@ -228,18 +228,19 @@ export const PROJECTS = [
     images: [
       {
         id: 0,
-        name:"Danette détail",
-        image: "/images/danette-card.jpg"
+        image: "/images/XAVIERCHANARD/0-XAVIER-CHANARD-01.jpg"
       },
       {
         id: 1,
-        name:"Danette détail",
-        image: "/images/danette-card.jpg"
+        image: "/images/XAVIERCHANARD/0-XAVIER-CHANARD-02.jpg"
       },
       {
         id: 2,
-        name:"Danette détail",
-        image: "/images/danette-card.jpg"
+        image: "/images/XAVIERCHANARD/0-XAVIER-CHANARD-03.jpg"
+      },
+      {
+        id: 3,
+        image: "/images/XAVIERCHANARD/0-XAVIER-CHANARD-04.jpg"
       }
     ]
   },
