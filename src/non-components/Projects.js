@@ -134,18 +134,27 @@ export const PROJECTS = [
     images: [
       {
         id: 0,
-        image:
-        "/images/volvic-card.jpg"
+        image: "/images/ZEROWASTE/0-ZEROWASTE-01.jpg"
       },
       {
         id: 1,
-        image:
-        "/images/volvic-card.jpg"
+        image: "/images/ZEROWASTE/0-ZEROWASTE-02.jpg"
       },
       {
         id: 2,
-        image:
-        "/images/volvic-card.jpg"
+        image: "/images/ZEROWASTE/0-ZEROWASTE-03.gif"
+      },
+      {
+        id: 3,
+        image: "/images/ZEROWASTE/0-ZEROWASTE-04.jpg"
+      },
+      {
+        id: 4,
+        image: "/images/ZEROWASTE/0-ZEROWASTE-05.jpg"
+      },
+      {
+        id: 5,
+        image: "/images/ZEROWASTE/0-ZEROWASTE-06.jpg"
       }
     ]
   },
