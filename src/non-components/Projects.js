@@ -101,18 +101,23 @@ export const PROJECTS = [
     images: [
       {
         id: 0,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/LUBEES/0-LUBEES-01.jpg"
       },
       {
         id: 1,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/LUBEES/0-LUBEES-02.jpg"
       },
       {
         id: 2,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/LUBEES/0-LUBEES-03.jpg"
+      },
+      {
+        id: 3,
+        image: "/images/LUBEES/0-LUBEES-04.jpg"
+      },
+      {
+        id: 4,
+        image: "/images/LUBEES/0-LUBEES-05.jpg"
       }
     ]
   },
@@ -206,7 +211,7 @@ export const PROJECTS = [
     type1: "Online",
     alt: "Xavier Chanard",
     path: "digital",
-    link:"www.blabla.com",
+    link:"www.psychanalyste-sophrologue-chanard.com",
     github: 'NULL',
     mission: "Identity & Web Design",
     color:"#ff6a48",
