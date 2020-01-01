@@ -168,37 +168,6 @@ body {
   color: $green;
 }
 
-///////////////////////////// GALLERY ///////////////////////////////
-
-.GalleryContainer {
-  min-height: 600px;
-  padding-top: 70px;
-  position: relative;
-  z-index: 100;
-
-  .blackTitle2 {
-    @include blackTitle(2em);
-    position: absolute;
-    left: -120px;
-    top: 30px;
-  }
-
-  .GalleryDisplay {
-    grid-area: gallery;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 2em;
-    column-gap: 2em;
-    width: 80%;
-    margin: 3em auto;
-
-    .GalleryImg {
-      width: 100%;
-    }
-  }
-}
-
-
 
 .FooterContainer {
   grid-area: footer;

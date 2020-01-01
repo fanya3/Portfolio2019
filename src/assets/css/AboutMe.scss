@@ -42,7 +42,7 @@ body {
             margin:0;
         }
 
-        .AboutMeIntro {
+        .AboutMeIntroSection {
             display: inline-block;
             background-color: white;
             box-shadow: 3px 3px 12px rgb(64, 181, 138);
@@ -80,15 +80,11 @@ body {
         }
     }
 
-    .IconContacts {
-        width: 40px;
-       
-      }
+  
 
 
 
-
-.AboutMeContactBlock {
+.AboutMeContactGlobalSection {
     color: $black;
     display: flex;
     flex-direction: column;
@@ -104,24 +100,44 @@ body {
         padding-bottom: 9px;
         margin-top:40px;
     }
-    .AboutMeContact, .IconContactsBlock{
-        color: $black;
-        display: flex;
-        align-items: center;
 
-        p {
-            font-family: $secondFont;
-            font-weight: 500;
-        }
+    .AboutMeContactSection {
+        display:flex;
 
-        .ContactsList {
+
+        .AboutMeContactGroup{
+            align-items: flex-start;
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
             margin-right:4em;
+                p {
+                    font-family: $secondFont;
+                    font-weight: 500;
+                }
+            
         }
-    }
+}
+}
+
+.IconContactsGroup {
+  color: $black;
+  display: flex;
+  align-items: center;
+    // margin:2em 2em 1em 2em;
+  a{
+    text-decoration: none;
+    color: $black;
+    p {
+    font-family: $secondFont;
+    font-weight: 500;
+  }}
+  
 }
 
 
+.IconContacts {
+    width: 40px;  
+  }
 
 

@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { PROJECTS } from "../../non-components/Projects";
-import And from "../../assets/icons/And.svg";
+
 import ButtonsGallery from "./ButtonsGallery"
+import Contacts from '../../components/Contacts'
 import Footer from "../../components/Footer";
 import Gallery from "./Gallery";
-import Hello from "../../assets/icons/Hello.svg";
-import MainNavbar from "../../components/MainNavbar";
-import Contacts from '../../components/Contacts'
 import InternshipLabel from "../../components/InternshipLabel";
+import MainNavbar from "../../components/MainNavbar";
 
+import Hello from "../../assets/icons/Hello.svg";
+import And from "../../assets/icons/And.svg";
 import "../../assets/css/Homepage.scss";
-
+import "../../assets/css/Gallery.scss"
 
 
 class Homepage extends Component {
@@ -58,20 +59,18 @@ class Homepage extends Component {
             <div className="WhatIDoBlock">
               <h2 className="blackTitle1">WHAT I DO</h2>
               <div className="WhatIDoBlockText">
-                <h3 className="WhatIDoTitle">I DESIGN</h3>
-                <p>
-                  Identities, Packaging, print supervision, Identities,
-                  Strategic development, print supe as well as printing
-                  supervision
+                <h3 className="WhatIDoTitle  green">I DESIGN</h3>
+                <p  className="green">
+                Graphic Design, Corporate Identity, <br/> Branding and Packaging Design, Web Design, <br/> with Global Strategic Thinking
                 </p>
               </div>
               <div className="Between">
                 <img className="And" src={And} alt=" zz" />
               </div>
               <div className="WhatIDoBlockText">
-                <h3 className="WhatIDoTitle green">I DEVELOP</h3>
-                <p className="green">
-                  FRONT-END &amp; BACK-END <br/> with HTML &amp; CSS, Sass, Bootstrap 
+                <h3 className="WhatIDoTitle">I DEVELOP</h3>
+                <p>
+                  FRONT-END &amp; BACK-END <br/> with HTML &amp; CSS, Sass, Bootstrap, 
                   JavaScript, React, Redux, Node.js &amp; Database with MySQL.
                 </p>
               </div>
