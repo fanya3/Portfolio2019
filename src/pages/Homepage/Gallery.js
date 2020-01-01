@@ -27,9 +27,9 @@ const Gallery = props => {
 
 
   return (
-    <div className="GalleryContainer">
+  
       <div className="GalleryDisplay">{card}</div>
-    </div>
+   
   );
 };
 

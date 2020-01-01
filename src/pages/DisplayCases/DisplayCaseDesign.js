@@ -9,6 +9,7 @@ import Navbar from "../../components/Navbar";
 import "../../assets/css/DisplayCase.scss";
 
 
+
 class DisplayCaseDesign extends React.Component {
   state = {
     projects: PROJECTS,
@@ -65,7 +66,8 @@ class DisplayCaseDesign extends React.Component {
                 />
             }
             content2={
-              <Contacts/>
+              <Contacts
+              color={'#5bf4c1'}/>
           }
           />
          

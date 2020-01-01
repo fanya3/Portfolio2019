@@ -11,6 +11,7 @@ $secondFont:'IBM Plex Sans', sans-serif;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Heimat-mono', sans-serif;  
+  background-color: $green;
 }
 
 @mixin blackTitle ($font-size) {

@@ -61,18 +61,18 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#gallery">
+            <Link className="ButtonAllProject" path to="/#GalleryId">
               BACK TO ALL
             </Link>
-            <div className="Border"></div>
-
+            <div className="BorderNav"></div>
+            
             {this.state.isLoaded ? (
-              <Link
+              <div className="ButtonsNavGroup"><Link
                 className="ButtonNavProject Next Heartbeat"
                 path to={`/project${this.state.nextPath}/${this.state.nextName}`}
               >
                 NEXT
-              </Link>
+              </Link> </div>
             ) : (
               <p> is loading ...</p>
             )}
@@ -83,17 +83,17 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#gallery">
+            <Link className="ButtonAllProject" path to="/#GalleryId">
               BACK TO ALL
             </Link>
-            <div className="Border"></div>
+            <div className="BorderNav"></div>
             {this.state.isLoaded ? (
-              <Link
+               <div className="ButtonsNavGroup"><Link
                 className="ButtonNavProject Previous Heartbeat"
                 path to={`/project${this.state.previousPath}/${this.state.previousName}`}
               >
                 PREVIOUS
-              </Link>
+              </Link> </div>
             ) : (
               <p> is loading ...</p>
             )}
@@ -103,11 +103,11 @@ class ButtonsNavProjects extends React.Component {
     } else if (this.props.id === "home") {
       return (
         <>
-          <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#gallery">
+          <div className="ButtonsContainerAboutMe">
+            <Link className="ButtonAllProject" path to="/">
               BACK TO HOME
             </Link>
-            <div className="Border"></div>
+            <div className="BorderAbout"></div>
           </div>
         </>
       );
@@ -115,13 +115,13 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#gallery">
+            <Link className="ButtonAllProject" path to="/#GalleryId">
               BACK TO ALL
             </Link>
-            <div className="Border"></div>
+            <div className="BorderNav"></div>
             {this.state.isLoaded ? (
               <>
-                <Link
+                <div className="ButtonsNavGroup"><Link
                   className="ButtonNavProject Previous pulsate-fwd"
                   path to={`/project${this.state.previousPath}/${this.state.previousName}`}
                 >
@@ -133,7 +133,7 @@ class ButtonsNavProjects extends React.Component {
                   path to={`/project${this.state.nextPath}/${this.state.nextName}`}
                 >
                   NEXT
-                </Link>
+                </Link></div>
               </>
             ) : (
               <p> is loading ...</p>

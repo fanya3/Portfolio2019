@@ -2,32 +2,125 @@
 
 ///////////////////////////// GALLERY ///////////////////////////////
 
-.GalleryContainer {
-    min-height: 600px;
-    padding-top: 70px;
-    position: relative;
-    z-index: 100;
+@media screen  and (min-width:1601px) {
+  .GalleryDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1.5vw;
+    column-gap: 1.5vw;
+    width: 75%;
+    margin: 12em auto;
+  }
+}
+
+@media screen and (min-width:1101px) and (max-width:1600px) {
+  .GalleryDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2vw;
+    column-gap: 2vw;
+    width: 75%;
+    margin: 12em auto;
+  }
+}
+
   
+  @media screen  and (min-width:1101px) {
+    .GalleryContainer {
+      position: relative;
+      z-index: 100;
+      grid-area: gallery;
+    }
+
+    
+     .blackTitle2 {
+      @include blackTitle(2em);
+      position: absolute;
+      left: -120px;
+      top: 30px;
+    }
+  }
+   
+  @media screen  and (min-width:901px) and (max-width:1100px) {
+    .GalleryContainer {
+      position: relative;
+      z-index: 100;
+      grid-area: gallery;
+    }
+
     .blackTitle2 {
       @include blackTitle(2em);
       position: absolute;
       left: -120px;
       top: 30px;
     }
-  
+
     .GalleryDisplay {
-      grid-area: gallery;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 2em;
-      column-gap: 2em;
-      width: 75%;
-      margin: 3em auto;
+      row-gap: 2vw;
+      column-gap: 2vw;
+      width: 85%;
+      margin: 12em auto 5em auto;
+    }
+  }
+
+
+  @media screen and (min-width:601px) and (max-width:900px) {
+
+    .GalleryContainer {
+      position: relative;
+      z-index: 100;
+      grid-area: gallery;
+      padding-top: 10em;
+    }
+
+    .blackTitle2 {
+      @include blackTitle(2em);
+      position: absolute;
+      left: 0;
+      top: 60px;
+    }
+
+    .GalleryDisplay {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 2vw;
+      column-gap: 2vw;
+      width: 85%;
+      margin: 4em auto;
+    }
+  }
+
+
+@media screen and (max-width:600px) {
+
+  .GalleryContainer {
+    position: relative;
+    z-index: 100;
+    grid-area: gallery;
+    padding-top: 7em;
+  }
+
+ .GalleryDisplay {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 2vw;
+      column-gap: 2vw;
+      width: 85%;
+      margin: 4em auto;
+    }
+
+    .blackTitle2 {
+      @include blackTitle(2em);
+      position: absolute;
+      left: 0;
+      top: 100px;
     }
   }
   
-  
-  
+
+
   .CardLink{
     text-decoration: none;
   }
@@ -52,10 +145,9 @@
     }
   }
   
-  
+  @media screen and (min-width:901px) {
   .GalleryCard {  
    &:hover {
-    
 
     .GalleryCardText {
       visibility: visible;
@@ -65,7 +157,7 @@
         text-transform: uppercase;
         display: block;
         color: white;
-        font-size: 1.5em;
+        font-size: 1.1em;
         margin:10px 0 0 0;
     
         &::after{
@@ -81,6 +173,7 @@
         font-family: $secondFont;
         font-weight: 400;
         letter-spacing: 0.1em;
+        font-size: 0.9em;
        }
     }
 
@@ -89,15 +182,56 @@
     }
    }
   }
+  }
+
+  @media  screen and (hover: hover) and (pointer: fine) and (max-width:900px) {
+      .GalleryCard {  
+      &:hover, &:active {
+    
+        .GalleryCardText {
+          visibility: visible;
+          padding:1em;
+    
+          h4 {
+            text-transform: uppercase;
+            display: block;
+            color: white;
+            font-size: 1.1em;
+            margin:10px 0 0 0;
+        
+            &::after{
+              content: "\A ─";
+              white-space: pre; 
+            }
+          }
+    
+          p {
+            visibility: visible;
+            color: white;
+            margin-top:0;
+            font-family: $secondFont;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            font-size: 0.9em;
+          }
+        }
+    
+        .GalleryImg {
+        visibility: hidden;
+        }
+      }
+      }
+      }
 
 
-
+  @media screen and (min-width:901px) {
   
   .shadow-drop-2-br:hover {
       -webkit-animation: shadow-drop-2-br 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
               animation: shadow-drop-2-br 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
   
+
    @-webkit-keyframes shadow-drop-2-br {
     0% {
       -webkit-transform: translateZ(0) translateX(0) translateY(0);
@@ -126,7 +260,6 @@
               box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
     }
   }
+}
   
-  
-  
-  
+ 

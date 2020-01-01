@@ -18,7 +18,8 @@ const AboutMe = () => {
     <div className="AboutMeContainer">
       <Navbar
         content={<ButtonsNavProjects id="home"/>}
-        content2={<Contacts />}
+        content2={<Contacts 
+          color={'#5bf4c1'}/>}
       />
 
       <div className="AboutMeMain">
@@ -29,7 +30,7 @@ const AboutMe = () => {
               <br/><br/>
               Etiam sed cursus quam, a convallis leo. Aliquam imperdiet ante in venenatis efficitur. Sed ut est eget tellus venenatis consectetur. Pellentesque quis mi iaculis, rutrum nisi eu, ultricies erat. Proin lacus lorem, aliquam quis feugiat quis, faucibus eu enim. Proin pellentesque aliquam magna, id finibus ligula semper vel. Morbi aliquam nibh sit amet semper ultricies. Maecenas pulvinar, libero accumsan iaculis tincidunt, magna nunc mollis sem, quis volutpat quam magna quis orci. Aliquam non orci sagittis, faucibus magna eu, posuere elit. 
             </p>
-            <a  className="ResumeLink" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1PArni32aYWv7Uk46FTy433SlORh-FW7A/view?usp=sharing"><h4 > CHECK MY RESUME HERE (french)</h4></a>
+            <div className="ResumeBlock"><a  className="ResumeLink" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1PArni32aYWv7Uk46FTy433SlORh-FW7A/view?usp=sharing"><h4 > CHECK MY RESUME HERE (french)</h4></a></div>
           </div>
           <div className="AboutMeContactGlobalSection">
 

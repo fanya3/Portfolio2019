@@ -4,10 +4,10 @@ import Mail from "../assets/icons/IconMail.svg"
 import LinkedIn from "../assets/icons/IconLinkedIn.svg"
 import Github from "../assets/icons/IconGithub.svg"
 
-const Contacts = () => {
+const Contacts = (props) => {
     return ( 
         <div className = "ContactsContainer">
-            <h4 className = "ContactsTitle"> &#60;Contact me&#47;&#62;</h4>
+            <h4 className = "ContactsTitle" style={{color : props.color}}> &#60;Contact me&#47;&#62;</h4>
             <div className = "IconsContactsGroup">
                 <a href="mailto:fanny.bouffier@gmail.com"><img className = "IconContacts" src={Mail} alt="mail link"/></a>
                 <a href="https://www.linkedin.com/in/fannybouffier/" target="_blank" rel="noopener noreferrer"><img className = "IconContacts" src={LinkedIn} alt="linkedin link"/></a>

@@ -1,10 +1,63 @@
 @import "../../GlobalStyle";
 
+@media screen and (min-width: 901px) {
+  .NavbarLogo {
+    margin: 30px auto 30px auto;
+    width: 120px;
+    height: auto;
+  }
 
-
-.NavbarLogo {
-  margin: 30px auto 30px auto;
-  width: 120px;
-  height: auto;
+  .NavbarLogoHorizontal {
+    display: none;
+  }
 }
+
+
+
+@media screen and (max-width: 900px) {
+  
+  .NavbarLogo, .NavbarLogoLink {
+    display:none;
+  }
+
+
+  .NavbarLogoHorizontal {
+    margin: 10px 0 10px 0;
+    width: 130px;
+    height: auto;
+    display: block;
+   
+  }
+
+  /*////////////animation classes //////////*/
+
+.scroll-down .NavbarContainer  {
+  transform: translate3d(0, -100%, 0);
+  box-shadow: none;
+}
+
+.scroll-up .NavbarContainer  {
+  transform: none;
+  box-shadow: 3px 3px 12px rgb(197, 197, 197);
+}
+
+}
+
+// @media screen and (max-width: 600px) {
+
+//   .NavbarLogo, .NavbarLogoLink {
+//     display:none;
+//   }
+
+
+//   .NavbarLogoHorizontal {
+//     margin: 15px 0 15px 0;
+//     width: 130px;
+//     height: auto;
+//     display: block;
+   
+//   }
+
+
+
 

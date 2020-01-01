@@ -7,22 +7,24 @@ const ButtonsGallery = (props) => {
 
     const filterButtons = FILTERS.map(filterName => {
         return (
-          <input className = "ButtonNavGallery pulsate-fwd"
-            key={filterName}
-            type ="button"
-            value={`it's ${filterName}!`}
-            onClick={() => props.cardFilterSelect(filterName)}
-          />
+          
+            <input className = "ButtonNavGallery pulsate-fwd"
+              key={filterName}
+              type ="button"
+              value={`it's ${filterName}!`}
+              onClick={() => props.cardFilterSelect(filterName)}
+            />
+         
         );
       });
 
       
     return ( 
       <>
-        <div className="ButtonsContainer ButtonsLeft">
+        <div className="ButtonsGalleryContainer ButtonsLeft">
             <button className = "ButtonAllGallery" onClick={() => props.cardFilterSelect(null)}>SHOW ALL</button>
             <div className = "Border" ></div>
-            {filterButtons}
+            <div className = "ButtonFilters">{filterButtons}</div>
         </div> 
       </>  
      );
