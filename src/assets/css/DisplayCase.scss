@@ -137,7 +137,7 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: right;
     padding: 3vw 0;
     margin-bottom: 1.1em;
   }
@@ -185,13 +185,7 @@ body {
   width: 45%;
 }
 
-.CaseContactSection{
-  width:80%;
-  display: flex;
-  margin:auto;
-  justify-content: space-around;
 
-}
 
 
 .FooterContainer{
@@ -199,8 +193,31 @@ body {
   z-index: 20;
 }
 
+@media screen  and (min-width:1101px)  {
+  
+  .CaseContactSection{
+    width:90%;
+    display: flex;
+    margin:3em auto;
+    justify-content: space-around;
+  
+  }
+}
 
-@media screen  and (max-width:600px) {
+
+@media screen  and (min-width:901px) and (max-width:1100px) {
+
+  .CaseContactSection{
+    width:80%;
+    display: flex;
+    margin:2em auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media screen  and (max-width:900px) {
 
   .CaseDescription {
     font-size:0.8em;
@@ -210,10 +227,10 @@ body {
   .CaseContactSection{
     width:80%;
     display: flex;
-    margin:auto;
+    margin:2em auto;
     flex-direction: column;
     justify-content: space-around;
-  
+    align-items: center;
   }
 }
 

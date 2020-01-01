@@ -67,8 +67,8 @@ export const PROJECTS = [
     mission: "Web App",
     color:"#08f8d5",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
-    link:"www.blabla.com",
-    github:"www.github.com",
+    link:"eloquent-fermat-974f6b.netlify.com",
+    github:"github.com/fanya3/Projet2-OhmyG",
     images: [
       {
         id: 0,
@@ -76,15 +76,11 @@ export const PROJECTS = [
       },
       {
         id: 1,
-        image: "/images/OHMYG/0-OHMYG-02.jpg"
+        image: "/images/OHMYG/0-OHMYG-02.gif"
       },
       {
         id: 2,
         image: "/images/OHMYG/0-OHMYG-03.jpg"
-      },
-      {
-        id: 3,
-        image: "/images/lubees-card.jpg"
       }
     ]
   },
