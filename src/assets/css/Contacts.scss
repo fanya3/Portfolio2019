@@ -13,7 +13,7 @@
   .IconsContactsGroup {
     display: flex;
     justify-content: space-evenly;
-    margin:auto auto 1em auto;
+    margin:1em auto;
     width: 30%;
  
 
@@ -32,10 +32,12 @@
     margin-top: 0.2em;
   }
 
+  .IconContactsWebLink {
+    font-size: 1.2em;
+  }
 }
 
 @media screen  and (max-width:900px) {
-
 
   .IconContactsWeb {
     width: 24px;
@@ -43,6 +45,28 @@
   }
   
   .IconContactsWebLink {
-    font-size: 0.8em;
+    font-size: 1.2em;
+  }
+}
+
+
+
+.IconContactsWebLink {
+  position:relative;
+  &::after {
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:0;
+    height:0.5em;
+    background-color: $green;
+    transition-duration:0.4s;
+    mix-blend-mode: multiply;
+  } 
+  &:hover::after {
+    width:100%;
   }
 }

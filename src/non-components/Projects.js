@@ -187,15 +187,14 @@ export const PROJECTS = [
     alt: "Into The Wild Code School",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     path: "digital",
-    link:"www.blabla.com",
-    github:"www.github.com",
+    link:"fanya3.github.io/Projet1-IntoTheWildCodeSchool",
+    github:"github.com/fanya3/Projet1-IntoTheWildCodeSchool",
     mission: "Website",
     color:"#504df4",
     images: [
       {
         id: 0,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/INTOTHEWILD/0-INTOTHEWILD-01.jpg"
       },
       {
         id: 1,
