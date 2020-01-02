@@ -81,7 +81,7 @@ class Homepage extends Component {
                 </p>
               </div>
             </div>
-            <Link className="HomepageLink" path to="/about-me">
+            <Link className="HomepageLink" to="/about-me">
               MORE ABOUT ME
             </Link>
           </div>

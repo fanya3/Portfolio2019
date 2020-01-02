@@ -13,8 +13,8 @@ const MainNavbar = () => {
     return (
       <>
         <div className="MainNavbarContainer">
-          <Link path to="/" ><img className="NavbarLogo" src={Logo} alt="Logo-FannyBouffier" /></Link>
-          <Link path to="/"><img className="NavbarLogoHorizontal" src={LogoHorizontal} alt="Logo-FannyBouffier"/></Link>
+          <Link to="/" ><img className="NavbarLogo" src={Logo} alt="Logo-FannyBouffier" /></Link>
+          <Link to="/"><img className="NavbarLogoHorizontal" src={LogoHorizontal} alt="Logo-FannyBouffier"/></Link>
         </div>
         <div className="ContactsHomepage">
           <Contacts color={"white"} />
