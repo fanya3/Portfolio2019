@@ -3,29 +3,36 @@ import "../assets/css/InternshipLabel.scss"
 
 class InternshipLabel extends React.Component {
 
-  handleScroll = () => {
-    const body = document.body;
-    const news = "news";
+  handleScrollNews = () => {
+    // const body = document.body;
+    // const news = "news";
     const WhatIDo = document.getElementsByClassName("HomepageWhatIDo");
+    const pastille = document.getElementsByClassName("Label");
     let currentScroll = window.pageYOffset;
-    let WhatIDoPosition = WhatIDo[0].offsetTop - 380;
+    let WhatIDoPosition = WhatIDo[0].offsetTop;
+    console.log(WhatIDo[0].offsetTop-200)
+    console.log(pastille[0].classList)
+    console.log(pastille[0].className)
+    console.log(pastille)
 
-    if (currentScroll >= WhatIDoPosition && !body.classList.contains(news)) {
-      body.classList.add(news);
-    } else if (currentScroll < WhatIDoPosition && body.classList.contains(news)) {
-      body.classList.remove(news);
+    if (currentScroll >= WhatIDoPosition && !pastille[0].classList.contains("news")) {
+      pastille[0].classList.add("news");
+    } else if (currentScroll < WhatIDoPosition && pastille[0].classList.contains("news")) {
+      pastille[0].classList.remove("news");
     } else return;
   };
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("scroll", this.handleScrollNews);
   }
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("scroll", this.handleScrollNews);
   }
 
   render() {
+    
     return (
+      
       <div className="Label">
         <h4>NEWS!</h4>
         <p>

@@ -186,7 +186,7 @@
 
   @media  screen  and (max-width:900px) {
       .GalleryCard {  
-       &:active {
+       &:active, &:focus {
     
         .GalleryCardText {
           visibility: visible;
