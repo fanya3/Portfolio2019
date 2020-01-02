@@ -198,13 +198,11 @@ export const PROJECTS = [
       },
       {
         id: 1,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/INTOTHEWILD/0-INTOTHEWILD-02.gif"
       },
       {
         id: 2,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/INTOTHEWILD/0-INTOTHEWILD-03.jpg"
       }
     ]
   },

@@ -69,7 +69,7 @@ class ButtonsNavProjects extends React.Component {
             {this.state.isLoaded ? (
               <div className="ButtonsNavGroup"><Link
                 className="ButtonNavProject Next Heartbeat"
-                path to={`/project${this.state.nextPath}/${this.state.nextName}`}
+                path to={`/${this.state.nextPath}project/${this.state.nextName}`}
               >
                 NEXT
               </Link> </div>
@@ -90,7 +90,7 @@ class ButtonsNavProjects extends React.Component {
             {this.state.isLoaded ? (
                <div className="ButtonsNavGroup"><Link
                 className="ButtonNavProject Previous Heartbeat"
-                path to={`/project${this.state.previousPath}/${this.state.previousName}`}
+                path to={`/${this.state.previousPath}project/${this.state.previousName}`}
               >
                 PREVIOUS
               </Link> </div>
@@ -123,14 +123,14 @@ class ButtonsNavProjects extends React.Component {
               <>
                 <div className="ButtonsNavGroup"><Link
                   className="ButtonNavProject Previous pulsate-fwd"
-                  path to={`/project${this.state.previousPath}/${this.state.previousName}`}
+                  path to={`/${this.state.previousPath}project/${this.state.previousName}`}
                 >
                   PREVIOUS
                 </Link>
 
                 <Link
                   className="ButtonNavProject Next pulsate-fwd"
-                  path to={`/project${this.state.nextPath}/${this.state.nextName}`}
+                  path to={`/${this.state.nextPath}project/${this.state.nextName}`}
                 >
                   NEXT
                 </Link></div>
