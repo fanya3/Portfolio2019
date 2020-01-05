@@ -214,7 +214,7 @@ export const PROJECTS = [
     mission: "Website",
     color:"#504df4",
     descriptionintro:"LET'S GET WILD!",
-    description: "An immersive photoreport about the Wild Code School, Paris. We developped a website for an imaginary photograph, who followed students & teachers in their everyday life (from commute to late evenings at school). Included a special dark mode to discover the wild side of the Wilders! Developped with Html, CSS & Javascript.",
+    description: "An immersive photoreport about the Wild Code School, Paris. We developped a website for an imaginary photograph, who followed students & teachers in their everyday life (from morning commute to late evenings at school). Included a special dark mode to discover the wild side of the Wilders! Developped with Html, CSS & Javascript.",
     link:"fanya3.github.io/Projet1-IntoTheWildCodeSchool",
     github:"github.com/fanya3/Projet1-IntoTheWildCodeSchool",
     images: [
