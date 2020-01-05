@@ -9,11 +9,7 @@ class InternshipLabel extends React.Component {
     const WhatIDo = document.getElementsByClassName("HomepageWhatIDo");
     const pastille = document.getElementsByClassName("Label");
     let currentScroll = window.pageYOffset;
-    let WhatIDoPosition = WhatIDo[0].offsetTop;
-    console.log(WhatIDo[0].offsetTop-200)
-    console.log(pastille[0].classList)
-    console.log(pastille[0].className)
-    console.log(pastille)
+    let WhatIDoPosition = (WhatIDo[0].offsetTop)-200;
 
     if (currentScroll >= WhatIDoPosition && !pastille[0].classList.contains("news")) {
       pastille[0].classList.add("news");

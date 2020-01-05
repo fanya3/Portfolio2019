@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     id: 0,
     name: "Danette",
-    cover_image: "/images/DANETTE-CARD.jpg",
+    cover_image: "/images/CARDS/DANETTE-CARD.jpg",
     type1: "Foody",
     alt: "Danette",
     path: "design",
@@ -60,7 +60,7 @@ export const PROJECTS = [
   {
     id: 1,
     name: "OhMyG!",
-    cover_image: "/images/OHMYG-CARD.gif",
+    cover_image: "/images/CARDS/OHMYG-CARD.gif",
     type1: "Online",
     alt: "Oh My G!",
     path: "digital",
@@ -87,7 +87,7 @@ export const PROJECTS = [
   {
     id: 2,
     name: "LubeesdeSylvie",
-    cover_image: "/images/lubees-card.jpg",
+    cover_image: "/images/CARDS/LUBEES-CARD.jpg",
     type1: "Green",
     alt: "Lubees de Sylvie",
     path: "design",
@@ -120,7 +120,7 @@ export const PROJECTS = [
   {
     id: 3,
     name: "ZeroWasteParis",
-    cover_image: "/images/ZEROWASTE-CARD.jpg",
+    cover_image: "/images/CARDS/ZEROWASTE-CARD.jpg",
     type1: "Green",
     alt: "Zero Waste Paris",
     path: "design",
@@ -157,7 +157,7 @@ export const PROJECTS = [
   {
     id: 4,
     name: "Calyce",
-    cover_image: "/images/CALYCE-CARD.jpg",
+    cover_image: "/images/CARDS/CALYCE-CARD.jpg",
     type1: "Green",
     alt: "Calycé Développement",
     path: "design",
@@ -167,22 +167,42 @@ export const PROJECTS = [
     images: [
       {
         id: 0,
-        image: "/images/CALYCE-CARD.jpg"
+        image: "/images/CALYCE/0-CALYCE-01.jpg"
       },
       {
         id: 1,
-        image:"/images/CALYCE-CARD.jpg"
+        image: "/images/CALYCE/0-CALYCE-02.jpg"
       },
       {
         id: 2,
-        image: "/images/CALYCE-CARD.jpg"
+        image: "/images/CALYCE/0-CALYCE-03.jpg"
+      },
+      {
+        id: 3,
+        image: "/images/CALYCE/0-CALYCE-04.jpg"
+      },
+      {
+        id: 4,
+        image: "/images/CALYCE/0-CALYCE-05.jpg"
+      },
+      {
+        id: 5,
+        image: "/images/CALYCE/0-CALYCE-06.jpg"
+      },
+      {
+        id: 6,
+        image: "/images/CALYCE/0-CALYCE-07.jpg"
+      },
+      {
+        id: 7,
+        image: "/images/CALYCE/0-CALYCE-08.jpg"
       }
     ]
   },
   {
     id: 5,
     name: "IntoTheWildCodeSchool",
-    cover_image: "/images/INTOTHEWILD-CARD.gif",
+    cover_image: "/images/CARDS/INTOTHEWILD-CARD.gif",
     type1: "Online",
     alt: "Into The Wild Code School",
     description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
@@ -209,7 +229,7 @@ export const PROJECTS = [
   {
     id: 6,
     name: "XavierChanard",
-    cover_image: "/images/XAVIERCHANARD-CARD.jpg",
+    cover_image: "/images/CARDS/XAVIERCHANARD-CARD.jpg",
     type1: "Online",
     alt: "Xavier Chanard",
     path: "digital",
@@ -240,7 +260,7 @@ export const PROJECTS = [
   {
     id: 7,
     name: "PetitNavire",
-    cover_image: "/images/PETITNAVIRE-CARD.jpg",
+    cover_image: "/images/CARDS/PETITNAVIRE-CARD.jpg",
     type1: "Foody",
     alt: "Petit Navire",
     path: "design",
@@ -277,7 +297,7 @@ export const PROJECTS = [
   {
     id: 8,
     name: "Danissimo",
-    cover_image: "/images/DANISSIMO-CARD.jpg",
+    cover_image: "/images/CARDS/DANISSIMO-CARD.jpg",
     type1: "Foody",
     alt: "Danissimo",
     path: "design",
@@ -318,7 +338,7 @@ export const PROJECTS = [
   {
     id: 9,
     name: "DanoneB2B",
-    cover_image: "/images/DANONEPRO-CARD.jpg",
+    cover_image: "/images/CARDS/DANONEPRO-CARD.jpg",
     type1: "Foody",
     alt: "Danone B2B",
     path: "design",
