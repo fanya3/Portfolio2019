@@ -37,7 +37,11 @@ class DisplayCaseDesign extends React.Component {
     return (
       <div className="CaseIntroSection" style={{backgroundImage:`url(${this.state.project[0].images[0].image})`}}>
         <h2 className="blackTitle4">{this.state.project[0].alt}<span className="missionTitle">/ {this.state.project[0].mission}</span></h2>
+        
         <p className="CaseDescription">
+        <p className="CaseDescriptionIntro">
+          {this.state.project[0].descriptionintro}
+        </p>
           {this.state.project[0].description}
         </p>
       </div>

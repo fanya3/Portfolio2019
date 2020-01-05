@@ -44,7 +44,7 @@ class Homepage extends Component {
             <div className="HomepageHelloContainer">
               <img className="HomepageHelloLogo" src={Hello} alt="hello logo" />
               <p className="HomepageHelloText">
-                I’m a lively cheerful senior designer <br />
+                I’m a lively cheerful design director <br />
                 &amp; creative developer!
               </p>
               <p className="HomepageHelloLegend">

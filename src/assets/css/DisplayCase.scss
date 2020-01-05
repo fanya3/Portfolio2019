@@ -5,6 +5,11 @@ body {
   background-color: $green;
 }
 
+.CaseDescriptionIntro{
+  font-weight: 800;
+  margin-top: 0;
+}
+
 @media screen and (min-width: 1801px)  {
 
   .CaseContainer{
@@ -182,11 +187,8 @@ body {
   z-index: 20;
   color:$black;
   padding: 1.8em;
-  width: 45%;
+  width: 55%;
 }
-
-
-
 
 .FooterContainer{
   grid-area: footer; 
@@ -219,6 +221,8 @@ body {
     font-size:0.8em;
     width: 65%;
   }
+
+  
 
   .CaseContactSection{
     width:100%;

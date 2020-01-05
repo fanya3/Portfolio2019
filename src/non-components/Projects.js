@@ -8,7 +8,8 @@ export const PROJECTS = [
     path: "design",
     mission: "Global Redesign",
     color:"#892409",
-    description: "SolutionPost haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"THE POT IS ALL!",
+    description: "A new identity that reveals the iconic pot of Danette and its unifying power around a multitude of sublimated recipes. A colorful and gourmet universe with a strengthened and modernized brand. A friendly ton of voice spread on all supports from packaging to bus shelter ads. (France & Belgium)",
     images: [
       {
         id: 0,
@@ -66,7 +67,8 @@ export const PROJECTS = [
     path: "digital",
     mission: "Web App",
     color:"#08f8d5",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"A TASTEFUL APP!",
+    description: "OH MY G! (aka Oh My Glycemia!) is web app which helps teenagers to deal with their diabetes everyday. Starting with one of our diabetic friend struggling with cold and boring medical apps, we decided to develop a more colorful and simple web app more adapted to teens and young adults (based also on personas). Features : a tool to calculate insuline, a tool to calculate total carbohydrates from food intake and a nutritional informations database. Developped with Javascript, React and Nutritional Anses Ciqual API, with Scrum Methodology.",
     link:"eloquent-fermat-974f6b.netlify.com",
     github:"github.com/fanya3/Projet2-OhmyG",
     images: [
@@ -93,7 +95,8 @@ export const PROJECTS = [
     path: "design",
     mission: "Identity",
     color:"#efd5bb",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"SMALL TISSUES FOR A BETTER WORLD!",
+    description: "Trying to change the world with small acts everyday, Sylvie decided to create her own activity putting care and quality into each bee's wrap she makes. The identity encapsulates her know-how and her special cheerfulness! (France)",
     images: [
       {
         id: 0,
@@ -126,7 +129,8 @@ export const PROJECTS = [
     path: "design",
     mission: "Graphic Design",
     color:"#00a1b2",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"FIRST STEPS ON THE ZERO WASTE PATH!", 
+    description: "A new presentation for the 'Beginners Zero Waste Program' of the non-profit organization, Zero Waste Paris. This program was developped within the local groups to sensibilize to global zero waste approach and challenges (global waste and plastic pollution, first small actions to a more conscious consumption, with reduced costs and reduced environmental footprint).",
     images: [
       {
         id: 0,
@@ -163,7 +167,8 @@ export const PROJECTS = [
     path: "design",
     mission: "Corporate Identity",
     color:"#243e93",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"A POSITIVE BREATH OF FRESH AIR!",
+    description: "Calycé Développement is a local company specialized in wind farms. The 3 founders, Mael, Dorothée and Eric believe in developping small local projects that leads to territorial dynamism. The identity conveys the local roots of the 3 partners through the 3 wind turbines anchored in fields, that disperse sparkles of joy on 'Souffle d'Espoir' identity (a social and charitable initiative that offers financial support to 3 medical charitable organizations).",
     images: [
       {
         id: 0,
@@ -205,12 +210,13 @@ export const PROJECTS = [
     cover_image: "/images/CARDS/INTOTHEWILD-CARD.gif",
     type1: "Online",
     alt: "Into The Wild Code School",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     path: "digital",
-    link:"fanya3.github.io/Projet1-IntoTheWildCodeSchool",
-    github:"github.com/fanya3/Projet1-IntoTheWildCodeSchool",
     mission: "Website",
     color:"#504df4",
+    descriptionintro:"LET'S GET WILD!",
+    description: "An immersive photoreport about the Wild Code School, Paris. We developped a website for an imaginary photograph, who followed students & teachers in their everyday life (from commute to late evenings at school). Included a special dark mode to discover the wild side of the Wilders! Developped with Html, CSS & Javascript.",
+    link:"fanya3.github.io/Projet1-IntoTheWildCodeSchool",
+    github:"github.com/fanya3/Projet1-IntoTheWildCodeSchool",
     images: [
       {
         id: 0,
@@ -233,11 +239,12 @@ export const PROJECTS = [
     type1: "Online",
     alt: "Xavier Chanard",
     path: "digital",
-    link:"www.psychanalyste-sophrologue-chanard.com",
-    github: 'NULL',
     mission: "Identity & Web Design",
     color:"#ff6a48",
-    description: "TEST haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    link:"www.psychanalyste-sophrologue-chanard.com",
+    github: 'NULL',
+    descriptionintro:"THE POT IS ALL!",
+    description: "Xavier Chanard is a Psychoanalyst and an experimented Sophrologist. The identity encapsulates how these two methods are complementing each other. Xavier offers a flexible and balanced method to help people to deal with their problems, as well as an incredible professionalism, scientific approach and discretion.",
     images: [
       {
         id: 0,
@@ -266,7 +273,8 @@ export const PROJECTS = [
     path: "design",
     mission: "Branding & Packaging",
     color:"#6b95d6",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"JUST BACK FROM FISHING!",
+    description: "A complete new identity and ranges redesign to capture this moment, embody history and the know-how of Petit Navire in order to reveal an iconic love brand. Going back to basics, showing the freshness of the products and the wealth of flavors offered by the sea. (France)",
     images: [
       {
         id: 0,
@@ -303,7 +311,8 @@ export const PROJECTS = [
     path: "design",
     mission: "Branding & Packaging",
     color:"#f7bd89",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"WHITE IS THE NEW INDULGENCE!",
+    description: "A new premium Danone range for dairy french market. Original and creative recipes based on sensorial milky pleasure, to embody a premium dessert offer but true to the brand's DNA. 3 ranges : plain yoghurt with crunchy fruit coulis, unique milky foam texture with a melty heart inside and fruity duo sorbet styled recipe. (France)",
     images: [
       {
         id: 0,
@@ -344,7 +353,8 @@ export const PROJECTS = [
     path: "design",
     mission: "Branding & Packaging",
     color:"#eb212e",
-    description: "DANONE B2B : POP ART IN THE DAIRY WORLD. Danone  Group  B2B  Branch  for  Catering  Profesionnals has decided  to  boost  referencing and to feed Danone Equity. The new Danone Bicouche launched with exclusive and exquisite flavors is good & beautiful all at once. A fun and tasty creation that highlights varieties by using strong and modern color codes to promote impulsive consumption. (France & Belgium)",
+    descriptionintro:"POP ART IN THE DAIRY WORLD!",
+    description: "Danone  Group  B2B  Branch  for  Catering  Profesionnals has decided  to  boost  referencing and to feed Danone Equity. The new Danone Bicouche launched with exclusive and exquisite flavors is good & beautiful all at once. A fun and tasty creation that highlights varieties by using strong and modern color codes to promote impulsive consumption. (France & Belgium)",
     images: [
       {
         id: 0,
