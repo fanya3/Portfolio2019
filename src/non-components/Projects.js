@@ -68,7 +68,7 @@ export const PROJECTS = [
     mission: "Web App",
     color:"#08f8d5",
     descriptionintro:"A TASTEFUL APP!",
-    description: "OH MY G! (aka Oh My Glycemia!) is web app which helps teenagers to deal with their diabetes everyday. Starting with one of our diabetic friend struggling with cold and boring medical apps, we decided to develop a more colorful and simple web app more adapted to teens and young adults (based also on personas). Features : a tool to calculate insuline, a tool to calculate total carbohydrates from food intake and a nutritional informations database. Developped with Javascript, React and Nutritional Anses Ciqual API, with Scrum Methodology.",
+    description: "OH MY G! (aka Oh My Glycemia!) is web app which helps teenagers to deal with their diabetes everyday. Starting from one of our diabetic friend struggling with cold and boring medical apps, we decided to develop a more colorful and simple web app more adapted to teens and young adults (based also on personas). Features : a tool to calculate insuline, a tool to calculate total carbohydrates from food intake and a nutritional informations database. Developed with Javascript, React and Nutritional Anses Ciqual API, with Scrum Methodology.",
     link:"eloquent-fermat-974f6b.netlify.com",
     github:"github.com/fanya3/Projet2-OhmyG",
     images: [
@@ -130,7 +130,7 @@ export const PROJECTS = [
     mission: "Graphic Design",
     color:"#00a1b2",
     descriptionintro:"FIRST STEPS ON THE ZERO WASTE PATH!", 
-    description: "A new presentation for the 'Beginners Zero Waste Program' of the non-profit organization, Zero Waste Paris. This program was developped within the local groups to sensibilize to global zero waste approach and challenges (global waste and plastic pollution, first small actions to a more conscious consumption, with reduced costs and reduced environmental footprint).",
+    description: "A new presentation for the 'Beginners Zero Waste Program' of the non-profit organization, Zero Waste Paris. This program was developed within the local groups to sensibilize to global zero waste approach and challenges (global waste and plastic pollution, first small actions to a more conscious consumption, with reduced costs and reduced environmental footprint).",
     images: [
       {
         id: 0,
@@ -168,7 +168,7 @@ export const PROJECTS = [
     mission: "Corporate Identity",
     color:"#243e93",
     descriptionintro:"A POSITIVE BREATH OF FRESH AIR!",
-    description: "Calycé Développement is a local company specialized in wind farms. The 3 founders, Mael, Dorothée and Eric believe in developping small local projects that leads to territorial dynamism. The identity conveys the local roots of the 3 partners through the 3 wind turbines anchored in fields, that disperse sparkles of joy on 'Souffle d'Espoir' identity (a social and charitable initiative that offers financial support to 3 medical charitable organizations).",
+    description: "Calycé Développement is a local company specialized in wind farms. The 3 founders, Mael, Dorothée and Eric believe in developing small local projects that leads to territorial dynamism. The identity conveys the local roots of the 3 partners through the 3 wind turbines anchored in fields, that disperse sparkles of joy on 'Souffle d'Espoir' identity (a social and charitable initiative that offers financial support to 3 medical charitable organizations).",
     images: [
       {
         id: 0,
@@ -214,7 +214,7 @@ export const PROJECTS = [
     mission: "Website",
     color:"#504df4",
     descriptionintro:"LET'S GET WILD!",
-    description: "An immersive photoreport about the Wild Code School, Paris. We developped a website for an imaginary photograph, who followed students & teachers in their everyday life (from morning commute to late evenings at school). Included a special dark mode to discover the wild side of the Wilders! Developped with Html, CSS & Javascript.",
+    description: "An immersive photoreport about the Wild Code School, Paris. We developed a website for an imaginary photograph, who followed students & teachers in their everyday life (from morning commute to late evenings at school). Included a special dark mode to discover the wild side of the Wilders! Developed with Html, CSS & Javascript.",
     link:"fanya3.github.io/Projet1-IntoTheWildCodeSchool",
     github:"github.com/fanya3/Projet1-IntoTheWildCodeSchool",
     images: [
@@ -274,7 +274,7 @@ export const PROJECTS = [
     mission: "Branding & Packaging",
     color:"#6b95d6",
     descriptionintro:"JUST BACK FROM FISHING!",
-    description: "A complete new identity and ranges redesign to capture this moment, embody history and the know-how of Petit Navire in order to reveal an iconic love brand. Going back to basics, showing the freshness of the products and the wealth of flavors offered by the sea. (France)",
+    description: "A complete new identity and ranges redesign to capture this moment, embody history and the know-how of Petit Navire in order to reveal an iconic love brand. Going back to basics, showing the freshness of the products and the variety of flavors offered by the sea. (France)",
     images: [
       {
         id: 0,
@@ -354,7 +354,7 @@ export const PROJECTS = [
     mission: "Branding & Packaging",
     color:"#eb212e",
     descriptionintro:"POP ART IN THE DAIRY WORLD!",
-    description: "Danone  Group  B2B  Branch  for  Catering  Profesionnals has decided  to  boost  referencing and to feed Danone Equity. The new Danone Bicouche launched with exclusive and exquisite flavors is good & beautiful all at once. A fun and tasty creation that highlights varieties by using strong and modern color codes to promote impulsive consumption. (France & Belgium)",
+    description: "Danone Group B2B Branch for Catering Profesionnals has decided to boost referencing and to feed Danone Equity. The new Danone Bicouche launched with exclusive and exquisite flavors is good & beautiful all at once. A fun and tasty creation that highlights varieties by using strong and modern color codes to promote impulsive consumption. (France & Belgium)",
     images: [
       {
         id: 0,

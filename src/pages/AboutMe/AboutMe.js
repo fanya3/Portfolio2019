@@ -26,13 +26,13 @@ const AboutMe = () => {
        <h2 className="blackTitle3">ABOUT ME</h2>
           <div className="AboutMeIntroSection">
             <p >
-             <strong>As told on the landing page, I have a lively cheerful personality!</strong> What I like as a graphic designer is creating stories. I've been helping brands to convey their universe and values for 12 years, working as a designer for the Design Group, "Team Créatif". I was lucky enough to work for worldwide branding and packaging projects in Paris and experiment colorful graphic design during my stay in São Paulo to develop the new local retail Agency, Market Value in 2018.
+             <strong>As stated on the landing page, I have a lively cheerful personality!</strong> What I like as a graphic designer is creating stories. I've been helping brands to convey their universe and values for 12 years, working as a designer director for the International Design Group, "Team Créatif". I was lucky enough to work for global branding and packaging projects in Paris and experiment colorful graphic design during my stay in São Paulo to develop the new local retail Agency, Market Value in 2018.
              <br/><br/>
-             For me, design shouldn't just look good, it should do good as well. Thereby, since January 2019, as a Freelancer, I help people telling their story, now with a focus on sustainable projects with social &amp; environmental positive impact. This new adventure gives me even more energy and also opportunities for wonderful encounters!
+             For me, design shouldn't just look good, it should do good as well. Therefor, since January 2019, as a Freelancer, I started helping people telling their story focusing on sustainable projects with social &amp; environmental positive impact. This new adventure is boosting my energy and giving me opportunity to meet amazing people!
              <br/><br/>
-             My taste for challenge and hard work &#40;+ my love for logic and innovation!&#41; led me to join the Wild Code School Paris, in September 2019 for an intensive React/NodeJS developer training. <strong>I'm now looking for an opportunity of internship to join a company to develop my new skills in web development.</strong> 
+             My love for challenge and hard work &#40;+ my interest for logic and innovation!&#41; led me to join the Wild Code School Paris,in September 2019 for an intensive React/NodeJS developer training. <strong>I'm now looking for an internship to improve my new skills in web development.</strong> 
              <br/><br/>
-             I love understanding how things work from the inside and turning complex problems into simple and intuitive designs. When I'm not coding, you'll find me doing yoga, experimenting new zero waste cosmetic recipe, laughing (a lot) or enjoying a nice meal with friends.
+             I love to dig inside how things work and turning complex problems into simple and intuitive solutions. When I'm not coding, you'll find me doing yoga, experimenting new zero waste cosmetic recipe, laughing (out loud) or enjoying a nice meal with friends.
             </p>
             <div className="ResumeBlock"><a  className="ResumeLink" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1RxtCDI-JMTEwavL05ysIAMYojMRORtyQ/view?usp=sharing"><h4 > CHECK MY RESUME HERE (french)</h4></a></div>
           </div>
