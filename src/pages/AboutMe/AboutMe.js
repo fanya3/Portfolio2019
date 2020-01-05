@@ -30,7 +30,7 @@ const AboutMe = () => {
              <br/><br/>
              For me, design shouldn't just look good, it should do good as well. Thereby, since January 2019, as a Freelancer, I help people telling their story, now with a focus on sustainable projects with social &amp; environmental positive impact. This new adventure gives me even more energy and also opportunities for wonderful encounters!
              <br/><br/>
-             My taste for challenge and hard work &#40;+ my love for logic and innovation!&#41; led me to join the Wild Code School Paris, in September 2019 for an intensive React/NodeJS developer training. <strong>I'm now looking for an opportunity to join a company to develop my new skills in web development.</strong> 
+             My taste for challenge and hard work &#40;+ my love for logic and innovation!&#41; led me to join the Wild Code School Paris, in September 2019 for an intensive React/NodeJS developer training. <strong>I'm now looking for an opportunity of internship to join a company to develop my new skills in web development.</strong> 
              <br/><br/>
              I love understanding how things work from the inside and turning complex problems into simple and intuitive designs. When I'm not coding, you'll find me doing yoga, experimenting new zero waste cosmetic recipe, laughing (a lot) or enjoying a nice meal with friends.
             </p>
