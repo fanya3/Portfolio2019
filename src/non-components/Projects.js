@@ -243,7 +243,7 @@ export const PROJECTS = [
     color:"#ff6a48",
     link:"www.psychanalyste-sophrologue-chanard.com",
     github: 'NULL',
-    descriptionintro:"!",
+    descriptionintro:"A mind-body new balance!",
     description: "Xavier Chanard is a Psychoanalyst and an experimented Sophrologist. The identity encapsulates how these two methods are complementing each other. Xavier offers a flexible and balanced methodology to help people to deal with their problems, as well as an incredible professionalism, scientific approach and discretion. Developed with Wordpress and custom CSS.",
     images: [
       {
