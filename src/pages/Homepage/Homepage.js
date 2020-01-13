@@ -44,18 +44,17 @@ class Homepage extends Component {
             <div className="HomepageHelloContainer">
               <img className="HomepageHelloLogo" src={Hello} alt="hello logo" />
               <p className="HomepageHelloText">
-                I’m a lively cheerful design director <br />
+                I’m a lively cheerful senior designer <br />
                 &amp; creative developer!
               </p>
               <p className="HomepageHelloLegend">
                 <span className="LegendSuperBold">!</span>
                 <span className="LegendBold">
-                  = I am often told that I speak loudly :&#41;
+                  = I am often told that I speak loudly ;&#41;
                 </span>{" "}
                 <br />
                 Fortunately, this is what I like to do in my job, helping brands
-                and entrepreneurs to state loud and clear and make the
-                difference in the market!
+                and entrepreneurs to play it loud and different from competition!
               </p>
             </div>
           </div>

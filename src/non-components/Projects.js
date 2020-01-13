@@ -9,7 +9,7 @@ export const PROJECTS = [
     mission: "Global Redesign",
     color:"#892409",
     descriptionintro:"THE POT IS ALL!",
-    description: "A new identity that reveals the iconic pot of Danette and its unifying power around a multitude of sublimated recipes. A colorful and gourmet universe with a strengthened and modernized brand. A friendly ton of voice spread on all supports from packaging to bus shelter ads. (France & Belgium)",
+    description: "A new identity that reveals the iconic pot of Danette and its unifying power around a multitude of crafted recipes. A colorful and gourmet universe with a stronger and modernised brand. A friendly tone of voice across all media from packaging to bus shelter ads. (France & Belgium)",
     images: [
       {
         id: 0,
@@ -68,7 +68,7 @@ export const PROJECTS = [
     mission: "Web App",
     color:"#08f8d5",
     descriptionintro:"A TASTEFUL APP!",
-    description: "OH MY G! (aka Oh My Glycemia!) is web app which helps teenagers to deal with their diabetes everyday. Starting from one of our diabetic friend struggling with cold and boring medical apps, we decided to develop a more colorful and simple web app more adapted to teens and young adults (based also on personas). Features : a tool to calculate insuline, a tool to calculate total carbohydrates from food intake and a nutritional informations database. Developed with Javascript, React and Nutritional Anses Ciqual API, with Scrum Methodology.",
+    description: "OH MY G! (aka Oh My Glycemia!) is a web app which helps teenagers to deal with their diabetes on a daily basis. The journey started with the experience of one of our diabetic friend struggling with cold and boring medical apps, we decided to develop a more colorful and simple web app, more adapted to teens and young adults (based also on personas). Features : a tool to calculate insuline, a tool to calculate total carbohydrates from food intake and a nutritional informations database. Developed with Javascript, React and Nutritional Anses Ciqual API, with Scrum Methodology.",
     link:"eloquent-fermat-974f6b.netlify.com",
     github:"github.com/fanya3/Projet2-OhmyG",
     images: [
@@ -96,7 +96,7 @@ export const PROJECTS = [
     mission: "Identity",
     color:"#efd5bb",
     descriptionintro:"SMALL TISSUES FOR A BETTER WORLD!",
-    description: "Trying to change the world with small acts everyday, Sylvie decided to create her own activity putting care and quality into each bee's wrap she makes. The identity encapsulates her know-how and her special cheerfulness! (France)",
+    description: "Trying to change the world with small actions everyday, Sylvie decided to launch her own business putting care and quality into each bee's wrap she makes. The identity encapsulates her know-how and her special cheerfulness! (France)",
     images: [
       {
         id: 0,
@@ -130,7 +130,7 @@ export const PROJECTS = [
     mission: "Graphic Design",
     color:"#00a1b2",
     descriptionintro:"FIRST STEPS ON THE ZERO WASTE PATH!", 
-    description: "A new presentation for the 'Beginners Zero Waste Program' of the non-profit organization, Zero Waste Paris. This program was developed within the local groups to sensibilize to global zero waste approach and challenges (global waste and plastic pollution, first small actions to a more conscious consumption, with reduced costs and reduced environmental footprint).",
+    description: "A new presentation for the 'Beginners Zero Waste Program' of the non-profit organization, Zero Waste Paris. This program was developed within the local groups to increase awareness of global zero waste approach and challenges (global waste and plastic pollution, first small actions to a more conscious consumption, with reduced costs and reduced environmental footprint).",
     images: [
       {
         id: 0,
@@ -168,7 +168,7 @@ export const PROJECTS = [
     mission: "Corporate Identity",
     color:"#243e93",
     descriptionintro:"A POSITIVE BREATH OF FRESH AIR!",
-    description: "Calycé Développement is a local company specialized in wind farms. The 3 founders, Mael, Dorothée and Eric believe in developing small local projects that leads to territorial dynamism. The identity conveys the local roots of the 3 partners through the 3 wind turbines anchored in fields, that disperse sparkles of joy on 'Souffle d'Espoir' identity (a social and charitable initiative that offers financial support to 3 medical charitable organizations).",
+    description: "Calycé Développement is a local company specialized in windmill farms. The 3 founders, Mael, Dorothée and Eric believed in developing small local projects that lead to territorial dynamism. The identity conveys the local roots of the 3 partners through the 3 wind turbines anchored in fields, that disperse sparkles of joy on 'Souffle d'Espoir' identity (a social NGO initiative that offers financial support to 3 medical charities).",
     images: [
       {
         id: 0,
@@ -214,7 +214,7 @@ export const PROJECTS = [
     mission: "Website",
     color:"#504df4",
     descriptionintro:"LET'S GET WILD!",
-    description: "An immersive photoreport about the Wild Code School, Paris. We developed a website for an imaginary photograph, who followed students & teachers in their everyday life (from morning commute to late evenings at school). Included a special dark mode to discover the wild side of the Wilders! Developed with Html, CSS & Javascript.",
+    description: "An immersive photoreport about the Wild Code School, Paris. We developed a website for an imaginary photograph, who followed students & teachers in their daily life (from morning commute to late evenings at school). Included a special dark mode to discover the wild side of the Wilders! Developed with Html, CSS & Javascript.",
     link:"fanya3.github.io/Projet1-IntoTheWildCodeSchool",
     github:"github.com/fanya3/Projet1-IntoTheWildCodeSchool",
     images: [
@@ -243,8 +243,8 @@ export const PROJECTS = [
     color:"#ff6a48",
     link:"www.psychanalyste-sophrologue-chanard.com",
     github: 'NULL',
-    descriptionintro:"A mind-body new balance!",
-    description: "Xavier Chanard is a Psychoanalyst and an experimented Sophrologist. The identity encapsulates how these two methods are complementing each other. Xavier offers a flexible and balanced methodology to help people to deal with their problems, as well as an incredible professionalism, scientific approach and discretion. Developed with Wordpress and custom CSS.",
+    descriptionintro:"A MIND-BODY NEW BALANCE!",
+    description: "Xavier Chanard is a Psychoanalyst and an experimented Sophrologist. The identity encapsulates how these two methods are complementing each other. Xavier offers a flexible and balanced methodology to help people dealing with their problems. The overall design of the website conveys the scientific aspect of his work rather than the 'deja-vu' zen approach of the majority of sophrology websites. Developed with Wordpress and custom CSS.",
     images: [
       {
         id: 0,
@@ -274,7 +274,7 @@ export const PROJECTS = [
     mission: "Branding & Packaging",
     color:"#6b95d6",
     descriptionintro:"JUST BACK FROM FISHING!",
-    description: "A complete new identity and ranges redesign to capture this moment, embody history and the know-how of Petit Navire in order to reveal an iconic love brand. Going back to basics, showing the freshness of the products and the variety of flavors offered by the sea. (France)",
+    description: "A complete new identity and portfolio redesign to capture this moment, embody the history and the know-how of Petit Navire in order to reveal an iconic loved-brand. Going back to the roots, showing the freshness of the products and the variety of flavors offered by the sea. (France)",
     images: [
       {
         id: 0,
@@ -312,7 +312,7 @@ export const PROJECTS = [
     mission: "Branding & Packaging",
     color:"#f7bd89",
     descriptionintro:"WHITE IS THE NEW INDULGENCE!",
-    description: "A new premium Danone range for dairy french market. Original and creative recipes based on sensorial milky pleasure, to embody a premium dessert offer but true to the brand's DNA. 3 ranges : plain yoghurt with crunchy fruit coulis, unique milky foam texture with a melty heart inside and fruity duo sorbet styled recipe. (France)",
+    description: "A new premium Danone range for dairy French market. Unique and creative recipes based on sensorial milky pleasure that celebrates a premium dessert offer sticked to the brand DNA. 3 ranges : plain yoghurt with crunchy fruit coulis, unique milky foam texture with a melty hearted inside and fruity duo sorbet-like recipe. (France)",
     images: [
       {
         id: 0,
@@ -354,7 +354,7 @@ export const PROJECTS = [
     mission: "Branding & Packaging",
     color:"#eb212e",
     descriptionintro:"POP ART IN THE DAIRY WORLD!",
-    description: "Danone Group B2B Branch for Catering Profesionnals has decided to boost referencing and to feed Danone Equity. The new Danone Bicouche launched with exclusive and exquisite flavors is good & beautiful all at once. A fun and tasty creation that highlights varieties by using strong and modern color codes to promote impulsive consumption. (France & Belgium)",
+    description: "Danone Group B2B Branch for Catering Profesionnals has decided to increase referencing and to enhance Danone Equity. The new Danone Bicouche launched with exclusive and exquisite flavors is good & beautiful all at once. A fun and tasty creation that highlights varieties by using strong and modern color coding to encourage impulsive consumption. (France & Belgium)",
     images: [
       {
         id: 0,
