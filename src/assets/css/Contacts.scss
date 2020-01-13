@@ -1,0 +1,72 @@
+@import "../../GlobalStyle";
+
+.ContactsContainer {
+ 
+  text-align: center;
+  .ContactsTitle {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.05em;
+  }
+
+  .IconsContactsGroup {
+    display: flex;
+    justify-content: space-evenly;
+    margin:1em auto;
+    width: 30%;
+ 
+
+    .IconContacts {
+      width: 40px;
+    }
+  }
+}
+
+
+@media screen  and (min-width:901px) {
+
+ 
+  .IconContactsWeb {
+    width: 34px;
+    margin-top: 0.2em;
+  }
+
+  .IconContactsWebLink {
+    font-size: 1.2em;
+  }
+}
+
+@media screen  and (max-width:900px) {
+
+  .IconContactsWeb {
+    width: 24px;
+    margin-top: 0.2em;
+  }
+  
+  .IconContactsWebLink {
+    font-size: 1.2em;
+  }
+}
+
+
+
+.IconContactsWebLink {
+  position:relative;
+  &::after {
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:0;
+    height:0.5em;
+    background-color: $green;
+    transition-duration:0.4s;
+    mix-blend-mode: multiply;
+  } 
+  &:hover::after {
+    width:100%;
+  }
+}

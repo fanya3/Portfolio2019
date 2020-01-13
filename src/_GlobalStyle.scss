@@ -1,0 +1,57 @@
+$green: #5bf4c1;
+$black: #1d1d1b;
+$mainFont:'Heimat-mono', sans-serif;
+$secondFont:'IBM Plex Sans', sans-serif;
+
+@import url("https://use.typekit.net/ejc7vwp.css");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&display=swap") ;
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Heimat-mono', sans-serif;  
+  background-color: $green;
+}
+
+@mixin blackTitle ($font-size) {
+  background-color: $black;
+  color:$black;
+  font-size:$font-size;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  padding: 0.2em 0.5em 0.2em 0.7em;
+  text-shadow: 1.2px 0 0 white, 0 1.2px 0 white, 0 -1.2px 0 white, -1.2px 0 0 white, 1.2px 1.2px 0 white, 1.2px -1.2px 0 white, -1.2px 1.2px 0 white, -1.2px -1.2px 0 white;
+}
+
+
+@mixin ButtonAll () {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: $black;
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 1.2em;
+    &:hover {
+      font-weight: 800;
+      transition-duration: 0.3s;
+  }
+}
+
+
+@mixin ButtonNav() {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: $black;
+    font-family: $mainFont;
+    font-weight: 800;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}

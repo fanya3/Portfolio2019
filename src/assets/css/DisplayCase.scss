@@ -1,0 +1,240 @@
+@import "../../GlobalStyle";
+
+
+body {
+  background-color: $green;
+}
+
+.CaseDescriptionIntro{
+  font-weight: 800;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1801px)  {
+
+  .CaseContainer{
+    display:grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "navbar case"
+                         "contacts footer";
+    color: white;
+    width:100%;
+    width:100%;
+    max-width: 1800px;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+    margin: auto;
+    box-shadow: 3px 0 11px #5bbb8e;
+  }
+}
+
+
+@media screen and (min-width: 901px) and (max-width: 1800px) {
+  .CaseContainer{
+    display:grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "navbar case"
+                         "contacts footer";
+    color: white;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+  }
+}
+
+
+
+@media screen  and (min-width:901px) {
+
+.NavbarContainer {
+  grid-area: navbar;
+  background-color: white;
+  box-shadow: 3px 3px 12px rgb(197, 197, 197);
+  mix-blend-mode: multiply;
+  z-index: 20;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+  height:100vh;
+  padding:0.5em;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .ContactsDisplayCase {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    z-index:100;
+  }
+  
+
+}
+
+@media screen  and (max-width:900px) {
+  .CaseContainer{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "navbar"
+                         "case "
+                         "contacts"
+                         "footer";
+    color: white;
+    width:100%;
+    font-family: $mainFont;
+    font-weight: bold;
+    background-color: white;
+  }
+
+  .NavbarContainer {
+    grid-area: navbar;
+    background-color: white;
+    box-shadow: 3px 3px 12px rgb(197, 197, 197);
+    z-index: 20;
+    position: sticky;
+    position: -webkit-sticky;
+    transition: transform 0.4s;
+    top:0;
+    padding:0.5em 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .ContactsDisplayCase {
+    grid-area: contacts;
+    background-color: white;
+    box-shadow: 3px -3px 12px rgb(197, 197, 197);
+    padding: 2em;
+  }
+
+  }
+
+
+
+
+.CaseDisplay {
+  grid-area: case;
+  font-family: $mainFont;
+  color:$black;
+  padding:60px 7% 60px 7%;
+  position: relative;
+
+}
+
+
+.CaseImg{
+  width:100%;
+  height:auto;
+  margin-bottom:0.8em;
+}
+
+
+@media screen  and (min-width:901px){
+  .CaseIntroSection {
+    width:100%;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: right;
+    padding: 3vw 0;
+    margin-bottom: 1.1em;
+  }
+}
+
+@media screen  and (max-width:900px){
+  .CaseIntroSection {
+    width:100%;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: scroll;
+    background-position: center;
+    padding: 3vw 0;
+    margin-bottom: 1.1em;
+  }
+}
+
+.blackTitle4 {
+  @include blackTitle(1.5);
+  text-transform: uppercase;
+  padding-left:0.9em;
+  letter-spacing: 0.06em;
+  display: inline-block;
+}
+
+.missionTitle {
+  color:white;
+  text-transform: capitalize;
+  text-shadow: none;
+  letter-spacing: -0.04em;
+  padding-left:0.2em;
+  padding-right:0.4em
+  
+}
+
+.CaseDescription {
+  font-family: $secondFont;
+  font-weight: 400;
+  text-align: left;
+  background-color: white;
+  z-index: 20;
+  color:$black;
+  padding: 1.8em;
+  width: 55%;
+}
+
+.FooterContainer{
+  grid-area: footer; 
+  z-index: 20;
+}
+
+@media screen  and (min-width:1101px)  {
+  
+  .CaseContactSection{
+    width:60%;
+    display: flex;
+    margin:3em auto;
+    justify-content: space-evenly;
+}
+}
+
+@media screen  and (min-width:901px) and (max-width:1100px) {
+
+  .CaseContactSection{
+    width:100%;
+    display: flex;
+    margin:2em auto;
+    justify-content: space-evenly;
+}
+}
+
+@media screen  and (max-width:900px) {
+
+  .CaseDescription {
+    font-size:0.8em;
+    width: 65%;
+  }
+
+  
+
+  .CaseContactSection{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin:2em auto;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+
+
+
+
