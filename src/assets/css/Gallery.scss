@@ -184,9 +184,9 @@
   }
   }
 
-  @media  screen and (hover: hover) and (pointer: fine) and (max-width:900px) {
+  @media  screen  and (max-width:900px) {
       .GalleryCard {  
-      &:hover, &:active {
+       &:active, &:focus {
     
         .GalleryCardText {
           visibility: visible;

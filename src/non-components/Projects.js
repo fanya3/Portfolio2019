@@ -2,13 +2,14 @@ export const PROJECTS = [
   {
     id: 0,
     name: "Danette",
-    cover_image: "/images/DANETTE-CARD.jpg",
+    cover_image: "/images/CARDS/DANETTE-CARD.jpg",
     type1: "Foody",
     alt: "Danette",
     path: "design",
     mission: "Global Redesign",
     color:"#892409",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"THE POT IS ALL!",
+    description: "A new identity that reveals the iconic pot of Danette and its unifying power around a multitude of crafted recipes. A colorful and gourmet universe with a stronger and modernised brand. A friendly tone of voice across all media from packaging to bus shelter ads. (France & Belgium)",
     images: [
       {
         id: 0,
@@ -60,15 +61,16 @@ export const PROJECTS = [
   {
     id: 1,
     name: "OhMyG!",
-    cover_image: "/images/OHMYG-CARD.gif",
+    cover_image: "/images/CARDS/OHMYG-CARD.gif",
     type1: "Online",
     alt: "Oh My G!",
     path: "digital",
     mission: "Web App",
     color:"#08f8d5",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
-    link:"www.blabla.com",
-    github:"www.github.com",
+    descriptionintro:"A TASTEFUL APP!",
+    description: "OH MY G! (aka Oh My Glycemia!) is a web app which helps teenagers to deal with their diabetes on a daily basis. The journey started with the experience of one of our diabetic friend struggling with cold and boring medical apps, we decided to develop a more colorful and simple web app, more adapted to teens and young adults (based also on personas). Features : a tool to calculate insuline, a tool to calculate total carbohydrates from food intake and a nutritional informations database. Developed with Javascript, React and Nutritional Anses Ciqual API, with Scrum Methodology.",
+    link:"eloquent-fermat-974f6b.netlify.com",
+    github:"github.com/fanya3/Projet2-OhmyG",
     images: [
       {
         id: 0,
@@ -76,169 +78,203 @@ export const PROJECTS = [
       },
       {
         id: 1,
-        image: "/images/OHMYG/0-OHMYG-02.jpg"
+        image: "/images/OHMYG/0-OHMYG-02.gif"
       },
       {
         id: 2,
         image: "/images/OHMYG/0-OHMYG-03.jpg"
-      },
-      {
-        id: 3,
-        image: "/images/lubees-card.jpg"
       }
     ]
   },
   {
     id: 2,
     name: "LubeesdeSylvie",
-    cover_image: "/images/lubees-card.jpg",
+    cover_image: "/images/CARDS/LUBEES-CARD.jpg",
     type1: "Green",
     alt: "Lubees de Sylvie",
     path: "design",
     mission: "Identity",
     color:"#efd5bb",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"SMALL TISSUES FOR A BETTER WORLD!",
+    description: "Trying to change the world with small actions everyday, Sylvie decided to launch her own business putting care and quality into each bee's wrap she makes. The identity encapsulates her know-how and her special cheerfulness! (France)",
     images: [
       {
         id: 0,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/LUBEES/0-LUBEES-01.jpg"
       },
       {
         id: 1,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/LUBEES/0-LUBEES-02.jpg"
       },
       {
         id: 2,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/LUBEES/0-LUBEES-03.jpg"
+      },
+      {
+        id: 3,
+        image: "/images/LUBEES/0-LUBEES-04.jpg"
+      },
+      {
+        id: 4,
+        image: "/images/LUBEES/0-LUBEES-05.jpg"
       }
     ]
   },
   {
     id: 3,
     name: "ZeroWasteParis",
-    cover_image: "/images/ZEROWASTE-CARD.jpg",
+    cover_image: "/images/CARDS/ZEROWASTE-CARD.jpg",
     type1: "Green",
     alt: "Zero Waste Paris",
     path: "design",
     mission: "Graphic Design",
     color:"#00a1b2",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"FIRST STEPS ON THE ZERO WASTE PATH!", 
+    description: "A new presentation for the 'Beginners Zero Waste Program' of the non-profit organization, Zero Waste Paris. This program was developed within the local groups to increase awareness of global zero waste approach and challenges (global waste and plastic pollution, first small actions to a more conscious consumption, with reduced costs and reduced environmental footprint).",
     images: [
       {
         id: 0,
-        image:
-        "/images/volvic-card.jpg"
+        image: "/images/ZEROWASTE/0-ZEROWASTE-01.jpg"
       },
       {
         id: 1,
-        image:
-        "/images/volvic-card.jpg"
+        image: "/images/ZEROWASTE/0-ZEROWASTE-02.jpg"
       },
       {
         id: 2,
-        image:
-        "/images/volvic-card.jpg"
+        image: "/images/ZEROWASTE/0-ZEROWASTE-03.gif"
+      },
+      {
+        id: 3,
+        image: "/images/ZEROWASTE/0-ZEROWASTE-04.jpg"
+      },
+      {
+        id: 4,
+        image: "/images/ZEROWASTE/0-ZEROWASTE-05.jpg"
+      },
+      {
+        id: 5,
+        image: "/images/ZEROWASTE/0-ZEROWASTE-06.jpg"
       }
     ]
   },
   {
     id: 4,
     name: "Calyce",
-    cover_image: "/images/CALYCE-CARD.jpg",
+    cover_image: "/images/CARDS/CALYCE-CARD.jpg",
     type1: "Green",
     alt: "Calycé Développement",
     path: "design",
     mission: "Corporate Identity",
     color:"#243e93",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"A POSITIVE BREATH OF FRESH AIR!",
+    description: "Calycé Développement is a local company specialized in windmill farms. The 3 founders, Mael, Dorothée and Eric believed in developing small local projects that lead to territorial dynamism. The identity conveys the local roots of the 3 partners through the 3 wind turbines anchored in fields, that disperse sparkles of joy on 'Souffle d'Espoir' identity (a social NGO initiative that offers financial support to 3 medical charities).",
     images: [
       {
         id: 0,
-        image: "/images/CALYCE-CARD.jpg"
+        image: "/images/CALYCE/0-CALYCE-01.jpg"
       },
       {
         id: 1,
-        image:"/images/CALYCE-CARD.jpg"
+        image: "/images/CALYCE/0-CALYCE-02.jpg"
       },
       {
         id: 2,
-        image: "/images/CALYCE-CARD.jpg"
+        image: "/images/CALYCE/0-CALYCE-03.jpg"
+      },
+      {
+        id: 3,
+        image: "/images/CALYCE/0-CALYCE-04.jpg"
+      },
+      {
+        id: 4,
+        image: "/images/CALYCE/0-CALYCE-05.jpg"
+      },
+      {
+        id: 5,
+        image: "/images/CALYCE/0-CALYCE-06.jpg"
+      },
+      {
+        id: 6,
+        image: "/images/CALYCE/0-CALYCE-07.jpg"
+      },
+      {
+        id: 7,
+        image: "/images/CALYCE/0-CALYCE-08.jpg"
       }
     ]
   },
   {
     id: 5,
     name: "IntoTheWildCodeSchool",
-    cover_image: "/images/INTOTHEWILD-CARD.gif",
+    cover_image: "/images/CARDS/INTOTHEWILD-CARD.gif",
     type1: "Online",
     alt: "Into The Wild Code School",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
     path: "digital",
-    link:"www.blabla.com",
-    github:"www.github.com",
     mission: "Website",
     color:"#504df4",
+    descriptionintro:"LET'S GET WILD!",
+    description: "An immersive photoreport about the Wild Code School, Paris. We developed a website for an imaginary photograph, who followed students & teachers in their daily life (from morning commute to late evenings at school). Included a special dark mode to discover the wild side of the Wilders! Developed with Html, CSS & Javascript.",
+    link:"fanya3.github.io/Projet1-IntoTheWildCodeSchool",
+    github:"github.com/fanya3/Projet1-IntoTheWildCodeSchool",
     images: [
       {
         id: 0,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/INTOTHEWILD/0-INTOTHEWILD-01.jpg"
       },
       {
         id: 1,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/INTOTHEWILD/0-INTOTHEWILD-02.gif"
       },
       {
         id: 2,
-        image:
-        "/images/lubees-card.jpg"
+        image: "/images/INTOTHEWILD/0-INTOTHEWILD-03.jpg"
       }
     ]
   },
   {
     id: 6,
     name: "XavierChanard",
-    cover_image: "/images/XAVIERCHANARD-CARD.jpg",
+    cover_image: "/images/CARDS/XAVIERCHANARD-CARD.jpg",
     type1: "Online",
     alt: "Xavier Chanard",
     path: "digital",
-    link:"www.blabla.com",
-    github: 'NULL',
     mission: "Identity & Web Design",
     color:"#ff6a48",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    link:"www.psychanalyste-sophrologue-chanard.com",
+    github: 'NULL',
+    descriptionintro:"A MIND-BODY NEW BALANCE!",
+    description: "Xavier Chanard is a Psychoanalyst and an experimented Sophrologist. The identity encapsulates how these two methods are complementing each other. Xavier offers a flexible and balanced methodology to help people dealing with their problems. The overall design of the website conveys the scientific aspect of his work rather than the 'deja-vu' zen approach of the majority of sophrology websites. Developed with Wordpress and custom CSS.",
     images: [
       {
         id: 0,
-        name:"Danette détail",
-        image: "/images/danette-card.jpg"
+        image: "/images/XAVIERCHANARD/0-XAVIER-CHANARD-01.jpg"
       },
       {
         id: 1,
-        name:"Danette détail",
-        image: "/images/danette-card.jpg"
+        image: "/images/XAVIERCHANARD/0-XAVIER-CHANARD-02.jpg"
       },
       {
         id: 2,
-        name:"Danette détail",
-        image: "/images/danette-card.jpg"
+        image: "/images/XAVIERCHANARD/0-XAVIER-CHANARD-03.jpg"
+      },
+      {
+        id: 3,
+        image: "/images/XAVIERCHANARD/0-XAVIER-CHANARD-04.jpg"
       }
     ]
   },
   {
     id: 7,
     name: "PetitNavire",
-    cover_image: "/images/PETITNAVIRE-CARD.jpg",
+    cover_image: "/images/CARDS/PETITNAVIRE-CARD.jpg",
     type1: "Foody",
     alt: "Petit Navire",
     path: "design",
     mission: "Branding & Packaging",
     color:"#6b95d6",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"JUST BACK FROM FISHING!",
+    description: "A complete new identity and portfolio redesign to capture this moment, embody the history and the know-how of Petit Navire in order to reveal an iconic loved-brand. Going back to the roots, showing the freshness of the products and the variety of flavors offered by the sea. (France)",
     images: [
       {
         id: 0,
@@ -269,13 +305,14 @@ export const PROJECTS = [
   {
     id: 8,
     name: "Danissimo",
-    cover_image: "/images/DANISSIMO-CARD.jpg",
+    cover_image: "/images/CARDS/DANISSIMO-CARD.jpg",
     type1: "Foody",
     alt: "Danissimo",
     path: "design",
     mission: "Branding & Packaging",
     color:"#f7bd89",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"WHITE IS THE NEW INDULGENCE!",
+    description: "A new premium Danone range for dairy French market. Unique and creative recipes based on sensorial milky pleasure that celebrates a premium dessert offer sticked to the brand DNA. 3 ranges : plain yoghurt with crunchy fruit coulis, unique milky foam texture with a melty hearted inside and fruity duo sorbet-like recipe. (France)",
     images: [
       {
         id: 0,
@@ -309,42 +346,39 @@ export const PROJECTS = [
   },
   {
     id: 9,
-    name: "DanonePro",
-    cover_image: "/images/DANONEPRO-CARD.jpg",
+    name: "DanoneB2B",
+    cover_image: "/images/CARDS/DANONEPRO-CARD.jpg",
     type1: "Foody",
-    alt: "Danone Pro",
+    alt: "Danone B2B",
     path: "design",
     mission: "Branding & Packaging",
     color:"#eb212e",
-    description: "Post haec Gallus Hierapolim profecturus ut expeditioni specie tenus adesset, Antiochensi plebi suppliciter obsecranti ut inediae dispelleret metum, quae per multas difficilisque causas adfore iam sperabatur, non ut mos est principibus, quorum diffusa potestas localibus subinde medetur aerumnis, disponi quicquam statuit vel ex provinciis alimenta transferri conterminis, sed consularem Syriae Theophilum prope adstantem ultima metuenti multitudini dedit id adsidue replicando quod invito rectore nullus egere poterit victu.",
+    descriptionintro:"POP ART IN THE DAIRY WORLD!",
+    description: "Danone Group B2B Branch for Catering Profesionnals has decided to increase referencing and to enhance Danone Equity. The new Danone Bicouche launched with exclusive and exquisite flavors is good & beautiful all at once. A fun and tasty creation that highlights varieties by using strong and modern color coding to encourage impulsive consumption. (France & Belgium)",
     images: [
       {
         id: 0,
-        image: "/images/DANISSIMO/0-DANISSIMO-01.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-01.jpg"
       },
       {
         id: 1,
-        image: "/images/DANISSIMO/0-DANISSIMO-02.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-02.jpg"
       },
       {
         id: 2,
-        image: "/images/DANISSIMO/0-DANISSIMO-03.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-03.jpg"
       },
       {
         id: 3,
-        image: "/images/DANISSIMO/0-DANISSIMO-04.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-04.jpg"
       },
       {
         id: 4,
-        image: "/images/DANISSIMO/0-DANISSIMO-05.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-05.jpg"
       },
       {
         id: 5,
-        image: "/images/DANISSIMO/0-DANISSIMO-06.jpg"
-      },
-      {
-        id: 6,
-        image: "/images/DANISSIMO/0-DANISSIMO-07.jpg"
+        image: "/images/DANONEPRO/0-DANONEPRO-06.jpg"
       }
     ]
   }

@@ -11,7 +11,7 @@ const ButtonsGallery = (props) => {
             <input className = "ButtonNavGallery pulsate-fwd"
               key={filterName}
               type ="button"
-              value={`it's ${filterName}!`}
+              value={`it's ${filterName}! >`}
               onClick={() => props.cardFilterSelect(filterName)}
             />
          

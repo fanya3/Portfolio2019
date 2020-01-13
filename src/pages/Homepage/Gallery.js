@@ -11,7 +11,7 @@ const Gallery = props => {
     .map(card => {
       return (
         <div>
-          <Link className ="CardLink" to = {`/project${card.path}/${card.name}`}>
+          <Link className ="CardLink" to = {`/${card.path}project/${card.name}`}>
             <div className="GalleryCard shadow-drop-2-br" style={{backgroundColor:`${card.color}`}}>
               <img className="GalleryImg" src={card.cover_image} alt={card.alt}/>
               <div className="GalleryCardText">

@@ -61,7 +61,7 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#GalleryId">
+            <Link className="ButtonAllProject"  to="/#GalleryId">
               BACK TO ALL
             </Link>
             <div className="BorderNav"></div>
@@ -69,7 +69,7 @@ class ButtonsNavProjects extends React.Component {
             {this.state.isLoaded ? (
               <div className="ButtonsNavGroup"><Link
                 className="ButtonNavProject Next Heartbeat"
-                path to={`/project${this.state.nextPath}/${this.state.nextName}`}
+                 to={`/${this.state.nextPath}project/${this.state.nextName}`}
               >
                 NEXT
               </Link> </div>
@@ -83,14 +83,14 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#GalleryId">
+            <Link className="ButtonAllProject"  to="/#GalleryId">
               BACK TO ALL
             </Link>
             <div className="BorderNav"></div>
             {this.state.isLoaded ? (
                <div className="ButtonsNavGroup"><Link
                 className="ButtonNavProject Previous Heartbeat"
-                path to={`/project${this.state.previousPath}/${this.state.previousName}`}
+                to={`/${this.state.previousPath}project/${this.state.previousName}`}
               >
                 PREVIOUS
               </Link> </div>
@@ -104,7 +104,7 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainerAboutMe">
-            <Link className="ButtonAllProject" path to="/">
+            <Link className="ButtonAllProject"  to="/">
               BACK TO HOME
             </Link>
             <div className="BorderAbout"></div>
@@ -115,7 +115,7 @@ class ButtonsNavProjects extends React.Component {
       return (
         <>
           <div className="ButtonsContainer">
-            <Link className="ButtonAllProject" path to="/#GalleryId">
+            <Link className="ButtonAllProject"  to="/#GalleryId">
               BACK TO ALL
             </Link>
             <div className="BorderNav"></div>
@@ -123,14 +123,14 @@ class ButtonsNavProjects extends React.Component {
               <>
                 <div className="ButtonsNavGroup"><Link
                   className="ButtonNavProject Previous pulsate-fwd"
-                  path to={`/project${this.state.previousPath}/${this.state.previousName}`}
+                  to={`/${this.state.previousPath}project/${this.state.previousName}`}
                 >
                   PREVIOUS
                 </Link>
 
                 <Link
                   className="ButtonNavProject Next pulsate-fwd"
-                  path to={`/project${this.state.nextPath}/${this.state.nextName}`}
+                   to={`/${this.state.nextPath}project/${this.state.nextName}`}
                 >
                   NEXT
                 </Link></div>

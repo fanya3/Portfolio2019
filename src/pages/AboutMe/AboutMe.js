@@ -26,11 +26,15 @@ const AboutMe = () => {
        <h2 className="blackTitle3">ABOUT ME</h2>
           <div className="AboutMeIntroSection">
             <p >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor purus in lobortis scelerisque. Mauris scelerisque massa in pellentesque ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc vitae dictum quam. Mauris est nunc, porta ac ornare ac, iaculis eu lorem. Fusce ut tellus ligula. Phasellus eu diam cursus enim pellentesque facilisis. Praesent a ipsum cursus, bibendum ipsum eget, malesuada ipsum. Vivamus ut vulputate turpis, vel elementum nibh. Curabitur tincidunt massa urna, nec dictum velit malesuada a. Sed a finibus orci, sed accumsan nulla. Suspendisse tristique neque diam, sit amet lacinia elit lobortis sit amet. Nam vitae dolor eu tellus tincidunt vulputate eget finibus ex. Fusce vel rutrum purus. Sed erat nunc, commodo ac odio commodo, ullamcorper viverra elit. Quisque pulvinar sed ante ut posuere.
-              <br/><br/>
-              Etiam sed cursus quam, a convallis leo. Aliquam imperdiet ante in venenatis efficitur. Sed ut est eget tellus venenatis consectetur. Pellentesque quis mi iaculis, rutrum nisi eu, ultricies erat. Proin lacus lorem, aliquam quis feugiat quis, faucibus eu enim. Proin pellentesque aliquam magna, id finibus ligula semper vel. Morbi aliquam nibh sit amet semper ultricies. Maecenas pulvinar, libero accumsan iaculis tincidunt, magna nunc mollis sem, quis volutpat quam magna quis orci. Aliquam non orci sagittis, faucibus magna eu, posuere elit. 
+             <strong>As you know by now ;) I have a lively cheerful personality!</strong> What I like as a graphic designer is creating stories. I've been helping brands to convey their universe and values for 12 years, working as a designer director for the International Design Group, "Team Créatif". I was lucky enough to work for global branding and packaging projects in Paris and to experiment a more colourful latino design during 1-year-mission in São Paulo to develop the newly launched retail agency of the group in 2018.
+             <br/><br/>
+             For me, design shouldn't just look good, it should do good as well. Therefore, since January 2019, as a Freelancer, I started helping people telling a different story focusing on sustainable projects with social &amp; environmental positive impact. This new adventure is boosting my energy and giving me the opportunity to meet people from diverse background and facing different challenges!
+             <br/><br/>
+             Hard worker and always ready to take up new challenges, my love for innovation & science led me to join the Wild Code School Paris, in September 2019 for an intensive React/NodeJS developer training. <strong>I'm now looking for an internship to develop my new skills in web development.</strong> 
+             <br/><br/>
+             I love to dig inside how things work and turning complex problems into simple and intuitive solutions. When I'm not coding, you'll find me doing yoga, experimenting new zero waste cosmetic recipe, laughing (out loud ;&#41;) or enjoying a nice meal with friends.
             </p>
-            <div className="ResumeBlock"><a  className="ResumeLink" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1PArni32aYWv7Uk46FTy433SlORh-FW7A/view?usp=sharing"><h4 > CHECK MY RESUME HERE (french)</h4></a></div>
+            <div className="ResumeBlock"><a  className="ResumeLink" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1RxtCDI-JMTEwavL05ysIAMYojMRORtyQ/view?usp=sharing"><h4 > CHECK MY RESUME HERE (french)</h4></a></div>
           </div>
           <div className="AboutMeContactGlobalSection">
 

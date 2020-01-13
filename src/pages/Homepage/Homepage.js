@@ -32,7 +32,7 @@ class Homepage extends Component {
     if (elem) {
       elem.scrollIntoView()
     }
-}
+  }
 
   render() {
     return (
@@ -50,29 +50,33 @@ class Homepage extends Component {
               <p className="HomepageHelloLegend">
                 <span className="LegendSuperBold">!</span>
                 <span className="LegendBold">
-                  = I am often told that I speak loudly :&#41;
+                  = I am often told that I speak loudly ;&#41;
                 </span>{" "}
                 <br />
                 Fortunately, this is what I like to do in my job, helping brands
-                and entrepreneurs to state loud and clear and make the
-                difference in the market!
+                and entrepreneurs to play it loud and different from competition!
               </p>
             </div>
           </div>
 
           <div className="HomepageWhatIDo">
-          <InternshipLabel/>
+            <InternshipLabel/>
+
             <div className="WhatIDoBlock">
               <h2 className="blackTitle1">WHAT I DO</h2>
+
               <div className="WhatIDoBlockText">
                 <h3 className="WhatIDoTitle  green">I DESIGN</h3>
+
                 <p  className="green">
-                Graphic Design, Corporate Identity, <br/> Branding and Packaging Design, Web Design, with Global Strategic Thinking
+                  Graphic Design, Corporate Identity, <br/> Branding and Packaging Design, Web Design, with Global Strategic Thinking
                 </p>
               </div>
+
               <div className="Between">
                 <img className="And" src={And} alt=" zz" />
               </div>
+
               <div className="WhatIDoBlockText">
                 <h3 className="WhatIDoTitle">I DEVELOP</h3>
                 <p>
@@ -81,7 +85,7 @@ class Homepage extends Component {
                 </p>
               </div>
             </div>
-            <Link className="HomepageLink" path to="/about-me">
+            <Link className="HomepageLink" to="/about-me">
               MORE ABOUT ME
             </Link>
           </div>

@@ -7,7 +7,7 @@ const Footer = () => {
     return (
       
       <div className="FooterContainer">
-         <p>© Fanny Bouffier 2019 - Made with <span><img className = "FooterLogo" src={LogoLove} alt="Logo-React"/></span> &amp; <img className = "FooterLogo" src={LogoReact} alt="Logo-Heart"/> </p>
+         <p>© Fanny Bouffier 2020 - Made with <span><img className = "FooterLogo" src={LogoLove} alt="Logo-Love"/></span> &amp; <img className = "FooterLogo" src={LogoReact} alt="Logo-React"/> </p>
          <p>All rights reserved.</p>
       </div>
       

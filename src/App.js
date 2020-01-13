@@ -14,8 +14,8 @@ import './_GlobalStyle.scss';
     <Switch>
       <Route exact path ='/' component={Homepage}/>
       <Route path ='/about-me' component={AboutMe}/> 
-      <Route path ='/projectdesign/:name' component={DisplayCaseDesign}/> 
-      <Route path ='/projectdigital/:name' component={DisplayCaseDigital}/>
+      <Route path ='/designproject/:name' component={DisplayCaseDesign}/> 
+      <Route path ='/digitalproject/:name' component={DisplayCaseDigital}/>
     </Switch>
     </div>
   );
