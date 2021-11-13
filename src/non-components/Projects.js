@@ -69,7 +69,6 @@ export const PROJECTS = [
     color:"#08f8d5",
     descriptionintro:"A TASTEFUL APP!",
     description: "OH MY G! (aka Oh My Glycemia!) is a web app which helps teenagers to deal with their diabetes on a daily basis. The journey started with the experience of one of our diabetic friend struggling with cold and boring medical apps, we decided to develop a more colorful and simple web app, more adapted to teens and young adults (based also on personas). Features : a tool to calculate insuline, a tool to calculate total carbohydrates from food intake and a nutritional informations database. Developed with Javascript, React and Nutritional Anses Ciqual API, with Scrum Methodology.",
-    link:"eloquent-fermat-974f6b.netlify.com",
     github:"github.com/fanya3/Projet2-OhmyG",
     images: [
       {
