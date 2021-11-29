@@ -77,7 +77,7 @@ class Homepage extends Component {
                 <h3 className="WhatIDoTitle">I DEVELOP</h3>
                 <p>
                   FRONT-END &amp; BACK-END <br /> with HTML &amp; CSS, Sass,
-                  Bootstrap, JavaScript, React, Redux, Node.js &amp; Database
+                  Bootstrap, JavaScript, TypeScript, React, Redux, Node.js &amp; Database
                   with MySQL.
                 </p>
               </div>
