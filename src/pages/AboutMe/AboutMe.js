@@ -64,7 +64,7 @@ const AboutMe = () => {
               className="ResumeLink"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1RxtCDI-JMTEwavL05ysIAMYojMRORtyQ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1kEJ0_5jYcSta4P6NYPoiIAXMtSKU85zE/view?usp=sharing"
             >
               <h4> CHECK MY RESUME HERE (french)</h4>
             </a>
